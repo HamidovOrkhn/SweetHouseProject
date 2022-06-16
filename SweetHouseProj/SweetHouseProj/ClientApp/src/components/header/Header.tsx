@@ -181,7 +181,23 @@ class Header extends React.Component {
                                                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15536" data-size={60}><a href="contact-3/index.html">Contact 3</a></li>
                                             </ul>
                                         </li>
-                                    </ul><div className="hotale-navigation-slide-bar  hotale-navigation-slide-bar-style-2 hotale-left" data-size-offset={0} data-width="19px" id="hotale-navigation-slide-bar" style={{ width: '19px', left: '358.313px', display: 'block', overflow: 'hidden' }} /></div><div className="hotale-main-menu-right-wrap clearfix  hotale-item-mglr hotale-navigation-top"><div className="tourmaster-currency-switcher"><span className="tourmaster-head"><span>USD</span><i className="fa fa-sort-down" /></span><div className="tourmaster-currency-switcher-inner"><div className="tourmaster-currency-switcher-content"><ul><li><a href="index5e60.html?currency=eur">EUR</a></li><li><a href="index4236.html?currency=chf">CHF</a></li></ul></div></div></div><div className="tourmaster-room-navigation-checkout-wrap "><a id="tourmaster-room-navigation-checkout-button" className="tourmaster-room-navigation-checkout-button" href="room-search/indexae75.html?room_amount=1&room-search=" data-checkout-label="Check Out" data-label="Book Now">Book Now<span className="tourmaster-count">0</span></a><div className="tourmaster-room-cart-item-wrap"><div className="tourmaster-room-cart-items"><ul /><a className="tourmaster-checkout-button" href="payment-summary/indexbaa2.html?pt=room&type=cart">Check Out</a></div></div></div></div>			</div>{/* hotale-navigation */}
+                                    </ul><div className="hotale-navigation-slide-bar  hotale-navigation-slide-bar-style-2 hotale-left" data-size-offset={0} data-width="19px" id="hotale-navigation-slide-bar" style={{ width: '19px', left: '358.313px', display: 'block', overflow: 'hidden' }} />
+                                    </div>
+                                    <div className="hotale-main-menu-right-wrap clearfix  hotale-item-mglr hotale-navigation-top">
+                                        <div className="tourmaster-room-navigation-checkout-wrap ">
+                                            <a id="tourmaster-room-navigation-checkout-button" className="tourmaster-room-navigation-checkout-button" href="room-search/indexae75.html?room_amount=1&room-search=" data-checkout-label="Check Out" data-label="Book Now">
+                                                Book Now
+                                                <span className="tourmaster-count">0</span>
+                                            </a>
+                                            <div className="tourmaster-room-cart-item-wrap">
+                                                <div className="tourmaster-room-cart-items">
+                                                    <ul />
+                                                    <a className="tourmaster-checkout-button" href="payment-summary/indexbaa2.html?pt=room&type=cart">Check Out</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>{/* hotale-navigation */}
                             </div>{/* hotale-header-inner */}
                         </div>{/* hotale-header-container */}
                     </header>

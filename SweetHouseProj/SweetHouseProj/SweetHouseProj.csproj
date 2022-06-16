@@ -27,6 +27,11 @@
   <ItemGroup>
     <None Remove="ClientApp\src\components\foot\Footer.tsx" />
     <None Remove="ClientApp\src\components\header\Header.tsx" />
+    <None Remove="ClientApp\src\components\home\HomeAboutUs.tsx" />
+    <None Remove="ClientApp\src\components\home\HomeFacilities.tsx" />
+    <None Remove="ClientApp\src\components\home\HomeVideo.tsx" />
+    <None Remove="ClientApp\src\components\home\HomeWelcome.tsx" />
+    <None Remove="ClientApp\src\components\home\HotelCards.tsx" />
   </ItemGroup>
 
   <ItemGroup>
