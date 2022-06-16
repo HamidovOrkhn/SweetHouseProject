@@ -3,6 +3,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import logo from '../images/bar.jpg';
 import { RouteComponentProps } from 'react-router';
+import { Link } from "react-router-dom";
 class Header extends React.Component {
     public render() {
         return (
@@ -30,7 +31,7 @@ class Header extends React.Component {
                         <div className="hotale-header-container  hotale-container">
                             <div className="hotale-header-container-inner clearfix">
                                 <div className="hotale-logo  hotale-item-pdlr"><div className="hotale-logo-inner"><a className="hotale-fixed-nav-logo" href="index.html"><img src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2022/05/logo-nx1.png" alt="" width={147} height={37} title="logo-nx1" srcSet="https://a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2022/05/logo-nx1.png 1x, https://a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2022/05/logo-nx2-1.png 2x" /></a><a className=" hotale-orig-logo" href="index.html"><img src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2022/05/logo-nx1.png" alt="" width={147} height={37} title="logo-nx1" srcSet="https://a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2022/05/logo-nx1.png 1x, https://a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2022/05/logo-nx2-1.png 2x" /></a></div></div>			<div className="hotale-navigation hotale-item-pdlr clearfix ">
-                                    <div className="hotale-main-menu sf-js-enabled sf-arrows" id="hotale-main-menu" style={{ touchAction: 'pan-y' }}><ul id="menu-main-navigation-1" className="sf-menu"><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14980 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-15531 hotale-normal-menu"><a href="index.html" className="sf-with-ul-pre sf-with-ul">Home</a>
+                                    <div className="hotale-main-menu sf-js-enabled sf-arrows" id="hotale-main-menu" style={{ touchAction: 'pan-y' }}><ul id="menu-main-navigation-1" className="sf-menu"><li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14980 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-15531 hotale-normal-menu"><Link className="sf-with-ul-pre sf-with-ul" to="/">Ana Səhifə</Link>
                                         <ul className="sub-menu" style={{ display: 'none' }}>
                                             <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14980 current_page_item menu-item-15878" data-size={60}><a href="index.html">Home – Resort 1</a></li>
                                             <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-15879" data-size={60}><a target="_blank" href="https://demo.goodlayers.com/hotale/resort2/">Home – Resort 2</a></li>
@@ -40,85 +41,9 @@ class Header extends React.Component {
                                             <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-15876" data-size={60}><a target="_blank" href="https://demo.goodlayers.com/hotale/apartment2/">Home – Apartment 2</a></li>
                                         </ul>
                                     </li>
-                                        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15533 hotale-normal-menu"><a href="#" className="sf-with-ul-pre sf-with-ul">Pages</a>
-                                            <ul className="sub-menu" style={{ display: 'none' }}>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15523" data-size={60}><a href="about-us/index.html">About Us</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15522" data-size={60}><a href="about-us-2/index.html">About Us 2</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15525" data-size={60}><a href="about-us-3/index.html">About Us 3</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15521" data-size={60}><a href="our-team/index.html">Our Team</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15524" data-size={60}><a href="hotel-review/index.html">Hotel Review</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15538" data-size={60}><a href="team-frame-style/index.html" className="sf-with-ul-pre sf-with-ul">Team / Frame Style</a>
-                                                    <ul className="sub-menu" style={{ display: 'none' }}>
-                                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15539"><a href="team-plain-style/index.html">Team / Plain Style</a></li>
-                                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15540"><a href="team-thumbnail-style/index.html">Team / Thumbnail Style</a></li>
-                                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15541"><a href="team-frame-style/index.html">Team / Frame Style</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15542" data-size={60}><a href="woocommerce-page/index.html" className="sf-with-ul-pre sf-with-ul">Woocommerce Page Item</a>
-                                                    <ul className="sub-menu" style={{ display: 'none' }}>
-                                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15543"><a href="woocommerce-page/index.html">Woocommerce Page Item</a></li>
-                                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15544"><a href="shop/index.html">Shop</a></li>
-                                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15545"><a href="my-account/index.html">My account</a></li>
-                                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15546"><a href="checkout/index.html">Checkout</a></li>
-                                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15547"><a href="cart/index.html">Cart</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15562" data-size={60}><a href="#" className="sf-with-ul-pre sf-with-ul">Features</a>
-                                                    <ul className="sub-menu" style={{ display: 'none' }}>
-                                                        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15570"><a href="#" className="sf-with-ul-pre sf-with-ul">Set 1</a>
-                                                            <ul className="sub-menu" style={{ display: 'none' }}>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15563"><a href="accordions-toggles/index.html">Accordions &amp; Toggles</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15564"><a href="alert-box/index.html">Alert Box</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15565"><a href="blockquotes/index.html">Blockquotes</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15566"><a href="buttons/index.html">Buttons</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15567"><a href="call-to-action/index.html">Call To Action</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15568"><a href="column-services/index.html">Column Services</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15569"><a href="columns/index.html">Columns</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15571"><a href="#" className="sf-with-ul-pre sf-with-ul">Set 2</a>
-                                                            <ul className="sub-menu" style={{ display: 'none' }}>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15574"><a href="count-down/index.html">Count Down</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15575"><a href="counters/index.html">Counters</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15576"><a href="dividers/index.html">Dividers</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15577"><a href="dropcaps/index.html">Dropcaps</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15578"><a href="featured-boxes/index.html">Featured Boxes</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15579"><a href="flip-boxes/index.html">Flip Boxes</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15581"><a href="icon-list/index.html">Icon Lists</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15572"><a href="#" className="sf-with-ul-pre sf-with-ul">Set 3</a>
-                                                            <ul className="sub-menu" style={{ display: 'none' }}>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15580"><a href="icons/index.html">Icons</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15582"><a href="images/index.html">Images</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15583"><a href="price-table/index.html">Price Table</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15584"><a href="promo-boxes/index.html">Promo Boxes</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15585"><a href="shape-divider/index.html">Shape Divider</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15586"><a href="skill-bar/index.html">Skill Bar</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15573"><a href="#" className="sf-with-ul-pre sf-with-ul">Set 4</a>
-                                                            <ul className="sub-menu" style={{ display: 'none' }}>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15587"><a href="skill-circle/index.html">Skill Circle</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15588"><a href="social-shares/index.html">Social Shares</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15589"><a href="stunning-texts/index.html">Stunning Texts</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15590"><a href="tabs-horizontal/index.html">Tabs Horizontal</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15591"><a href="tabs-vertical/index.html">Tabs Vertical</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15592"><a href="testimonial/index.html">Testimonial</a></li>
-                                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15593"><a href="typography/index.html">Typography</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15548" data-size={60}><a href="faq/index.html">FAQ</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15549" data-size={60}><a href="gallery/index.html">Gallery</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15558" data-size={60}><a href="price-table/index.html">Price Table</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15559" data-size={60}><a href="maintenance/index.html">Maintenance</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15560" data-size={60}><a href="coming-soon/index.html">Coming Soon</a></li>
-                                                <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-15561" data-size={60}><a href="404.html">404 Page</a></li>
-                                            </ul>
+                                        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15533 hotale-normal-menu"><Link className="sf-with-ul-pre sf-with-ul" to="/aboutus">Haqqımızda</Link>
                                         </li>
-                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15712 hotale-normal-menu"><a href="room-grid-style-1/index.html" className="sf-with-ul-pre sf-with-ul">Rooms</a>
+                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15712 hotale-normal-menu"><Link className="sf-with-ul-pre sf-with-ul" to="/rooms">Otaqlar</Link>
                                             <ul className="sub-menu" style={{ display: 'none' }}>
                                                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15713" data-size={60}><a href="room-grid-style-1/index.html">Room Grid Style 1</a></li>
                                                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15727" data-size={60}><a href="room-grid-style-2/index.html">Room Grid Style 2</a></li>
