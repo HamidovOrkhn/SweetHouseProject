@@ -99,12 +99,8 @@ class Header extends React.Component {
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15537 hotale-normal-menu"><a href="contact/index.html" className="sf-with-ul-pre sf-with-ul">Contact</a>
-                                            <ul className="sub-menu" style={{ display: 'none' }}>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15534" data-size={60}><a href="contact/index.html">Contact</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15535" data-size={60}><a href="contact-2/index.html">Contact 2</a></li>
-                                                <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15536" data-size={60}><a href="contact-3/index.html">Contact 3</a></li>
-                                            </ul>
+                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15537 hotale-normal-menu">
+                                            <Link className="sf-with-ul-pre sf-with-ul" to="/contactus">Əlaqə</Link>
                                         </li>
                                     </ul><div className="hotale-navigation-slide-bar  hotale-navigation-slide-bar-style-2 hotale-left" data-size-offset={0} data-width="19px" id="hotale-navigation-slide-bar" style={{ width: '19px', left: '358.313px', display: 'block', overflow: 'hidden' }} />
                                     </div>

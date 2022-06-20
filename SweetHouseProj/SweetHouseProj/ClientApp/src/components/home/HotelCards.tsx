@@ -143,7 +143,7 @@ class HotelCards extends React.Component {
                                                                         <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
                                                                             <a href="room/luxury-suite/index.html">
                                                                                 <img
-                                                                                    src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2022/01/andrew-neel-T0eb55DxDN4-unsplash-780x595.jpg"
+                                                                                    src={require('../images/andrew-neel-T0eb55DxDN4-unsplash-780x595.jpg')}
                                                                                     alt=""
                                                                                     width={780}
                                                                                     height={595}
@@ -231,9 +231,9 @@ class HotelCards extends React.Component {
                                                                         }}
                                                                     >
                                                                         <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
-                                                                            <a href="room/standard-deluxe/index.html">
+                                                                            <a href="room/luxury-suite/index.html">
                                                                                 <img
-                                                                                    src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2020/10/shop-slo-vhztm9QC0L0-unsplash-780x595.jpg"
+                                                                                    src={require('../images/andrew-neel-T0eb55DxDN4-unsplash-780x595.jpg')}
                                                                                     alt=""
                                                                                     width={780}
                                                                                     height={595}
@@ -249,7 +249,7 @@ class HotelCards extends React.Component {
                                                                                 }}
                                                                             >
                                                                                 <span className="tourmaster-head">From</span>
-                                                                                <span className="tourmaster-price">$75</span>
+                                                                                <span className="tourmaster-price">$90</span>
                                                                                 <span className="tourmaster-tail">
                                                                                     {" "}
                                                                                     / night
@@ -269,192 +269,8 @@ class HotelCards extends React.Component {
                                                                                 className="tourmaster-room-title gdlr-core-skin-title"
                                                                                 style={{ textTransform: "none" }}
                                                                             >
-                                                                                <a href="room/standard-deluxe/index.html">
-                                                                                    Standard Deluxe
-                                                                                </a>
-                                                                            </h3>
-                                                                            <div className="tourmaster-info-wrap clearfix">
-                                                                                <div className="tourmaster-info tourmaster-info-bed-type">
-                                                                                    <i className="gdlr-icon-double-bed2" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        2 Single Beds
-                                                                                    </span>
-                                                                                </div>
-                                                                                <div className="tourmaster-info tourmaster-info-guest-amount">
-                                                                                    <i className="gdlr-icon-group" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        6 Guests
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <a
-                                                                                className="tourmaster-read-more tourmaster-type-text"
-                                                                                href="room/standard-deluxe/index.html"
-                                                                            >
-                                                                                Book Now
-                                                                                <i className="icon-arrow-right" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li
-                                                                className="gdlr-core-item-mglr flex-with-active-class"
-                                                                style={{
-                                                                    width: "400px",
-                                                                    marginRight: "40px",
-                                                                    float: "left",
-                                                                    display: "block",
-                                                                }}
-                                                            >
-                                                                <div className="tourmaster-room-grid tourmaster-grid-frame ">
-                                                                    <div
-                                                                        className="tourmaster-room-grid-inner "
-                                                                        style={{
-                                                                            boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            WebkitBoxShadow:
-                                                                                "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            borderRadius: "20px",
-                                                                            MozBorderRadius: "20px",
-                                                                            WebkitBorderRadius: "20px",
-                                                                        }}
-                                                                    >
-                                                                        <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price tourmaster-with-ribbon">
-                                                                            <a href="room/the-penthouse/index.html">
-                                                                                <img
-                                                                                    src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2020/10/roberto-nickson-emqnSQwQQDo-unsplash-scaled-780x595.jpg"
-                                                                                    alt=""
-                                                                                    width={780}
-                                                                                    height={595}
-                                                                                    draggable="false"
-                                                                                />
-                                                                            </a>
-                                                                            <div
-                                                                                className="tourmaster-price-wrap tourmaster-with-bg "
-                                                                                style={{
-                                                                                    borderRadius: "10px",
-                                                                                    MozBorderRadius: "10px",
-                                                                                    WebkitBorderRadius: "10px",
-                                                                                }}
-                                                                            >
-                                                                                <span className="tourmaster-head">From</span>
-                                                                                <span className="tourmaster-price-discount">
-                                                                                    $250
-                                                                                </span>
-                                                                                <span className="tourmaster-price">$200</span>
-                                                                                <span className="tourmaster-tail">
-                                                                                    {" "}
-                                                                                    / night
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="tourmaster-ribbon">20% Off</div>
-                                                                        </div>
-                                                                        <div
-                                                                            className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
-                                                                            data-sync-height="room-item-53"
-                                                                            style={{
-                                                                                paddingTop: "45px",
-                                                                                paddingBottom: "40px",
-                                                                                height: "239px",
-                                                                            }}
-                                                                        >
-                                                                            <h3
-                                                                                className="tourmaster-room-title gdlr-core-skin-title"
-                                                                                style={{ textTransform: "none" }}
-                                                                            >
-                                                                                <a href="room/the-penthouse/index.html">
-                                                                                    The Penthouse
-                                                                                </a>
-                                                                            </h3>
-                                                                            <div className="tourmaster-info-wrap clearfix">
-                                                                                <div className="tourmaster-info tourmaster-info-bed-type">
-                                                                                    <i className="gdlr-icon-double-bed2" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        2 King Beds
-                                                                                    </span>
-                                                                                </div>
-                                                                                <div className="tourmaster-info tourmaster-info-guest-amount">
-                                                                                    <i className="gdlr-icon-group" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        6 Guests
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <a
-                                                                                className="tourmaster-read-more tourmaster-type-text"
-                                                                                href="room/the-penthouse/index.html"
-                                                                            >
-                                                                                Book Now
-                                                                                <i className="icon-arrow-right" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li
-                                                                className="gdlr-core-item-mglr flex-with-active-class"
-                                                                style={{
-                                                                    width: "400px",
-                                                                    marginRight: "40px",
-                                                                    float: "left",
-                                                                    display: "block",
-                                                                }}
-                                                            >
-                                                                <div className="tourmaster-room-grid tourmaster-grid-frame ">
-                                                                    <div
-                                                                        className="tourmaster-room-grid-inner "
-                                                                        style={{
-                                                                            boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            WebkitBoxShadow:
-                                                                                "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            borderRadius: "20px",
-                                                                            MozBorderRadius: "20px",
-                                                                            WebkitBorderRadius: "20px",
-                                                                        }}
-                                                                    >
-                                                                        <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
-                                                                            <a href="room/grand-suite-room/index.html">
-                                                                                <img
-                                                                                    src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2020/10/shutterstock_560973166-780x595.jpg"
-                                                                                    alt=""
-                                                                                    width={780}
-                                                                                    height={595}
-                                                                                    draggable="false"
-                                                                                />
-                                                                            </a>
-                                                                            <div
-                                                                                className="tourmaster-price-wrap tourmaster-with-bg "
-                                                                                style={{
-                                                                                    borderRadius: "10px",
-                                                                                    MozBorderRadius: "10px",
-                                                                                    WebkitBorderRadius: "10px",
-                                                                                }}
-                                                                            >
-                                                                                <span className="tourmaster-head">From</span>
-                                                                                <span className="tourmaster-price">$80</span>
-                                                                                <span className="tourmaster-tail">
-                                                                                    {" "}
-                                                                                    / night
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div
-                                                                            className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
-                                                                            data-sync-height="room-item-53"
-                                                                            style={{
-                                                                                paddingTop: "45px",
-                                                                                paddingBottom: "40px",
-                                                                                height: "239px",
-                                                                            }}
-                                                                        >
-                                                                            <h3
-                                                                                className="tourmaster-room-title gdlr-core-skin-title"
-                                                                                style={{ textTransform: "none" }}
-                                                                            >
-                                                                                <a href="room/grand-suite-room/index.html">
-                                                                                    Grand Suite Room
+                                                                                <a href="room/luxury-suite/index.html">
+                                                                                    Luxury Suite
                                                                                 </a>
                                                                             </h3>
                                                                             <div className="tourmaster-info-wrap clearfix">
@@ -473,7 +289,7 @@ class HotelCards extends React.Component {
                                                                             </div>
                                                                             <a
                                                                                 className="tourmaster-read-more tourmaster-type-text"
-                                                                                href="room/grand-suite-room/index.html"
+                                                                                href="room/luxury-suite/index.html"
                                                                             >
                                                                                 Book Now
                                                                                 <i className="icon-arrow-right" />
@@ -481,464 +297,546 @@ class HotelCards extends React.Component {
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </li>
-                                                            <li
-                                                                className="gdlr-core-item-mglr flex-with-active-class"
-                                                                style={{
-                                                                    width: "400px",
-                                                                    marginRight: "40px",
-                                                                    float: "left",
-                                                                    display: "block",
-                                                                }}
-                                                            >
-                                                                <div className="tourmaster-room-grid tourmaster-grid-frame ">
-                                                                    <div
-                                                                        className="tourmaster-room-grid-inner "
-                                                                        style={{
-                                                                            boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            WebkitBoxShadow:
-                                                                                "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            borderRadius: "20px",
-                                                                            MozBorderRadius: "20px",
-                                                                            WebkitBorderRadius: "20px",
-                                                                        }}
-                                                                    >
-                                                                        <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price tourmaster-with-ribbon">
-                                                                            <a href="room/junior-suite-room/index.html">
-                                                                                <img
-                                                                                    src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2020/10/andrea-davis-1uNh3B3ppl4-unsplash-780x595.jpg"
-                                                                                    alt=""
-                                                                                    width={780}
-                                                                                    height={595}
-                                                                                    draggable="false"
-                                                                                />
-                                                                            </a>
-                                                                            <div
-                                                                                className="tourmaster-price-wrap tourmaster-with-bg "
-                                                                                style={{
-                                                                                    borderRadius: "10px",
-                                                                                    MozBorderRadius: "10px",
-                                                                                    WebkitBorderRadius: "10px",
-                                                                                }}
-                                                                            >
-                                                                                <span className="tourmaster-head">From</span>
-                                                                                <span className="tourmaster-price-discount">
-                                                                                    $80
-                                                                                </span>
-                                                                                <span className="tourmaster-price">$69</span>
-                                                                                <span className="tourmaster-tail">
-                                                                                    {" "}
-                                                                                    / night
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="tourmaster-ribbon">15% Off</div>
-                                                                        </div>
+                                                                <li
+                                                                    className="gdlr-core-item-mglr flex-with-active-class"
+                                                                    style={{
+                                                                        width: "400px",
+                                                                        marginRight: "40px",
+                                                                        float: "left",
+                                                                        display: "block",
+                                                                    }}
+                                                                >
+                                                                    <div className="tourmaster-room-grid tourmaster-grid-frame ">
                                                                         <div
-                                                                            className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
-                                                                            data-sync-height="room-item-53"
+                                                                            className="tourmaster-room-grid-inner "
                                                                             style={{
-                                                                                paddingTop: "45px",
-                                                                                paddingBottom: "40px",
-                                                                                height: "239px",
+                                                                                boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                WebkitBoxShadow:
+                                                                                    "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                borderRadius: "20px",
+                                                                                MozBorderRadius: "20px",
+                                                                                WebkitBorderRadius: "20px",
                                                                             }}
                                                                         >
-                                                                            <h3
-                                                                                className="tourmaster-room-title gdlr-core-skin-title"
-                                                                                style={{ textTransform: "none" }}
-                                                                            >
-                                                                                <a href="room/junior-suite-room/index.html">
-                                                                                    Junior Suite Room
+                                                                            <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
+                                                                                <a href="room/luxury-suite/index.html">
+                                                                                    <img
+                                                                                        src={require('../images/andrew-neel-T0eb55DxDN4-unsplash-780x595.jpg')}
+                                                                                        alt=""
+                                                                                        width={780}
+                                                                                        height={595}
+                                                                                        draggable="false"
+                                                                                    />
                                                                                 </a>
-                                                                            </h3>
-                                                                            <div className="tourmaster-info-wrap clearfix">
-                                                                                <div className="tourmaster-info tourmaster-info-bed-type">
-                                                                                    <i className="gdlr-icon-double-bed2" />
+                                                                                <div
+                                                                                    className="tourmaster-price-wrap tourmaster-with-bg "
+                                                                                    style={{
+                                                                                        borderRadius: "10px",
+                                                                                        MozBorderRadius: "10px",
+                                                                                        WebkitBorderRadius: "10px",
+                                                                                    }}
+                                                                                >
+                                                                                    <span className="tourmaster-head">From</span>
+                                                                                    <span className="tourmaster-price">$90</span>
                                                                                     <span className="tourmaster-tail">
-                                                                                        1 Double Bed
-                                                                                    </span>
-                                                                                </div>
-                                                                                <div className="tourmaster-info tourmaster-info-guest-amount">
-                                                                                    <i className="gdlr-icon-group" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        3 Guests
+                                                                                        {" "}
+                                                                                        / night
                                                                                     </span>
                                                                                 </div>
                                                                             </div>
-                                                                            <a
-                                                                                className="tourmaster-read-more tourmaster-type-text"
-                                                                                href="room/junior-suite-room/index.html"
-                                                                            >
-                                                                                Book Now
-                                                                                <i className="icon-arrow-right" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
-                                                            <li
-                                                                className="gdlr-core-item-mglr flex-with-active-class"
-                                                                style={{
-                                                                    width: "400px",
-                                                                    marginRight: "40px",
-                                                                    float: "left",
-                                                                    display: "block",
-                                                                }}
-                                                            >
-                                                                <div className="tourmaster-room-grid tourmaster-grid-frame ">
-                                                                    <div
-                                                                        className="tourmaster-room-grid-inner "
-                                                                        style={{
-                                                                            boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            WebkitBoxShadow:
-                                                                                "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            borderRadius: "20px",
-                                                                            MozBorderRadius: "20px",
-                                                                            WebkitBorderRadius: "20px",
-                                                                        }}
-                                                                    >
-                                                                        <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
-                                                                            <a href="room/standard-room/index.html">
-                                                                                <img
-                                                                                    src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2022/02/collov-home-design-LSpkE5OCD_8-unsplash-780x595.jpg"
-                                                                                    alt=""
-                                                                                    width={780}
-                                                                                    height={595}
-                                                                                    draggable="false"
-                                                                                />
-                                                                            </a>
                                                                             <div
-                                                                                className="tourmaster-price-wrap tourmaster-with-bg "
+                                                                                className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
+                                                                                data-sync-height="room-item-53"
                                                                                 style={{
-                                                                                    borderRadius: "10px",
-                                                                                    MozBorderRadius: "10px",
-                                                                                    WebkitBorderRadius: "10px",
+                                                                                    paddingTop: "45px",
+                                                                                    paddingBottom: "40px",
+                                                                                    height: "239px",
                                                                                 }}
                                                                             >
-                                                                                <span className="tourmaster-head">From</span>
-                                                                                <span className="tourmaster-price">$80</span>
-                                                                                <span className="tourmaster-tail">
-                                                                                    {" "}
-                                                                                    / night
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div
-                                                                            className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
-                                                                            data-sync-height="room-item-53"
-                                                                            style={{
-                                                                                paddingTop: "45px",
-                                                                                paddingBottom: "40px",
-                                                                                height: "239px",
-                                                                            }}
-                                                                        >
-                                                                            <h3
-                                                                                className="tourmaster-room-title gdlr-core-skin-title"
-                                                                                style={{ textTransform: "none" }}
-                                                                            >
-                                                                                <a href="room/standard-room/index.html">
-                                                                                    Standard Room
+                                                                                <h3
+                                                                                    className="tourmaster-room-title gdlr-core-skin-title"
+                                                                                    style={{ textTransform: "none" }}
+                                                                                >
+                                                                                    <a href="room/luxury-suite/index.html">
+                                                                                        Luxury Suite
+                                                                                    </a>
+                                                                                </h3>
+                                                                                <div className="tourmaster-info-wrap clearfix">
+                                                                                    <div className="tourmaster-info tourmaster-info-bed-type">
+                                                                                        <i className="gdlr-icon-double-bed2" />
+                                                                                        <span className="tourmaster-tail">
+                                                                                            1 King Bed
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div className="tourmaster-info tourmaster-info-guest-amount">
+                                                                                        <i className="gdlr-icon-group" />
+                                                                                        <span className="tourmaster-tail">
+                                                                                            4 Guests
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    className="tourmaster-read-more tourmaster-type-text"
+                                                                                    href="room/luxury-suite/index.html"
+                                                                                >
+                                                                                    Book Now
+                                                                                    <i className="icon-arrow-right" />
                                                                                 </a>
-                                                                            </h3>
-                                                                            <div className="tourmaster-info-wrap clearfix">
-                                                                                <div className="tourmaster-info tourmaster-info-bed-type">
-                                                                                    <i className="gdlr-icon-double-bed2" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        1 Double Bed
-                                                                                    </span>
-                                                                                </div>
-                                                                                <div className="tourmaster-info tourmaster-info-guest-amount">
-                                                                                    <i className="gdlr-icon-group" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        4 Guests
-                                                                                    </span>
-                                                                                </div>
                                                                             </div>
-                                                                            <a
-                                                                                className="tourmaster-read-more tourmaster-type-text"
-                                                                                href="room/standard-room/index.html"
-                                                                            >
-                                                                                Book Now
-                                                                                <i className="icon-arrow-right" />
-                                                                            </a>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                            </li>
-                                                            <li
-                                                                className="gdlr-core-item-mglr flex-with-active-class flex-active-slide"
-                                                                style={{
-                                                                    width: "400px",
-                                                                    marginRight: "40px",
-                                                                    float: "left",
-                                                                    display: "block",
-                                                                }}
-                                                            >
-                                                                <div className="tourmaster-room-grid tourmaster-grid-frame ">
-                                                                    <div
-                                                                        className="tourmaster-room-grid-inner "
-                                                                        style={{
-                                                                            boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            WebkitBoxShadow:
-                                                                                "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            borderRadius: "20px",
-                                                                            MozBorderRadius: "20px",
-                                                                            WebkitBorderRadius: "20px",
-                                                                        }}
-                                                                    >
-                                                                        <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
-                                                                            <a href="room/family-special-room/index.html">
-                                                                                <img
-                                                                                    src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2020/10/shutterstock_324822821-780x595.jpg"
-                                                                                    alt=""
-                                                                                    width={780}
-                                                                                    height={595}
-                                                                                    draggable="false"
-                                                                                />
-                                                                            </a>
+                                                                </li>
+                                                                <li
+                                                                    className="gdlr-core-item-mglr flex-with-active-class"
+                                                                    style={{
+                                                                        width: "400px",
+                                                                        marginRight: "40px",
+                                                                        float: "left",
+                                                                        display: "block",
+                                                                    }}
+                                                                >
+                                                                    <div className="tourmaster-room-grid tourmaster-grid-frame ">
+                                                                        <div
+                                                                            className="tourmaster-room-grid-inner "
+                                                                            style={{
+                                                                                boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                WebkitBoxShadow:
+                                                                                    "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                borderRadius: "20px",
+                                                                                MozBorderRadius: "20px",
+                                                                                WebkitBorderRadius: "20px",
+                                                                            }}
+                                                                        >
+                                                                            <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
+                                                                                <a href="room/luxury-suite/index.html">
+                                                                                    <img
+                                                                                        src={require('../images/andrew-neel-T0eb55DxDN4-unsplash-780x595.jpg')}
+                                                                                        alt=""
+                                                                                        width={780}
+                                                                                        height={595}
+                                                                                        draggable="false"
+                                                                                    />
+                                                                                </a>
+                                                                                <div
+                                                                                    className="tourmaster-price-wrap tourmaster-with-bg "
+                                                                                    style={{
+                                                                                        borderRadius: "10px",
+                                                                                        MozBorderRadius: "10px",
+                                                                                        WebkitBorderRadius: "10px",
+                                                                                    }}
+                                                                                >
+                                                                                    <span className="tourmaster-head">From</span>
+                                                                                    <span className="tourmaster-price">$90</span>
+                                                                                    <span className="tourmaster-tail">
+                                                                                        {" "}
+                                                                                        / night
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
                                                                             <div
-                                                                                className="tourmaster-price-wrap tourmaster-with-bg "
+                                                                                className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
+                                                                                data-sync-height="room-item-53"
                                                                                 style={{
-                                                                                    borderRadius: "10px",
-                                                                                    MozBorderRadius: "10px",
-                                                                                    WebkitBorderRadius: "10px",
+                                                                                    paddingTop: "45px",
+                                                                                    paddingBottom: "40px",
+                                                                                    height: "239px",
                                                                                 }}
                                                                             >
-                                                                                <span className="tourmaster-head">From</span>
-                                                                                <span className="tourmaster-price">$180</span>
-                                                                                <span className="tourmaster-tail">
-                                                                                    {" "}
-                                                                                    / night
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div
-                                                                            className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
-                                                                            data-sync-height="room-item-53"
-                                                                            style={{
-                                                                                paddingTop: "45px",
-                                                                                paddingBottom: "40px",
-                                                                                height: "239px",
-                                                                            }}
-                                                                        >
-                                                                            <h3
-                                                                                className="tourmaster-room-title gdlr-core-skin-title"
-                                                                                style={{ textTransform: "none" }}
-                                                                            >
-                                                                                <a href="room/family-special-room/index.html">
-                                                                                    Family Special Room
+                                                                                <h3
+                                                                                    className="tourmaster-room-title gdlr-core-skin-title"
+                                                                                    style={{ textTransform: "none" }}
+                                                                                >
+                                                                                    <a href="room/luxury-suite/index.html">
+                                                                                        Luxury Suite
+                                                                                    </a>
+                                                                                </h3>
+                                                                                <div className="tourmaster-info-wrap clearfix">
+                                                                                    <div className="tourmaster-info tourmaster-info-bed-type">
+                                                                                        <i className="gdlr-icon-double-bed2" />
+                                                                                        <span className="tourmaster-tail">
+                                                                                            1 King Bed
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div className="tourmaster-info tourmaster-info-guest-amount">
+                                                                                        <i className="gdlr-icon-group" />
+                                                                                        <span className="tourmaster-tail">
+                                                                                            4 Guests
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    className="tourmaster-read-more tourmaster-type-text"
+                                                                                    href="room/luxury-suite/index.html"
+                                                                                >
+                                                                                    Book Now
+                                                                                    <i className="icon-arrow-right" />
                                                                                 </a>
-                                                                            </h3>
-                                                                            <div className="tourmaster-info-wrap clearfix">
-                                                                                <div className="tourmaster-info tourmaster-info-bed-type">
-                                                                                    <i className="gdlr-icon-double-bed2" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        2 Double Beds
-                                                                                    </span>
-                                                                                </div>
-                                                                                <div className="tourmaster-info tourmaster-info-guest-amount">
-                                                                                    <i className="gdlr-icon-group" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        6 Guests
-                                                                                    </span>
-                                                                                </div>
                                                                             </div>
-                                                                            <a
-                                                                                className="tourmaster-read-more tourmaster-type-text"
-                                                                                href="room/family-special-room/index.html"
-                                                                            >
-                                                                                Book Now
-                                                                                <i className="icon-arrow-right" />
-                                                                            </a>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                            </li>
-                                                            <li
-                                                                className="gdlr-core-item-mglr flex-with-active-class flex-active-slide"
-                                                                style={{
-                                                                    width: "400px",
-                                                                    marginRight: "40px",
-                                                                    float: "left",
-                                                                    display: "block",
-                                                                }}
-                                                            >
-                                                                <div className="tourmaster-room-grid tourmaster-grid-frame ">
-                                                                    <div
-                                                                        className="tourmaster-room-grid-inner "
-                                                                        style={{
-                                                                            boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            WebkitBoxShadow:
-                                                                                "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            borderRadius: "20px",
-                                                                            MozBorderRadius: "20px",
-                                                                            WebkitBorderRadius: "20px",
-                                                                        }}
-                                                                    >
-                                                                        <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
-                                                                            <a href="room/premium-room/index.html">
-                                                                                <img
-                                                                                    src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2020/10/paul-postema-mr0Dp231IEw-unsplash-780x595.jpg"
-                                                                                    alt=""
-                                                                                    width={780}
-                                                                                    height={595}
-                                                                                    draggable="false"
-                                                                                />
-                                                                            </a>
+                                                                </li>
+                                                                <li
+                                                                    className="gdlr-core-item-mglr flex-with-active-class"
+                                                                    style={{
+                                                                        width: "400px",
+                                                                        marginRight: "40px",
+                                                                        float: "left",
+                                                                        display: "block",
+                                                                    }}
+                                                                >
+                                                                    <div className="tourmaster-room-grid tourmaster-grid-frame ">
+                                                                        <div
+                                                                            className="tourmaster-room-grid-inner "
+                                                                            style={{
+                                                                                boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                WebkitBoxShadow:
+                                                                                    "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                borderRadius: "20px",
+                                                                                MozBorderRadius: "20px",
+                                                                                WebkitBorderRadius: "20px",
+                                                                            }}
+                                                                        >
+                                                                            <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
+                                                                                <a href="room/luxury-suite/index.html">
+                                                                                    <img
+                                                                                        src={require('../images/andrew-neel-T0eb55DxDN4-unsplash-780x595.jpg')}
+                                                                                        alt=""
+                                                                                        width={780}
+                                                                                        height={595}
+                                                                                        draggable="false"
+                                                                                    />
+                                                                                </a>
+                                                                                <div
+                                                                                    className="tourmaster-price-wrap tourmaster-with-bg "
+                                                                                    style={{
+                                                                                        borderRadius: "10px",
+                                                                                        MozBorderRadius: "10px",
+                                                                                        WebkitBorderRadius: "10px",
+                                                                                    }}
+                                                                                >
+                                                                                    <span className="tourmaster-head">From</span>
+                                                                                    <span className="tourmaster-price">$90</span>
+                                                                                    <span className="tourmaster-tail">
+                                                                                        {" "}
+                                                                                        / night
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
                                                                             <div
-                                                                                className="tourmaster-price-wrap tourmaster-with-bg "
+                                                                                className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
+                                                                                data-sync-height="room-item-53"
                                                                                 style={{
-                                                                                    borderRadius: "10px",
-                                                                                    MozBorderRadius: "10px",
-                                                                                    WebkitBorderRadius: "10px",
+                                                                                    paddingTop: "45px",
+                                                                                    paddingBottom: "40px",
+                                                                                    height: "239px",
                                                                                 }}
                                                                             >
-                                                                                <span className="tourmaster-head">From</span>
-                                                                                <span className="tourmaster-price">$75</span>
-                                                                                <span className="tourmaster-tail">
-                                                                                    {" "}
-                                                                                    / night
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div
-                                                                            className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
-                                                                            data-sync-height="room-item-53"
-                                                                            style={{
-                                                                                paddingTop: "45px",
-                                                                                paddingBottom: "40px",
-                                                                                height: "239px",
-                                                                            }}
-                                                                        >
-                                                                            <h3
-                                                                                className="tourmaster-room-title gdlr-core-skin-title"
-                                                                                style={{ textTransform: "none" }}
-                                                                            >
-                                                                                <a href="room/premium-room/index.html">
-                                                                                    Premium Room
+                                                                                <h3
+                                                                                    className="tourmaster-room-title gdlr-core-skin-title"
+                                                                                    style={{ textTransform: "none" }}
+                                                                                >
+                                                                                    <a href="room/luxury-suite/index.html">
+                                                                                        Luxury Suite
+                                                                                    </a>
+                                                                                </h3>
+                                                                                <div className="tourmaster-info-wrap clearfix">
+                                                                                    <div className="tourmaster-info tourmaster-info-bed-type">
+                                                                                        <i className="gdlr-icon-double-bed2" />
+                                                                                        <span className="tourmaster-tail">
+                                                                                            1 King Bed
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div className="tourmaster-info tourmaster-info-guest-amount">
+                                                                                        <i className="gdlr-icon-group" />
+                                                                                        <span className="tourmaster-tail">
+                                                                                            4 Guests
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    className="tourmaster-read-more tourmaster-type-text"
+                                                                                    href="room/luxury-suite/index.html"
+                                                                                >
+                                                                                    Book Now
+                                                                                    <i className="icon-arrow-right" />
                                                                                 </a>
-                                                                            </h3>
-                                                                            <div className="tourmaster-info-wrap clearfix">
-                                                                                <div className="tourmaster-info tourmaster-info-bed-type">
-                                                                                    <i className="gdlr-icon-double-bed2" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        2 Single Beds
-                                                                                    </span>
-                                                                                </div>
-                                                                                <div className="tourmaster-info tourmaster-info-guest-amount">
-                                                                                    <i className="gdlr-icon-group" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        4 Guests
-                                                                                    </span>
-                                                                                </div>
                                                                             </div>
-                                                                            <a
-                                                                                className="tourmaster-read-more tourmaster-type-text"
-                                                                                href="room/premium-room/index.html"
-                                                                            >
-                                                                                Book Now
-                                                                                <i className="icon-arrow-right" />
-                                                                            </a>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                            </li>
-                                                            <li
-                                                                className="gdlr-core-item-mglr flex-with-active-class flex-active-slide"
-                                                                style={{
-                                                                    width: "400px",
-                                                                    marginRight: "40px",
-                                                                    float: "left",
-                                                                    display: "block",
-                                                                }}
-                                                            >
-                                                                <div className="tourmaster-room-grid tourmaster-grid-frame ">
-                                                                    <div
-                                                                        className="tourmaster-room-grid-inner "
-                                                                        style={{
-                                                                            boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            WebkitBoxShadow:
-                                                                                "0 10px 45px rgba(10, 10, 10,0.07)",
-                                                                            borderRadius: "20px",
-                                                                            MozBorderRadius: "20px",
-                                                                            WebkitBorderRadius: "20px",
-                                                                        }}
-                                                                    >
-                                                                        <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price tourmaster-with-ribbon">
-                                                                            <a href="room/deluxe-suite-room/index.html">
-                                                                                <img
-                                                                                    src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2020/10/andrea-davis-1uNh3B3ppl4-unsplash-780x595.jpg"
-                                                                                    alt=""
-                                                                                    width={780}
-                                                                                    height={595}
-                                                                                    draggable="false"
-                                                                                />
-                                                                            </a>
+                                                                </li>
+                                                                <li
+                                                                    className="gdlr-core-item-mglr flex-with-active-class"
+                                                                    style={{
+                                                                        width: "400px",
+                                                                        marginRight: "40px",
+                                                                        float: "left",
+                                                                        display: "block",
+                                                                    }}
+                                                                >
+                                                                    <div className="tourmaster-room-grid tourmaster-grid-frame ">
+                                                                        <div
+                                                                            className="tourmaster-room-grid-inner "
+                                                                            style={{
+                                                                                boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                WebkitBoxShadow:
+                                                                                    "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                borderRadius: "20px",
+                                                                                MozBorderRadius: "20px",
+                                                                                WebkitBorderRadius: "20px",
+                                                                            }}
+                                                                        >
+                                                                            <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
+                                                                                <a href="room/luxury-suite/index.html">
+                                                                                    <img
+                                                                                        src={require('../images/andrew-neel-T0eb55DxDN4-unsplash-780x595.jpg')}
+                                                                                        alt=""
+                                                                                        width={780}
+                                                                                        height={595}
+                                                                                        draggable="false"
+                                                                                    />
+                                                                                </a>
+                                                                                <div
+                                                                                    className="tourmaster-price-wrap tourmaster-with-bg "
+                                                                                    style={{
+                                                                                        borderRadius: "10px",
+                                                                                        MozBorderRadius: "10px",
+                                                                                        WebkitBorderRadius: "10px",
+                                                                                    }}
+                                                                                >
+                                                                                    <span className="tourmaster-head">From</span>
+                                                                                    <span className="tourmaster-price">$90</span>
+                                                                                    <span className="tourmaster-tail">
+                                                                                        {" "}
+                                                                                        / night
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
                                                                             <div
-                                                                                className="tourmaster-price-wrap tourmaster-with-bg "
+                                                                                className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
+                                                                                data-sync-height="room-item-53"
                                                                                 style={{
-                                                                                    borderRadius: "10px",
-                                                                                    MozBorderRadius: "10px",
-                                                                                    WebkitBorderRadius: "10px",
+                                                                                    paddingTop: "45px",
+                                                                                    paddingBottom: "40px",
+                                                                                    height: "239px",
                                                                                 }}
                                                                             >
-                                                                                <span className="tourmaster-head">From</span>
-                                                                                <span className="tourmaster-price-discount">
-                                                                                    $150
-                                                                                </span>
-                                                                                <span className="tourmaster-price">$105</span>
-                                                                                <span className="tourmaster-tail">
-                                                                                    {" "}
-                                                                                    / night
-                                                                                </span>
-                                                                            </div>
-                                                                            <div className="tourmaster-ribbon">30% Off</div>
-                                                                        </div>
-                                                                        <div
-                                                                            className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
-                                                                            data-sync-height="room-item-53"
-                                                                            style={{
-                                                                                paddingTop: "45px",
-                                                                                paddingBottom: "40px",
-                                                                                height: "239px",
-                                                                            }}
-                                                                        >
-                                                                            <h3
-                                                                                className="tourmaster-room-title gdlr-core-skin-title"
-                                                                                style={{ textTransform: "none" }}
-                                                                            >
-                                                                                <a href="room/deluxe-suite-room/index.html">
-                                                                                    Deluxe Suite Room
+                                                                                <h3
+                                                                                    className="tourmaster-room-title gdlr-core-skin-title"
+                                                                                    style={{ textTransform: "none" }}
+                                                                                >
+                                                                                    <a href="room/luxury-suite/index.html">
+                                                                                        Luxury Suite
+                                                                                    </a>
+                                                                                </h3>
+                                                                                <div className="tourmaster-info-wrap clearfix">
+                                                                                    <div className="tourmaster-info tourmaster-info-bed-type">
+                                                                                        <i className="gdlr-icon-double-bed2" />
+                                                                                        <span className="tourmaster-tail">
+                                                                                            1 King Bed
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div className="tourmaster-info tourmaster-info-guest-amount">
+                                                                                        <i className="gdlr-icon-group" />
+                                                                                        <span className="tourmaster-tail">
+                                                                                            4 Guests
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    className="tourmaster-read-more tourmaster-type-text"
+                                                                                    href="room/luxury-suite/index.html"
+                                                                                >
+                                                                                    Book Now
+                                                                                    <i className="icon-arrow-right" />
                                                                                 </a>
-                                                                            </h3>
-                                                                            <div className="tourmaster-info-wrap clearfix">
-                                                                                <div className="tourmaster-info tourmaster-info-bed-type">
-                                                                                    <i className="gdlr-icon-double-bed2" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        1 King Bed
-                                                                                    </span>
-                                                                                </div>
-                                                                                <div className="tourmaster-info tourmaster-info-guest-amount">
-                                                                                    <i className="gdlr-icon-group" />
-                                                                                    <span className="tourmaster-tail">
-                                                                                        4 Guests
-                                                                                    </span>
-                                                                                </div>
                                                                             </div>
-                                                                            <a
-                                                                                className="tourmaster-read-more tourmaster-type-text"
-                                                                                href="room/deluxe-suite-room/index.html"
-                                                                            >
-                                                                                Book Now
-                                                                                <i className="icon-arrow-right" />
-                                                                            </a>
                                                                         </div>
                                                                     </div>
-                                                                </div>
+                                                                </li>
+                                                                <li
+                                                                    className="gdlr-core-item-mglr flex-with-active-class"
+                                                                    style={{
+                                                                        width: "400px",
+                                                                        marginRight: "40px",
+                                                                        float: "left",
+                                                                        display: "block",
+                                                                    }}
+                                                                >
+                                                                    <div className="tourmaster-room-grid tourmaster-grid-frame ">
+                                                                        <div
+                                                                            className="tourmaster-room-grid-inner "
+                                                                            style={{
+                                                                                boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                WebkitBoxShadow:
+                                                                                    "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                borderRadius: "20px",
+                                                                                MozBorderRadius: "20px",
+                                                                                WebkitBorderRadius: "20px",
+                                                                            }}
+                                                                        >
+                                                                            <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
+                                                                                <a href="room/luxury-suite/index.html">
+                                                                                    <img
+                                                                                        src={require('../images/andrew-neel-T0eb55DxDN4-unsplash-780x595.jpg')}
+                                                                                        alt=""
+                                                                                        width={780}
+                                                                                        height={595}
+                                                                                        draggable="false"
+                                                                                    />
+                                                                                </a>
+                                                                                <div
+                                                                                    className="tourmaster-price-wrap tourmaster-with-bg "
+                                                                                    style={{
+                                                                                        borderRadius: "10px",
+                                                                                        MozBorderRadius: "10px",
+                                                                                        WebkitBorderRadius: "10px",
+                                                                                    }}
+                                                                                >
+                                                                                    <span className="tourmaster-head">From</span>
+                                                                                    <span className="tourmaster-price">$90</span>
+                                                                                    <span className="tourmaster-tail">
+                                                                                        {" "}
+                                                                                        / night
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
+                                                                                data-sync-height="room-item-53"
+                                                                                style={{
+                                                                                    paddingTop: "45px",
+                                                                                    paddingBottom: "40px",
+                                                                                    height: "239px",
+                                                                                }}
+                                                                            >
+                                                                                <h3
+                                                                                    className="tourmaster-room-title gdlr-core-skin-title"
+                                                                                    style={{ textTransform: "none" }}
+                                                                                >
+                                                                                    <a href="room/luxury-suite/index.html">
+                                                                                        Luxury Suite
+                                                                                    </a>
+                                                                                </h3>
+                                                                                <div className="tourmaster-info-wrap clearfix">
+                                                                                    <div className="tourmaster-info tourmaster-info-bed-type">
+                                                                                        <i className="gdlr-icon-double-bed2" />
+                                                                                        <span className="tourmaster-tail">
+                                                                                            1 King Bed
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div className="tourmaster-info tourmaster-info-guest-amount">
+                                                                                        <i className="gdlr-icon-group" />
+                                                                                        <span className="tourmaster-tail">
+                                                                                            4 Guests
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a
+                                                                                    className="tourmaster-read-more tourmaster-type-text"
+                                                                                    href="room/luxury-suite/index.html"
+                                                                                >
+                                                                                    Book Now
+                                                                                    <i className="icon-arrow-right" />
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <li
+                                                                        className="gdlr-core-item-mglr flex-with-active-class"
+                                                                        style={{
+                                                                            width: "400px",
+                                                                            marginRight: "40px",
+                                                                            float: "left",
+                                                                            display: "block",
+                                                                        }}
+                                                                    >
+                                                                        <div className="tourmaster-room-grid tourmaster-grid-frame ">
+                                                                            <div
+                                                                                className="tourmaster-room-grid-inner "
+                                                                                style={{
+                                                                                    boxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                    MozBoxShadow: "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                    WebkitBoxShadow:
+                                                                                        "0 10px 45px rgba(10, 10, 10,0.07)",
+                                                                                    borderRadius: "20px",
+                                                                                    MozBorderRadius: "20px",
+                                                                                    WebkitBorderRadius: "20px",
+                                                                                }}
+                                                                            >
+                                                                                <div className="tourmaster-room-thumbnail tourmaster-media-image  gdlr-core-outer-frame-element tourmaster-with-price">
+                                                                                    <a href="room/luxury-suite/index.html">
+                                                                                        <img
+                                                                                            src={require('../images/andrew-neel-T0eb55DxDN4-unsplash-780x595.jpg')}
+                                                                                            alt=""
+                                                                                            width={780}
+                                                                                            height={595}
+                                                                                            draggable="false"
+                                                                                        />
+                                                                                    </a>
+                                                                                    <div
+                                                                                        className="tourmaster-price-wrap tourmaster-with-bg "
+                                                                                        style={{
+                                                                                            borderRadius: "10px",
+                                                                                            MozBorderRadius: "10px",
+                                                                                            WebkitBorderRadius: "10px",
+                                                                                        }}
+                                                                                    >
+                                                                                        <span className="tourmaster-head">From</span>
+                                                                                        <span className="tourmaster-price">$90</span>
+                                                                                        <span className="tourmaster-tail">
+                                                                                            {" "}
+                                                                                            / night
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div
+                                                                                    className="tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js "
+                                                                                    data-sync-height="room-item-53"
+                                                                                    style={{
+                                                                                        paddingTop: "45px",
+                                                                                        paddingBottom: "40px",
+                                                                                        height: "239px",
+                                                                                    }}
+                                                                                >
+                                                                                    <h3
+                                                                                        className="tourmaster-room-title gdlr-core-skin-title"
+                                                                                        style={{ textTransform: "none" }}
+                                                                                    >
+                                                                                        <a href="room/luxury-suite/index.html">
+                                                                                            Luxury Suite
+                                                                                        </a>
+                                                                                    </h3>
+                                                                                    <div className="tourmaster-info-wrap clearfix">
+                                                                                        <div className="tourmaster-info tourmaster-info-bed-type">
+                                                                                            <i className="gdlr-icon-double-bed2" />
+                                                                                            <span className="tourmaster-tail">
+                                                                                                1 King Bed
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div className="tourmaster-info tourmaster-info-guest-amount">
+                                                                                            <i className="gdlr-icon-group" />
+                                                                                            <span className="tourmaster-tail">
+                                                                                                4 Guests
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <a
+                                                                                        className="tourmaster-read-more tourmaster-type-text"
+                                                                                        href="room/luxury-suite/index.html"
+                                                                                    >
+                                                                                        Book Now
+                                                                                        <i className="icon-arrow-right" />
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </li>
                                                             </li>
                                                         </ul>
                                                     </div>

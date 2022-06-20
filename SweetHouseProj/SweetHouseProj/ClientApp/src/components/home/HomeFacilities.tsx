@@ -16,7 +16,7 @@ class HomeFacilities extends React.Component {
                             className="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js"
                             style={{
                                 backgroundImage:
-                                    "url(../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2021/11/Group-36.jpg)",
+                                    `url(${ require('../images/Group-36.jpg')})`,
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "top center",
                             }}
@@ -117,7 +117,7 @@ class HomeFacilities extends React.Component {
                                                     style={{ borderWidth: "0px", maxWidth: "65px" }}
                                                 >
                                                     <img
-                                                        src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2021/11/Group-40.png"
+                                                        src={ require('../images/Group-40.png')}
                                                         alt=""
                                                         width={130}
                                                         height={110}

@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\components\aboutus\AboutUs.tsx" />
+    <None Remove="ClientApp\src\components\contactus\ContactUs.tsx" />
     <None Remove="ClientApp\src\components\foot\Footer.tsx" />
     <None Remove="ClientApp\src\components\header\Header.tsx" />
     <None Remove="ClientApp\src\components\home\HomeAboutUs.tsx" />

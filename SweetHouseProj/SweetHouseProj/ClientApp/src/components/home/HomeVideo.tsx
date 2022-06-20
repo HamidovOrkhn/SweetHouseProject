@@ -1,5 +1,7 @@
 ﻿import * as React from 'react';
 import { connect } from 'react-redux';
+import background from "../images/bg-roomm.jpg";
+import play from "../images/play.png";
 class HomeVideo extends React.Component {
     public render() {
         return (
@@ -27,7 +29,7 @@ class HomeVideo extends React.Component {
                             className="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js"
                             style={{
                                 backgroundImage:
-                                    "url(../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2021/11/bg-roomm.jpg)",
+                                    `url(${background})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                             }}
@@ -51,7 +53,7 @@ class HomeVideo extends React.Component {
                                                         data-lg-id="74507c6a-e061-4912-8737-8ecb4a110479"
                                                     >
                                                         <img
-                                                            src="../../../a6e8z9v6.stackpathcdn.com/hotale/resort/wp-content/uploads/sites/2/2021/11/play.png"
+                                                            src={play}
                                                             alt=""
                                                             width={180}
                                                             height={180}

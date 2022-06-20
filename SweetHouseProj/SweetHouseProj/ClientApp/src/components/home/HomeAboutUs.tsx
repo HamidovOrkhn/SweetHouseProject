@@ -148,7 +148,7 @@ class HomeAboutUs extends React.Component {
                                                     }}
                                                 >
                                                     <img
-                                                        src="../components/images/resort-swim.jpg"
+                                                        src={require('../images/resort-swim.jpg') }
                                                         alt=""
                                                         width={1000}
                                                         height={1130}
@@ -180,7 +180,7 @@ class HomeAboutUs extends React.Component {
                                                     style={{ borderWidth: "0px", maxWidth: "1091px" }}
                                                 >
                                                     <img
-                                                        src="../components/images/resort-group.png"
+                                                        src={require('../images/resort-group.png')}
                                                         alt=""
                                                         width={1381}
                                                         height={672}
