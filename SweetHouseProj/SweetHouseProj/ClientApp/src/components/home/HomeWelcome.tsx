@@ -1,6 +1,6 @@
 ﻿import * as React from 'react';
 import { connect } from 'react-redux';
-import background from "../images/home-resort-hero-bg.jpg";
+//import background from "../images/home-resort-hero-bg.jpg";
 import { RouteComponentProps } from 'react-router';
 class HomeWelcome extends React.Component {
     public render() {
@@ -30,8 +30,7 @@ class HomeWelcome extends React.Component {
                                 <div
                                     className="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js"
                                     style={{
-                                        backgroundImage:
-                                            `url(${background})`,
+                                        backgroundImage: `url(${require('../images/home-resort-hero-bg.jpg') })`,
                                         backgroundSize: "cover",
                                         backgroundPosition: "center",
                                     }}
@@ -192,7 +191,7 @@ class HomeWelcome extends React.Component {
                                                                                                 data-handler="selectMonth"
                                                                                                 data-event="change"
                                                                                             >
-                                                                                                <option value={5} selected>
+                                                                                                <option value={5}>
                                                                                                     Jun
                                                                                                 </option>
                                                                                                 <option value={6}>Jul</option>
@@ -208,7 +207,7 @@ class HomeWelcome extends React.Component {
                                                                                                 data-handler="selectYear"
                                                                                                 data-event="change"
                                                                                             >
-                                                                                                <option value={2022} selected>
+                                                                                                <option value={2022}>
                                                                                                     2022
                                                                                                 </option>
                                                                                                 <option value={2023}>2023</option>

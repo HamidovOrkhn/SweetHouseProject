@@ -19,9 +19,27 @@ var React = require("react");
 var react_redux_1 = require("react-redux");
 var HomeAboutUs = /** @class */ (function (_super) {
     __extends(HomeAboutUs, _super);
-    function HomeAboutUs() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function HomeAboutUs(props) {
+        var _this = _super.call(this, props) || this;
+        _this.state = {
+            data: {
+                miniText: "",
+                aboutUsPictures: [],
+                body: "",
+                header: ""
+            }
+        };
+        return _this;
     }
+    HomeAboutUs.prototype.componentDidMount = function () {
+        var _this = this;
+        fetch('/api/home/aboutus').then(function (response) {
+            return response.json();
+        }).then(function (data) {
+            _this.setState({ data: data });
+            console.log(_this.state.data.aboutUsPictures);
+        });
+    };
     HomeAboutUs.prototype.render = function () {
         return (React.createElement(React.Fragment, null,
             React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "105px 0px 36px 0px" }, id: "gdlr-core-wrapper-2" },
@@ -72,7 +90,7 @@ var HomeAboutUs = /** @class */ (function (_super) {
                                                     textTransform: "none",
                                                     color: "#0a0a0a",
                                                 } },
-                                                React.createElement("p", null, "Our hotel is located in the heart of the New Forrest. A five stars lifestyle surrounded by the forest.")))),
+                                                React.createElement("p", null, this.state.data.miniText)))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" },
                                             React.createElement("a", { className: "gdlr-core-button  gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-with-border", href: "#", id: "gdlr-core-button-id-1" },
@@ -92,15 +110,7 @@ var HomeAboutUs = /** @class */ (function (_super) {
                                                     MozBorderRadius: "50px 0px 50px 0px",
                                                     WebkitBorderRadius: "50px 0px 50px 0px",
                                                 } },
-                                                React.createElement("img", { src: require('../images/resort-swim.jpg'), alt: "", width: 1000, height: 1130, title: "resort-swim" }))))))),
-                        React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first gdlr-core-hide-in-mobile", id: "gdlr-core-column-4" },
-                            React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { margin: "-130px 0px 0px 0px", padding: "0px 0px 0px 0px" } },
-                                React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
-                                React.createElement("div", { className: "gdlr-core-pbf-column-content clearfix gdlr-core-js " },
-                                    React.createElement("div", { className: "gdlr-core-pbf-element" },
-                                        React.createElement("div", { className: "gdlr-core-image-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-item-pdlr", style: { paddingBottom: "0px" } },
-                                            React.createElement("div", { className: "gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle", style: { borderWidth: "0px", maxWidth: "1091px" } },
-                                                React.createElement("img", { src: require('../images/resort-group.png'), alt: "", width: 1381, height: 672, title: "resort-group" })))))))))),
+                                                React.createElement("img", { src: this.state.data.aboutUsPictures.length > 0 ? require('../' + this.state.data.aboutUsPictures[0].src) : "", alt: "", width: 1000, height: 1130, title: "resort-swim" })))))))))),
             ";"));
     };
     return HomeAboutUs;

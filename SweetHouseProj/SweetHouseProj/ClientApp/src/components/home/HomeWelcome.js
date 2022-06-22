@@ -17,7 +17,6 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_redux_1 = require("react-redux");
-var home_resort_hero_bg_jpg_1 = require("../images/home-resort-hero-bg.jpg");
 var HomeWelcome = /** @class */ (function (_super) {
     __extends(HomeWelcome, _super);
     function HomeWelcome() {
@@ -39,7 +38,7 @@ var HomeWelcome = /** @class */ (function (_super) {
                                 WebkitBorderRadius: "20px 20px 20px 20px",
                             } },
                             React.createElement("div", { className: "gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js", style: {
-                                    backgroundImage: "url(".concat(home_resort_hero_bg_jpg_1.default, ")"),
+                                    backgroundImage: "url(".concat(require('../images/home-resort-hero-bg.jpg'), ")"),
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                 }, "data-parallax-speed": 0 })),
@@ -119,7 +118,7 @@ var HomeWelcome = /** @class */ (function (_super) {
                                                                                         React.createElement("span", { className: "ui-icon ui-icon-circle-triangle-w" }, "Previous")),
                                                                                     React.createElement("div", { className: "ui-datepicker-title" },
                                                                                         React.createElement("select", { className: "ui-datepicker-month", "aria-label": "Select month", "data-handler": "selectMonth", "data-event": "change" },
-                                                                                            React.createElement("option", { value: 5, selected: true }, "Jun"),
+                                                                                            React.createElement("option", { value: 5 }, "Jun"),
                                                                                             React.createElement("option", { value: 6 }, "Jul"),
                                                                                             React.createElement("option", { value: 7 }, "Aug"),
                                                                                             React.createElement("option", { value: 8 }, "Sep"),
@@ -127,7 +126,7 @@ var HomeWelcome = /** @class */ (function (_super) {
                                                                                             React.createElement("option", { value: 10 }, "Nov"),
                                                                                             React.createElement("option", { value: 11 }, "Dec")),
                                                                                         React.createElement("select", { className: "ui-datepicker-year", "aria-label": "Select year", "data-handler": "selectYear", "data-event": "change" },
-                                                                                            React.createElement("option", { value: 2022, selected: true }, "2022"),
+                                                                                            React.createElement("option", { value: 2022 }, "2022"),
                                                                                             React.createElement("option", { value: 2023 }, "2023"),
                                                                                             React.createElement("option", { value: 2024 }, "2024"),
                                                                                             React.createElement("option", { value: 2025 }, "2025"),

@@ -1,7 +1,30 @@
 ﻿import * as React from 'react';
 import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
-class HomeAboutUs extends React.Component {
+import { InitialDataState } from '../../interfaces/home/HomeTypes';
+
+
+class HomeAboutUs extends React.Component<any, InitialDataState> {
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            data : {
+                miniText : "",
+                aboutUsPictures: [],
+                body: "",
+                header:""
+
+            }
+        };
+    }
+    componentDidMount() {
+        fetch('/api/home/aboutus').then((response) => {
+            return response.json();
+        }).then((data) => {
+            this.setState({ data: data });
+            console.log(this.state.data.aboutUsPictures)
+        })
+    }
     public render() {
         return (
             <React.Fragment>
@@ -94,8 +117,7 @@ class HomeAboutUs extends React.Component {
                                                     }}
                                                 >
                                                     <p>
-                                                        Our hotel is located in the heart of the New Forrest. A five
-                                                        stars lifestyle surrounded by the forest.
+                                                        {this.state.data.miniText}
                                                     </p>
                                                 </div>
                                             </div>
@@ -148,7 +170,7 @@ class HomeAboutUs extends React.Component {
                                                     }}
                                                 >
                                                     <img
-                                                        src={require('../images/resort-swim.jpg') }
+                                                        src={this.state.data.aboutUsPictures.length > 0 ? require('../' + this.state.data.aboutUsPictures[0].src) : ""}
                                                         alt=""
                                                         width={1000}
                                                         height={1130}
@@ -160,38 +182,38 @@ class HomeAboutUs extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                className="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first gdlr-core-hide-in-mobile"
-                                id="gdlr-core-column-4"
-                            >
-                                <div
-                                    className="gdlr-core-pbf-column-content-margin gdlr-core-js "
-                                    style={{ margin: "-130px 0px 0px 0px", padding: "0px 0px 0px 0px" }}
-                                >
-                                    <div className="gdlr-core-pbf-background-wrap" />
-                                    <div className="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
-                                        <div className="gdlr-core-pbf-element">
-                                            <div
-                                                className="gdlr-core-image-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-item-pdlr"
-                                                style={{ paddingBottom: "0px" }}
-                                            >
-                                                <div
-                                                    className="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle"
-                                                    style={{ borderWidth: "0px", maxWidth: "1091px" }}
-                                                >
-                                                    <img
-                                                        src={require('../images/resort-group.png')}
-                                                        alt=""
-                                                        width={1381}
-                                                        height={672}
-                                                        title="resort-group"
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {/*<div*/}
+                            {/*    className="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first gdlr-core-hide-in-mobile"*/}
+                            {/*    id="gdlr-core-column-4"*/}
+                            {/*>*/}
+                            {/*    <div*/}
+                            {/*        className="gdlr-core-pbf-column-content-margin gdlr-core-js "*/}
+                            {/*        style={{ margin: "-130px 0px 0px 0px", padding: "0px 0px 0px 0px" }}*/}
+                            {/*    >*/}
+                            {/*        <div className="gdlr-core-pbf-background-wrap" />*/}
+                            {/*        <div className="gdlr-core-pbf-column-content clearfix gdlr-core-js ">*/}
+                            {/*            <div className="gdlr-core-pbf-element">*/}
+                            {/*                <div*/}
+                            {/*                    className="gdlr-core-image-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-item-pdlr"*/}
+                            {/*                    style={{ paddingBottom: "0px" }}*/}
+                            {/*                >*/}
+                            {/*                    <div*/}
+                            {/*                        className="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle"*/}
+                            {/*                        style={{ borderWidth: "0px", maxWidth: "1091px" }}*/}
+                            {/*                    >*/}
+                            {/*                        <img*/}
+                            {/*                            src={require('../images/resort-group.png')}*/}
+                            {/*                            alt=""*/}
+                            {/*                            width={1381}*/}
+                            {/*                            height={672}*/}
+                            {/*                            title="resort-group"*/}
+                            {/*                        />*/}
+                            {/*                    </div>*/}
+                            {/*                </div>*/}
+                            {/*            </div>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>;
@@ -200,7 +222,7 @@ class HomeAboutUs extends React.Component {
 
         );
 
-      
+
     }
 }
 export default connect()(HomeAboutUs);
