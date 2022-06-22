@@ -22,5 +22,31 @@ namespace SweetHouseProj.Fluent
                 builder.Property(T => T.Src).IsRequired().HasMaxLength(200);
             }
         }
+        public class RoomPhotoFluent : IEntityTypeConfiguration<RoomPhoto>
+        {
+            public void Configure(EntityTypeBuilder<RoomPhoto> builder)
+            {
+                builder.Property(T => T.Src).IsRequired().HasMaxLength(200);
+            }
+        }
+        public class AmenityFluent : IEntityTypeConfiguration<Amenity>
+        {
+            public void Configure(EntityTypeBuilder<Amenity> builder)
+            {
+                builder.Property(T => T.Name).IsRequired().HasMaxLength(50);
+                builder.Property(T => T.Icon).IsRequired().HasMaxLength(100);
+            }
+        }
+        public class RoomFluent : IEntityTypeConfiguration<Room>
+        {
+            public void Configure(EntityTypeBuilder<Room> builder)
+            {
+                builder.Property(T => T.Name).IsRequired().HasMaxLength(100);
+                builder.Property(T => T.RoomDesc).IsRequired().HasMaxLength(1000);
+                builder.Property(T => T.HotelRules).IsRequired().HasMaxLength(400);
+                builder.Property(T => T.RoomView).IsRequired().HasMaxLength(50);
+            }
+        }
+
     }
 }

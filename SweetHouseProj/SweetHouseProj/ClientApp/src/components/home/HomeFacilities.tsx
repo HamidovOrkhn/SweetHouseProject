@@ -47,7 +47,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Hotel Facilities.
+                                                        Xidmətlərə daxildir.
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -85,9 +85,7 @@ class HomeFacilities extends React.Component {
                                                     }}
                                                 >
                                                     <p>
-                                                        A wonderful serenity has taken possession of my entire soul,
-                                                        like these sweet mornings of spring which I enjoy with my
-                                                        whole heart.
+                                                        Tam funksyonal və daima yenilənən xidmətlər düşərgəsi ilə istifadəçiləri məmnun edirik.
                                                     </p>
                                                 </div>
                                             </div>
@@ -195,7 +193,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Safe
+                                                        Seyf
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -248,7 +246,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Swimming Pool
+                                                        Hovuz
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -354,7 +352,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Gym
+                                                        İdman zalı
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -419,7 +417,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Free Wifi
+                                                        Wifi
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -472,7 +470,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Breakfast
+                                                        Səhər Yeməyi
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -525,7 +523,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Workspace
+                                                        İş mühiti
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>

@@ -23,7 +23,13 @@ namespace SweetHouseProj.Controllers
         [HttpGet("[action]")]
         public IActionResult AboutUs()
         {
-            var result = _db.AboutUs.OrderByDescending(a=>a.Id).Include(a=>a.AboutUsPictures).FirstOrDefault();
+            var result = _db.AboutUs.OrderByDescending(a => a.Id).Include(a => a.AboutUsPictures).FirstOrDefault();
+            return StatusCode(200, result);
+        }
+        [HttpGet("[action]")]
+        public IActionResult Rooms()
+        {
+            var result = _db.Rooms.Include(a => a.RoomPhotos).Take(5).Select(a => new Room {Id = a.Id, Name = a.Name, Price = a.Price, BedCount = a.BedCount, MaxGuest = a.MaxGuest, RoomPhotos = a.RoomPhotos.Where(a => a.IsMain == true).ToList() });
             return StatusCode(200, result);
         }
     }
