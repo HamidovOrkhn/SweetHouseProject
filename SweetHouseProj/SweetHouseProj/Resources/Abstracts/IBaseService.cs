@@ -9,7 +9,7 @@ namespace SweetHouseProj.Resources.Abstracts
         public ResponseMessage<T> GetById(int id);
         public ResponseMessage<T> GetFirstOrDefault();
         public ResponseMessage<T> GetLastOrDefault();
-        public ResponseMessagePaginated<List<T>> GetPaginated(int page);
+        public ResponseMessagePaginated<List<T>> GetPaginated(int page, params string[] includes);
         public ResponseMessage<List<TResult>> GetFormated<TResult>();
         public ResponseMessage<List<TResult>> GetFormatedPaginated<TResult>(int page);
         public ResponseMessage<string> Add(T data);

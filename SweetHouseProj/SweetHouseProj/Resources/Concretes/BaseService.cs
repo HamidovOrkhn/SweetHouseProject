@@ -43,9 +43,16 @@ namespace SweetHouseProj.Resources.Concretes
             T data = entity.OrderByDescending(a => a.Id).LastOrDefault();
             return ResponseMessage<T>.Success(data);
         }
-        public ResponseMessagePaginated<List<T>> GetPaginated(int page)
+        public ResponseMessagePaginated<List<T>> GetPaginated(int page, params string[] includes)
         {
-            List<T> data = entity.ToList();
+            List<T> data = new();
+            if (includes is not null)
+            {
+                foreach (var item in includes)
+                {
+                    data = entity.Include(item).ToList();
+                }
+            }
             float pagecount = data.Count;
             int count = (int)Math.Ceiling(pagecount / 10);
             data = data.Skip(page * 10).Take(10).ToList();

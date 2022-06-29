@@ -113,6 +113,29 @@ namespace SweetHouseProj.Migrations
                     b.ToTable("Amenities");
                 });
 
+            modelBuilder.Entity("SweetHouseProj.Models.HomeVideo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Src")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("HomeVideos");
+                });
+
             modelBuilder.Entity("SweetHouseProj.Models.Room", b =>
                 {
                     b.Property<int>("Id")

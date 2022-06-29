@@ -5,6 +5,8 @@ import HomeAboutUs from './home/HomeAboutUs';
 import HomeVideo from './home/HomeVideo';
 import HomeFacilities from './home/HomeFacilities';
 import HotelCards from './home/HotelCards';
+import BlogList from './home/BlogList';
+import PostsSlider from './home/PostsSlider';
 const Home = () => (
     <React.Fragment>
         <HomeWelcome />
@@ -12,6 +14,8 @@ const Home = () => (
         <HotelCards />
         <HomeFacilities/>
         <HomeVideo />
+        <BlogList />
+        <PostsSlider/>
     </React.Fragment>
     
     

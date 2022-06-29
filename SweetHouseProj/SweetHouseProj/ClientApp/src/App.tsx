@@ -9,13 +9,15 @@ import Rooms from './components/rooms/Rooms';
 import ContactUs from './components/contactus/ContactUs';
 
 import './custom.css'
+import RoomDetails from './components/rooms/RoomDetails';
 
 export default () => (
     <Layout>
         <Route exact path='/' component={Home} />
         <Route path='/counter' component={Counter} />
         <Route path='/aboutus' component={AboutUs} />
-        <Route path='/rooms' component={Rooms} />
+        <Route exact path='/rooms' component={Rooms} />
+        <Route path='/rooms/details/:slug' component={RoomDetails} />
         <Route path='/contactus' component={ContactUs} />
         <Route path='/fetch-data/:startDateIndex?' component={FetchData} />
     </Layout>

@@ -37,7 +37,6 @@ var HomeAboutUs = /** @class */ (function (_super) {
             return response.json();
         }).then(function (data) {
             _this.setState({ data: data });
-            console.log(_this.state.data.aboutUsPictures);
         });
     };
     HomeAboutUs.prototype.render = function () {

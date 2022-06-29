@@ -1,7 +1,27 @@
 ﻿import * as React from 'react';
 import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
-class AboutUs extends React.Component {
+import { InitialDataState } from '../../interfaces/home/HomeTypes';
+class AboutUs extends React.Component < any, InitialDataState > {
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            data: {
+                miniText: "",
+                aboutUsPictures: [],
+                body: "",
+                header: ""
+
+            }
+        };
+    }
+    componentDidMount() {
+        fetch('/api/home/aboutus').then((response) => {
+            return response.json();
+        }).then((data) => {
+            this.setState({ data: data });
+        })
+    }
     public render() {
         return (
             <React.Fragment>
@@ -81,55 +101,8 @@ class AboutUs extends React.Component {
                                                                     color: "#898989",
                                                                 }}
                                                             >
-                                                                <p>
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
-                                                                    A wonderful serenity has taken possession of my entire
-                                                                    soul, like these sweet mornings of spring which I
-                                                                    enjoy with my whole heart.
+                                                            <p>
+                                                                {this.state.data.body}
                                                                 </p>
                                                             </div>
                                                         </div>

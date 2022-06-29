@@ -16,7 +16,7 @@ export interface CardsState {
     data: CardStateInitial[];
 }
 
-interface CardStateInitial {
+export interface CardStateInitial {
     id:number,
     name: string,
     price: number,
@@ -26,4 +26,13 @@ interface CardStateInitial {
 }
 interface RoomPhotos {
     src:string
+}
+export interface HomeVideoInitial {
+    data:HomeVideo
+}
+interface HomeVideo {
+    src:string
+}
+export interface HomePicturesInitial {
+    data: RoomPhotos[]
 }

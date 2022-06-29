@@ -1,8 +1,23 @@
 ﻿import * as React from 'react';
 import { connect } from 'react-redux';
-import background from "../images/bg-roomm.jpg";
-import play from "../images/play.png";
-class HomeVideo extends React.Component {
+import { HomeVideoInitial } from '../../interfaces/home/HomeTypes';
+class HomeVideo extends React.Component<any, HomeVideoInitial> {
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            data: {
+               src:""
+
+            }
+        };
+    }
+    componentDidMount() {
+        fetch('/api/home/homevideo').then((response) => {
+            return response.json();
+        }).then((data) => {
+            this.setState({ data: data });
+        })
+    }
     public render() {
         return (
             <React.Fragment>
@@ -29,7 +44,7 @@ class HomeVideo extends React.Component {
                             className="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js"
                             style={{
                                 backgroundImage:
-                                    `url(${background})`,
+                                    `url(${require('../images/bg-roomm.jpg')})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                             }}
@@ -49,11 +64,11 @@ class HomeVideo extends React.Component {
                                                 >
                                                     <a
                                                         className="gdlr-core-lightgallery gdlr-core-js "
-                                                        href="https://www.youtube.com/watch?v=US7bGTUkBfg"
+                                                        href={this.state.data.src}
                                                         data-lg-id="74507c6a-e061-4912-8737-8ecb4a110479"
                                                     >
                                                         <img
-                                                            src={play}
+                                                            src={require('../images/play.png')}
                                                             alt=""
                                                             width={180}
                                                             height={180}

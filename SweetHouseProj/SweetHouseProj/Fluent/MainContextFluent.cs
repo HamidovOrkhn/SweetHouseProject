@@ -47,6 +47,13 @@ namespace SweetHouseProj.Fluent
                 builder.Property(T => T.RoomView).IsRequired().HasMaxLength(50);
             }
         }
+        public class HomeVideoFluent : IEntityTypeConfiguration<HomeVideo>
+        {
+            public void Configure(EntityTypeBuilder<HomeVideo> builder)
+            {
+                builder.Property(T => T.Src).IsRequired().HasMaxLength(200);
+            }
+        }
 
     }
 }

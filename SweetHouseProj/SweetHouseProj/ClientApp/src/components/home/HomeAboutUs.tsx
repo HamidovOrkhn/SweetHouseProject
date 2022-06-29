@@ -22,7 +22,6 @@ class HomeAboutUs extends React.Component<any, InitialDataState> {
             return response.json();
         }).then((data) => {
             this.setState({ data: data });
-            console.log(this.state.data.aboutUsPictures)
         })
     }
     public render() {
