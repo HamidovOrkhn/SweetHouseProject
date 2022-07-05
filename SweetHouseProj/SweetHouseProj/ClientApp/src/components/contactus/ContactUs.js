@@ -17,20 +17,60 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_redux_1 = require("react-redux");
+var ContactUsForm_1 = require("./ContactUsForm");
 var ContactUs = /** @class */ (function (_super) {
     __extends(ContactUs, _super);
-    function ContactUs() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function ContactUs(props) {
+        var _this = _super.call(this, props) || this;
+        _this.state = {
+            data: {
+                email: "",
+                location: "",
+                mapX: 0,
+                mapY: 0,
+                phone: ""
+            }
+        };
+        return _this;
     }
+    ContactUs.prototype.componentDidMount = function () {
+        var _this = this;
+        fetch('/api/contact/contactus').then(function (response) {
+            return response.json();
+        }).then(function (data) {
+            _this.setState({ data: data });
+        });
+    };
     ContactUs.prototype.render = function () {
         return (React.createElement(React.Fragment, null,
-            React.createElement("div", { className: "hotale-page-title-wrap  hotale-style-custom hotale-center-align" },
-                React.createElement("div", { className: "hotale-header-transparent-substitute", style: { height: "149.3px" } }),
-                React.createElement("div", { className: "hotale-page-title-overlay" }),
-                React.createElement("div", { className: "hotale-page-title-container hotale-container" },
-                    React.createElement("div", { className: "hotale-page-title-content hotale-item-pdlr" },
-                        React.createElement("h1", { className: "hotale-page-title" }, "Haqq\u0131m\u0131zda")))),
-            " ",
+            React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "300px 0px 160px 0px" }, "data-skin": "white", id: "gdlr-core-wrapper-1" },
+                React.createElement("div", { className: "gdlr-core-pbf-background-wrap", style: { backgroundColor: "#0a0a0a" } },
+                    React.createElement("div", { className: "gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js", style: {
+                            backgroundImage: "url(".concat(require('../images/resort-title-bg.jpg'), ")"),
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                        }, "data-parallax-speed": 0 })),
+                React.createElement("div", { className: "gdlr-core-pbf-wrapper-content gdlr-core-js", "data-gdlr-animation-duration": "600ms", "data-gdlr-animation-offset": "0.8", style: {} },
+                    React.createElement("div", { className: "gdlr-core-pbf-wrapper-container clearfix gdlr-core-container" },
+                        React.createElement("div", { className: "gdlr-core-pbf-element" },
+                            React.createElement("div", { className: "gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-bottom gdlr-core-item-pdlr" },
+                                React.createElement("div", { className: "gdlr-core-title-item-title-wrap " },
+                                    React.createElement("h3", { className: "gdlr-core-title-item-title gdlr-core-skin-title  class-test", style: {
+                                            fontSize: "75px",
+                                            fontWeight: 600,
+                                            letterSpacing: "0px",
+                                            textTransform: "none",
+                                            color: "#ffffff",
+                                        } },
+                                        "\u018Flaq\u0259",
+                                        React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" }))),
+                                React.createElement("span", { className: "gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption", style: {
+                                        fontSize: "25px",
+                                        fontStyle: "normal",
+                                        letterSpacing: "0px",
+                                        color: "#e5e5e5",
+                                        marginTop: "15px",
+                                    } }, "Bizimil\u0259 \u0259laq\u0259 saxlamaq \u00FC\u00E7\u00FCn")))))),
             React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "30px 0px 20px 0px" }, "data-skin": "White Text" },
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap", style: { backgroundColor: "#191919" } },
                     React.createElement("div", { className: "gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js", style: {
@@ -75,12 +115,10 @@ var ContactUs = /** @class */ (function (_super) {
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align", style: { paddingBottom: "0px" } },
                                             React.createElement("div", { className: "gdlr-core-text-box-item-content", style: { textTransform: "none", color: "#ffffff" } },
-                                                React.createElement("p", null, "A wonderful serenity has taken possession of my entire soul, like these.")))),
+                                                React.createElement("p", null, this.state.data.phone)))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" },
-                                            React.createElement("div", { className: "gdlr-core-text-box-item-content", style: { fontWeight: 700, textTransform: "none" } },
-                                                React.createElement("p", null,
-                                                    React.createElement("a", { style: { textDecoration: "underline" }, href: "#" }, "+1-2345-2345")))))))),
+                                            React.createElement("div", { className: "gdlr-core-text-box-item-content", style: { fontWeight: 700, textTransform: "none" } })))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-20", id: "gdlr-core-column-2" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "50px 20px 0px 20px" } },
                                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
@@ -114,12 +152,10 @@ var ContactUs = /** @class */ (function (_super) {
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align", style: { paddingBottom: "0px" } },
                                             React.createElement("div", { className: "gdlr-core-text-box-item-content", style: { textTransform: "none", color: "#ffffff" } },
-                                                React.createElement("p", null, "A wonderful serenity has taken possession of my entire soul, like these.")))),
+                                                React.createElement("p", null, this.state.data.email)))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" },
-                                            React.createElement("div", { className: "gdlr-core-text-box-item-content", style: { fontWeight: 700, textTransform: "none" } },
-                                                React.createElement("p", null,
-                                                    React.createElement("a", { style: { textDecoration: "underline" }, href: "#" }, "Contact@goodlayersthemes.com")))))))),
+                                            React.createElement("div", { className: "gdlr-core-text-box-item-content", style: { fontWeight: 700, textTransform: "none" } })))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-20", id: "gdlr-core-column-3" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "50px 20px 0px 20px" } },
                                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
@@ -152,17 +188,11 @@ var ContactUs = /** @class */ (function (_super) {
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" }))))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align", style: { paddingBottom: "0px" } },
-                                            React.createElement("div", { className: "gdlr-core-text-box-item-content", style: { textTransform: "none", color: "#ffffff" } },
-                                                React.createElement("p", null,
-                                                    "4 apt. Flawing Street. The Grand Avenue.",
-                                                    React.createElement("br", null),
-                                                    "Liverpool, UK 33342")))),
+                                            React.createElement("div", { className: "gdlr-core-text-box-item-content", style: { textTransform: "none", color: "#ffffff" } }))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" },
-                                            React.createElement("div", { className: "gdlr-core-text-box-item-content", style: { fontWeight: 700, textTransform: "none" } },
-                                                React.createElement("p", null,
-                                                    React.createElement("a", { style: { textDecoration: "underline" }, href: "#" }, "View On Google Map"))))))))))),
-            ";",
+                                            React.createElement("div", { className: "gdlr-core-text-box-item-content", style: { textTransform: "none", color: "#ffffff" } },
+                                                React.createElement("p", null, this.state.data.location)))))))))),
             React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "90px 0px 35px 0px" } },
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap", style: { backgroundColor: "#ffffff" } }),
                 React.createElement("div", { className: "gdlr-core-pbf-wrapper-content gdlr-core-js " },
@@ -180,14 +210,14 @@ var ContactUs = /** @class */ (function (_super) {
                                                         letterSpacing: "0px",
                                                         textTransform: "none",
                                                     } },
-                                                    "Leave us your info",
+                                                    "M\u0259lumatlar\u0131 daxil edin",
                                                     " ",
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" }))),
                                             React.createElement("span", { className: "gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption", style: {
                                                     fontSize: "19px",
                                                     fontStyle: "normal",
                                                     letterSpacing: "0px",
-                                                } }, "and we will get back to you."))),
+                                                } }, "M\u00FCraci\u0259tl\u0259riniz tez bir zamanda cavabland\u0131r\u0131lacaqd\u0131r"))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb " },
                                             React.createElement("div", { role: "form", className: "wpcf7", id: "wpcf7-f1979-p1964-o1", lang: "en-US", dir: "ltr" },
@@ -195,34 +225,7 @@ var ContactUs = /** @class */ (function (_super) {
                                                     React.createElement("p", { role: "status", "aria-live": "polite", "aria-atomic": "true" }),
                                                     " ",
                                                     React.createElement("ul", null)),
-                                                React.createElement("form", { action: "https://demo.goodlayers.com/hotale/resort/contact/#wpcf7-f1979-p1964-o1", method: "post", className: "wpcf7-form init", "data-status": "init" },
-                                                    React.createElement("div", { style: { display: "none" } },
-                                                        React.createElement("input", { type: "hidden", name: "_wpcf7", defaultValue: 1979 }),
-                                                        React.createElement("input", { type: "hidden", name: "_wpcf7_version", defaultValue: "5.5.6.1" }),
-                                                        React.createElement("input", { type: "hidden", name: "_wpcf7_locale", defaultValue: "en_US" }),
-                                                        React.createElement("input", { type: "hidden", name: "_wpcf7_unit_tag", defaultValue: "wpcf7-f1979-p1964-o1" }),
-                                                        React.createElement("input", { type: "hidden", name: "_wpcf7_container_post", defaultValue: 1964 }),
-                                                        React.createElement("input", { type: "hidden", name: "_wpcf7_posted_data_hash" })),
-                                                    React.createElement("div", { className: "gdlr-core-input-wrap gdlr-core-full-width gdlr-core-no-border gdlr-core-with-column" },
-                                                        React.createElement("div", { className: "gdlr-core-column-30" },
-                                                            React.createElement("span", { className: "wpcf7-form-control-wrap your-name" },
-                                                                React.createElement("input", { type: "text", name: "your-name", size: 40, className: "wpcf7-form-control wpcf7-text wpcf7-validates-as-required", "aria-required": "true", "aria-invalid": "false", placeholder: "Full Name*" }))),
-                                                        React.createElement("div", { className: "gdlr-core-column-30" },
-                                                            React.createElement("span", { className: "wpcf7-form-control-wrap your-email" },
-                                                                React.createElement("input", { type: "email", name: "your-email", size: 40, className: "wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email", "aria-required": "true", "aria-invalid": "false", placeholder: "Email*" }))),
-                                                        React.createElement("div", { className: "clear" }),
-                                                        React.createElement("div", { className: "gdlr-core-column-60" },
-                                                            React.createElement("span", { className: "wpcf7-form-control-wrap your-subject" },
-                                                                React.createElement("input", { type: "text", name: "your-subject", size: 40, className: "wpcf7-form-control wpcf7-text wpcf7-validates-as-required", "aria-required": "true", "aria-invalid": "false", placeholder: "Subject*" }))),
-                                                        React.createElement("div", { className: "clear" }),
-                                                        React.createElement("div", { className: "gdlr-core-column-60" },
-                                                            React.createElement("span", { className: "wpcf7-form-control-wrap your-message" },
-                                                                React.createElement("textarea", { name: "your-message", cols: 40, rows: 10, className: "wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required", "aria-required": "true", "aria-invalid": "false", placeholder: "Message*", defaultValue: "" }))),
-                                                        React.createElement("div", { className: "gdlr-core-column-60 gdlr-core-left-align" },
-                                                            React.createElement("input", { type: "submit", defaultValue: "Submit Now", className: "wpcf7-form-control has-spinner wpcf7-submit gdlr-core-small-button gdlr-core-curve-button" }),
-                                                            React.createElement("span", { className: "wpcf7-spinner" }))),
-                                                    React.createElement("div", { className: "wpcf7-response-output", "aria-hidden": "true" }))))))))))),
-            ";",
+                                                React.createElement(ContactUsForm_1.default, null)))))))))),
             React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "0px 0px 0px 0px" } },
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
                 React.createElement("div", { className: "gdlr-core-pbf-wrapper-content gdlr-core-js " },
@@ -231,26 +234,12 @@ var ContactUs = /** @class */ (function (_super) {
                             React.createElement("div", { className: "gdlr-core-wp-google-map-plugin-item gdlr-core-item-pdlr gdlr-core-item-pdb ", style: { paddingBottom: "0px" } },
                                 React.createElement("div", { className: "wpgmp_map_container wpgmp-map-1" },
                                     React.createElement("div", { className: "wpgmp_map_parent" },
-                                        React.createElement("div", { className: "wpgmp_map ", style: {
+                                        React.createElement("div", { className: "wpgmp_map", style: {
                                                 width: "100%",
                                                 height: "500px",
                                                 position: "relative",
                                                 overflow: "hidden",
-                                            }, id: "map1" },
-                                            React.createElement("div", { style: {
-                                                    height: "100%",
-                                                    width: "100%",
-                                                    position: "absolute",
-                                                    top: "0px",
-                                                    left: "0px",
-                                                    backgroundColor: "rgb(229, 227, 223)",
-                                                } },
-                                                React.createElement("div", { className: "gm-err-container" },
-                                                    React.createElement("div", { className: "gm-err-content" },
-                                                        React.createElement("div", { className: "gm-err-icon" },
-                                                            React.createElement("img", { src: "https://maps.gstatic.com/mapfiles/api-3/images/icon_error.png", alt: "", draggable: "false", style: { userSelect: "none" } })),
-                                                        React.createElement("div", { className: "gm-err-title" }, "Oops! Something went wrong."),
-                                                        React.createElement("div", { className: "gm-err-message" }, "This page didn't load Google Maps correctly. See the JavaScript console for technical details."))))))))))))));
+                                            }, id: "map1" }))))))))));
     };
     return ContactUs;
 }(React.Component));

@@ -54,6 +54,26 @@ namespace SweetHouseProj.Fluent
                 builder.Property(T => T.Src).IsRequired().HasMaxLength(200);
             }
         }
-
+        public class ContactUsFluent : IEntityTypeConfiguration<ContactUs>
+        {
+            public void Configure(EntityTypeBuilder<ContactUs> builder)
+            {
+                builder.Property(T => T.Location).IsRequired().HasMaxLength(200);
+                builder.Property(T => T.Phone).IsRequired().HasMaxLength(100);
+                builder.Property(T => T.Email).IsRequired().HasMaxLength(100);
+                builder.Property(T => T.MapX).IsRequired();
+                builder.Property(T => T.MapY).IsRequired();
+            }
+        }
+        public class ContactUsListFluent : IEntityTypeConfiguration<ContactUsList>
+        {
+            public void Configure(EntityTypeBuilder<ContactUsList> builder)
+            {
+                builder.Property(T => T.Email).IsRequired().HasMaxLength(200);
+                builder.Property(T => T.Fullname).IsRequired().HasMaxLength(200);
+                builder.Property(T => T.Subject).IsRequired().HasMaxLength(200);
+                builder.Property(T => T.Message).IsRequired().HasMaxLength(200);
+            }
+        }
     }
 }

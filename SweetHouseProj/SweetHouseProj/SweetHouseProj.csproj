@@ -40,6 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\public\assets\layout\mapinit.ts" />
     <None Remove="ClientApp\src\components\aboutus\AboutUs.tsx" />
     <None Remove="ClientApp\src\components\contactus\ContactUs.tsx" />
     <None Remove="ClientApp\src\components\foot\Footer.tsx" />
@@ -55,12 +56,14 @@
     <None Remove="ClientApp\src\components\rooms\Pagination.tsx" />
     <None Remove="ClientApp\src\components\rooms\RoomDetails.tsx" />
     <None Remove="ClientApp\src\components\rooms\Rooms.tsx" />
+    <None Remove="ClientApp\src\interfaces\contactus\ContactUsTypes.ts" />
     <None Remove="ClientApp\src\interfaces\home\GlobalTypes.ts" />
     <None Remove="ClientApp\src\interfaces\home\HomeTypes.ts" />
     <None Remove="ClientApp\src\interfaces\home\RoomTypes.tsx" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Remove="ClientApp\src\components\contactus\ContactUsForm.tsx" />
     <TypeScriptCompile Remove="ClientApp\src\components\home\Posts.tsx" />
   </ItemGroup>
 
