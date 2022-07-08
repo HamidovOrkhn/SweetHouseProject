@@ -9,7 +9,7 @@ using System;
 
 namespace SweetHouseProj.Resources.Concretes
 {
-    public class BaseService<T>:IBaseService<T> where T: BaseEntity, new()
+    public class BaseService<T> : IBaseService<T> where T : BaseEntity, new()
     {
         private readonly MainContext _db;
         private DbSet<T> entity;
@@ -35,7 +35,7 @@ namespace SweetHouseProj.Resources.Concretes
         }
         public ResponseMessage<T> GetLastOrDefault()
         {
-            T data = entity.OrderByDescending(a=>a.Id).FirstOrDefault();
+            T data = entity.OrderByDescending(a => a.Id).FirstOrDefault();
             return ResponseMessage<T>.Success(data);
         }
         public ResponseMessage<T> GetFirstOrDefault()
@@ -46,21 +46,25 @@ namespace SweetHouseProj.Resources.Concretes
         public ResponseMessagePaginated<List<T>> GetPaginated(int page, params string[] includes)
         {
             List<T> data = new();
-            if (includes is not null)
+            if (includes.Length > 0)
             {
                 foreach (var item in includes)
                 {
                     data = entity.Include(item).ToList();
                 }
             }
+            else
+            {
+                data = entity.ToList();
+            }
             float pagecount = data.Count;
             int count = (int)Math.Ceiling(pagecount / 10);
             data = data.Skip(page * 10).Take(10).ToList();
-            return ResponseMessagePaginated<List<T>>.Success(count,data);
+            return ResponseMessagePaginated<List<T>>.Success(count, data);
         }
         public ResponseMessage<List<TResult>> GetFormated<TResult>()
         {
-            List<TResult> data = entity.Select(a=>a.Adapt<TResult>()).ToList();
+            List<TResult> data = entity.Select(a => a.Adapt<TResult>()).ToList();
             return ResponseMessage<List<TResult>>.Success(data);
         }
         public ResponseMessage<List<TResult>> GetFormatedPaginated<TResult>(int page)
@@ -80,7 +84,7 @@ namespace SweetHouseProj.Resources.Concretes
         }
         public ResponseMessage<string> AddFormated<TResult>(TResult data)
         {
-            T dataFormated = data.Adapt<T>();   
+            T dataFormated = data.Adapt<T>();
             entity.Add(dataFormated);
             _db.SaveChanges();
             return ResponseMessage<string>.Success("Əlavə olundu");
@@ -110,6 +114,6 @@ namespace SweetHouseProj.Resources.Concretes
             return ResponseMessage<string>.Success("Dəyişildi");
         }
 
-       
+
     }
 }

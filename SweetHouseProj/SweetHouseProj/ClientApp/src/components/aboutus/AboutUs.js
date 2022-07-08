@@ -41,14 +41,14 @@ var AboutUs = /** @class */ (function (_super) {
     };
     AboutUs.prototype.render = function () {
         return (React.createElement(React.Fragment, null,
-            React.createElement("div", { className: "hotale-page-title-wrap  hotale-style-custom hotale-center-align" },
+            React.createElement("div", { className: "hotale-page-title-wrap  hotale-style-custom hotale-center-align", "data-aos": "fade-bottom", "data-aos-duration": "1000" },
                 React.createElement("div", { className: "hotale-header-transparent-substitute", style: { height: "149.3px" } }),
                 React.createElement("div", { className: "hotale-page-title-overlay" }),
                 React.createElement("div", { className: "hotale-page-title-container hotale-container" },
                     React.createElement("div", { className: "hotale-page-title-content hotale-item-pdlr" },
                         React.createElement("h1", { className: "hotale-page-title" }, "Haqq\u0131m\u0131zda")))),
             " ",
-            React.createElement("div", { className: "hotale-page-wrapper", id: "hotale-page-wrapper" },
+            React.createElement("div", { className: "hotale-page-wrapper", id: "hotale-page-wrapper", "data-aos": "fade-bottom", "data-aos-duration": "1000" },
                 React.createElement("div", { className: "gdlr-core-page-builder-body" },
                     React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "105px 0px 55px 0px" }, id: "gdlr-core-wrapper-1" },
                         React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),

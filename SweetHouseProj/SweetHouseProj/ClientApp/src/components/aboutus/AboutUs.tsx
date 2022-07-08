@@ -25,7 +25,8 @@ class AboutUs extends React.Component < any, InitialDataState > {
     public render() {
         return (
             <React.Fragment>
-                    <div className="hotale-page-title-wrap  hotale-style-custom hotale-center-align">
+                <div className="hotale-page-title-wrap  hotale-style-custom hotale-center-align" data-aos="fade-bottom"
+                    data-aos-duration="1000" >
                         <div
                             className="hotale-header-transparent-substitute"
                             style={{ height: "149.3px" }}
@@ -37,7 +38,8 @@ class AboutUs extends React.Component < any, InitialDataState > {
                             </div>
                         </div>
                     </div>{" "}
-                    <div className="hotale-page-wrapper" id="hotale-page-wrapper">
+                <div className="hotale-page-wrapper" id="hotale-page-wrapper" data-aos="fade-bottom"
+                    data-aos-duration="1000">
                         <div className="gdlr-core-page-builder-body">
                             <div
                                 className="gdlr-core-pbf-wrapper "

@@ -41,9 +41,9 @@ var HomeAboutUs = /** @class */ (function (_super) {
     };
     HomeAboutUs.prototype.render = function () {
         return (React.createElement(React.Fragment, null,
-            React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "105px 0px 36px 0px" }, id: "gdlr-core-wrapper-2" },
+            React.createElement("div", { className: "gdlr-core-pbf-wrapper", style: { padding: "105px 0px 36px 0px" }, id: "gdlr-core-wrapper-2" },
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
-                React.createElement("div", { className: "gdlr-core-pbf-wrapper-content gdlr-core-js " },
+                React.createElement("div", { className: "gdlr-core-pbf-wrapper-content gdlr-core-js ", "data-aos": "fade-left", "data-aos-duration": "2000" },
                     React.createElement("div", { className: "gdlr-core-pbf-wrapper-container clearfix gdlr-core-container" },
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first", id: "gdlr-core-column-2" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "30px 0px 0px 0px" } },
@@ -99,7 +99,7 @@ var HomeAboutUs = /** @class */ (function (_super) {
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-30", id: "gdlr-core-column-3" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js " },
                                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
-                                React.createElement("div", { className: "gdlr-core-pbf-column-content clearfix gdlr-core-js", "data-gdlr-animation-duration": "600ms", "data-gdlr-animation-offset": "0.8", style: {} },
+                                React.createElement("div", { className: "gdlr-core-pbf-column-content clearfix gdlr-core-js", "data-aos": "fade-right", "data-aos-duration": "2000", style: {} },
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-image-item gdlr-core-item-pdb  gdlr-core-center-align", style: { paddingBottom: "0px" } },
                                             React.createElement("div", { className: "gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-round2 gdlr-core-image-item-style-round", style: {

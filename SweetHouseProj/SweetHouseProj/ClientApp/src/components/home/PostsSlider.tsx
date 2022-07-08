@@ -23,7 +23,10 @@ class PostsSlider extends React.Component<any, HomePicturesInitial> {
     }
     public render() {
         return (
-            <div className="gdlr-core-pbf-wrapper " id="gdlr-core-wrapper-9">
+            <div className="gdlr-core-pbf-wrapper " id="gdlr-core-wrapper-9"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+            >
                 <div className="gdlr-core-pbf-background-wrap" />
                 <div className="gdlr-core-pbf-background-wrap" style={{ top: "120px" }}>
                     <div
@@ -106,7 +109,6 @@ class PostsSlider extends React.Component<any, HomePicturesInitial> {
                                                 }}
                                             >
                                                 <span className="gdlr-core-content">
-                                                    <MDBIcon fab icon="instagram" />
                                                     Bizi Instagramdan takip edin
                                                 </span>
                                             </a>

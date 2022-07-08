@@ -6,7 +6,8 @@ class HomeWelcome extends React.Component {
     public render() {
         return (
             <React.Fragment>
-                <div className="hotale-page-wrapper" id="hotale-page-wrapper">
+                <div className="hotale-page-wrapper" id="hotale-page-wrapper" data-aos="fade-bottom"
+                    data-aos-duration="1000">
                     <div className="gdlr-core-page-builder-body">
                         <div
                             className="gdlr-core-pbf-wrapper  gdlr-core-wrapper-full-height gdlr-core-js gdlr-core-full-height-center"

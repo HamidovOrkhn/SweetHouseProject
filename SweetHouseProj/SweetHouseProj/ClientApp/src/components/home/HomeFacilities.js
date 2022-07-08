@@ -24,7 +24,7 @@ var HomeFacilities = /** @class */ (function (_super) {
     }
     HomeFacilities.prototype.render = function () {
         return (React.createElement(React.Fragment, null,
-            React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "50px 0px 200px 0px" }, id: "gdlr-core-wrapper-4" },
+            React.createElement("div", { className: "gdlr-core-pbf-wrapper", style: { padding: "50px 0px 200px 0px" }, id: "gdlr-core-wrapper-4", "data-aos": "zoom-out-right", "data-aos-duration": "2000" },
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap", style: { top: "-70px" } },
                     React.createElement("div", { className: "gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js", style: {

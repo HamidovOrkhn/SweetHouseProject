@@ -24,7 +24,7 @@ var HomeWelcome = /** @class */ (function (_super) {
     }
     HomeWelcome.prototype.render = function () {
         return (React.createElement(React.Fragment, null,
-            React.createElement("div", { className: "hotale-page-wrapper", id: "hotale-page-wrapper" },
+            React.createElement("div", { className: "hotale-page-wrapper", id: "hotale-page-wrapper", "data-aos": "fade-bottom", "data-aos-duration": "1000" },
                 React.createElement("div", { className: "gdlr-core-page-builder-body" },
                     React.createElement("div", { className: "gdlr-core-pbf-wrapper  gdlr-core-wrapper-full-height gdlr-core-js gdlr-core-full-height-center", style: {
                             margin: "0px",

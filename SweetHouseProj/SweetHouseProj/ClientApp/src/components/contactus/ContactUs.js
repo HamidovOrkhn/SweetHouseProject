@@ -43,7 +43,7 @@ var ContactUs = /** @class */ (function (_super) {
     };
     ContactUs.prototype.render = function () {
         return (React.createElement(React.Fragment, null,
-            React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "300px 0px 160px 0px" }, "data-skin": "white", id: "gdlr-core-wrapper-1" },
+            React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "300px 0px 160px 0px" }, "data-skin": "white", id: "gdlr-core-wrapper-1", "data-aos": "fade-bottom", "data-aos-duration": "1000" },
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap", style: { backgroundColor: "#0a0a0a" } },
                     React.createElement("div", { className: "gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js", style: {
                             backgroundImage: "url(".concat(require('../images/resort-title-bg.jpg'), ")"),

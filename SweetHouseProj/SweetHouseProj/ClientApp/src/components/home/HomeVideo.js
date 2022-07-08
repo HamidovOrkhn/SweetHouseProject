@@ -38,13 +38,13 @@ var HomeVideo = /** @class */ (function (_super) {
     };
     HomeVideo.prototype.render = function () {
         return (React.createElement(React.Fragment, null,
-            React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: {
+            React.createElement("div", { className: "gdlr-core-pbf-wrapper", style: {
                     margin: "-50px 0px 0px 0px",
                     padding: "258px 0px 258px 0px",
                     borderRadius: "0px 60px 0px 60px",
                     MozBorderRadius: "0px 60px 0px 60px",
                     WebkitBorderRadius: "0px 60px 0px 60px",
-                }, id: "gdlr-core-wrapper-5" },
+                }, id: "gdlr-core-wrapper-5", "data-aos": "zoom-in", "data-aos-duration": "2000" },
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap", style: {
                         borderRadius: "0px 60px 0px 60px",
                         MozBorderRadius: "0px 60px 0px 60px",

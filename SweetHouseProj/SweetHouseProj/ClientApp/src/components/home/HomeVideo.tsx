@@ -22,7 +22,7 @@ class HomeVideo extends React.Component<any, HomeVideoInitial> {
         return (
             <React.Fragment>
                 <div
-                    className="gdlr-core-pbf-wrapper "
+                    className="gdlr-core-pbf-wrapper"
                     style={{
                         margin: "-50px 0px 0px 0px",
                         padding: "258px 0px 258px 0px",
@@ -31,6 +31,8 @@ class HomeVideo extends React.Component<any, HomeVideoInitial> {
                         WebkitBorderRadius: "0px 60px 0px 60px",
                     }}
                     id="gdlr-core-wrapper-5"
+                    data-aos="zoom-in"
+                    data-aos-duration="2000"
                 >
                     <div
                         className="gdlr-core-pbf-background-wrap"

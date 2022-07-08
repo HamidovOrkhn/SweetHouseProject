@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "react-router-loading": "^1.0.0"
+    "framer-motion": "^6.4.1",
+    "react-intersection-observer": "^9.3.5",
+    "react-router-loading": "^1.0.0",
+    "react-scroll-motion": "^0.3.0"
   }
 }

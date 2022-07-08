@@ -10,6 +10,8 @@ class HotelCards extends React.Component {
                     className="gdlr-core-pbf-wrapper "
                     style={{ padding: "80px 0px 15px 0px" }}
                     id="gdlr-core-wrapper-3"
+                    data-aos="zoom-out"
+                    data-aos-duration="2000"
                 >
                     <div className="gdlr-core-pbf-background-wrap">
                         <div

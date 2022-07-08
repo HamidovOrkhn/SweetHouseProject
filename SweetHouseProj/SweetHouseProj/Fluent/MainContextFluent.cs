@@ -75,5 +75,14 @@ namespace SweetHouseProj.Fluent
                 builder.Property(T => T.Message).IsRequired().HasMaxLength(200);
             }
         }
+        public class BlogsFluent : IEntityTypeConfiguration<Blog>
+        {
+            public void Configure(EntityTypeBuilder<Blog> builder)
+            {
+                builder.Property(T => T.HeadText).IsRequired().HasMaxLength(200);
+                builder.Property(T => T.BodyText).IsRequired().HasMaxLength(2000);
+                builder.Property(T => T.BlogPicture).IsRequired().HasMaxLength(100);
+            }
+        }
     }
 }

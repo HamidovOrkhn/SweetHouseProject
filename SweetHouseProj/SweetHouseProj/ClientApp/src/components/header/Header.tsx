@@ -53,8 +53,7 @@ class Header extends React.Component {
                                                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15738" data-size={60}><a href="room-side-thumbnail/index.html">Room Side Thumbnail</a></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-15839 hotale-normal-menu"><a href="room-search/indexae75.html?room_amount=1&room-search=">Reservation</a></li>
-                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15617 hotale-normal-menu"><a href="blog-full-right-sidebar/index.html" className="sf-with-ul-pre sf-with-ul">Blog</a>
+                                        <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15617 hotale-normal-menu"><Link className="sf-with-ul-pre sf-with-ul" to="/blogs">Bloglar</Link>
                                             <ul className="sub-menu" style={{ display: 'none' }}>
                                                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15614" data-size={60}><a href="blog-3-columns-with-frame/index.html" className="sf-with-ul-pre sf-with-ul">Blog Columns</a>
                                                     <ul className="sub-menu" style={{ display: 'none' }}>

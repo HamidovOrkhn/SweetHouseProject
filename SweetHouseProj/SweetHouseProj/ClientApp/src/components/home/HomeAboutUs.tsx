@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
 import { InitialDataState } from '../../interfaces/home/HomeTypes';
 
-
 class HomeAboutUs extends React.Component<any, InitialDataState> {
     constructor(props: any) {
         super(props);
@@ -28,12 +27,16 @@ class HomeAboutUs extends React.Component<any, InitialDataState> {
         return (
             <React.Fragment>
                 <div
-                    className="gdlr-core-pbf-wrapper "
+                    className="gdlr-core-pbf-wrapper"
                     style={{ padding: "105px 0px 36px 0px" }}
                     id="gdlr-core-wrapper-2"
+                 
                 >
                     <div className="gdlr-core-pbf-background-wrap" />
-                    <div className="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                    <div className="gdlr-core-pbf-wrapper-content gdlr-core-js "
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >
                         <div className="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
                             <div
                                 className="gdlr-core-pbf-column gdlr-core-column-30 gdlr-core-column-first"
@@ -149,8 +152,8 @@ class HomeAboutUs extends React.Component<any, InitialDataState> {
                                     <div className="gdlr-core-pbf-background-wrap" />
                                     <div
                                         className="gdlr-core-pbf-column-content clearfix gdlr-core-js"
-                                        data-gdlr-animation-duration="600ms"
-                                        data-gdlr-animation-offset="0.8"
+                                        data-aos="fade-right"
+                                        data-aos-duration="2000"
                                         style={{}}
                                     >
                                         <div className="gdlr-core-pbf-element">

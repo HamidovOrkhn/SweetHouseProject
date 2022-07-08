@@ -17,7 +17,6 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_redux_1 = require("react-redux");
-var react_1 = require("swiper/react");
 require("swiper/css");
 var BlogList = /** @class */ (function (_super) {
     __extends(BlogList, _super);
@@ -40,7 +39,7 @@ var BlogList = /** @class */ (function (_super) {
     //}
     BlogList.prototype.render = function () {
         return (React.createElement("div", null,
-            React.createElement("div", { className: "gdlr-core-pbf-wrapper " },
+            React.createElement("div", { className: "gdlr-core-pbf-wrapper ", "data-aos": "fade-left", "data-aos-duration": "2000" },
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap", style: { top: "335px" } },
                     React.createElement("div", { className: "gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js", style: {
@@ -79,107 +78,7 @@ var BlogList = /** @class */ (function (_super) {
                                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
                                 React.createElement("div", { className: "gdlr-core-pbf-column-content clearfix gdlr-core-js", "data-gdlr-animation-duration": "600ms", "data-gdlr-animation-offset": "0.8", style: {} },
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
-                                        React.createElement("div", { className: "gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-image gdlr-core-item-pdlr", id: "gdlr-core-blog-1" },
-                                            React.createElement(react_1.Swiper, { spaceBetween: 10, slidesPerView: 3, onSlideChange: function () { return console.log('slide change'); }, onSwiper: function (swiper) { return console.log(swiper); } },
-                                                React.createElement(react_1.SwiperSlide, null,
-                                                    React.createElement("div", { className: "gdlr-core-item-mglr flex-with-active-class", style: {
-                                                            width: "386.667px",
-                                                            marginRight: "40px",
-                                                            float: "left",
-                                                            display: "block",
-                                                        } },
-                                                        React.createElement("div", { className: "gdlr-core-blog-modern  gdlr-core-with-image gdlr-core-hover-overlay-content gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover gdlr-core-style-1 gdlr-core-outer-frame-element", style: {
-                                                                borderWidth: "0px",
-                                                                borderRadius: "20px",
-                                                                MozBorderRadius: "20px",
-                                                                WebkitBorderRadius: "20px",
-                                                            } },
-                                                            React.createElement("div", { className: "gdlr-core-blog-modern-inner" },
-                                                                React.createElement("div", { className: "gdlr-core-blog-thumbnail gdlr-core-media-image" },
-                                                                    React.createElement("img", { src: require("../images/andrii-podilnyk-766487-unsplash-794x1024.jpg"), alt: "", width: 700, height: 990, title: "kelsey-roenau-608583-unsplash", draggable: "false" })),
-                                                                React.createElement("div", { className: "gdlr-core-blog-modern-content  gdlr-core-center-align", style: {
-                                                                        paddingRight: "40px",
-                                                                        paddingLeft: "40px",
-                                                                    } },
-                                                                    React.createElement("h3", { className: "gdlr-core-blog-title gdlr-core-skin-title", style: {
-                                                                            fontSize: "24px",
-                                                                            fontStyle: "normal",
-                                                                            fontWeight: 500,
-                                                                            letterSpacing: "0px",
-                                                                        } },
-                                                                        React.createElement("a", { href: "cities-to-visit-for-your-first-time-in-europe/index.html" }, "Cities To Visit For Your First Time In Europe")),
-                                                                    React.createElement("div", { className: "gdlr-core-blog-info-wrapper gdlr-core-skin-divider" },
-                                                                        React.createElement("span", { className: "gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date" },
-                                                                            React.createElement("span", { className: "gdlr-core-blog-info-sep" }, "\u2022"),
-                                                                            React.createElement("span", { className: "gdlr-core-head" },
-                                                                                React.createElement("i", { className: "gdlr-icon-clock" })),
-                                                                            React.createElement("a", { href: "2021/12/17/index.html" }, "Dec 17, 2021")))))))),
-                                                React.createElement(react_1.SwiperSlide, null,
-                                                    React.createElement("div", { className: "gdlr-core-item-mglr flex-with-active-class", style: {
-                                                            width: "386.667px",
-                                                            marginRight: "40px",
-                                                            float: "left",
-                                                            display: "block",
-                                                        } },
-                                                        React.createElement("div", { className: "gdlr-core-blog-modern  gdlr-core-with-image gdlr-core-hover-overlay-content gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover gdlr-core-style-1 gdlr-core-outer-frame-element", style: {
-                                                                borderWidth: "0px",
-                                                                borderRadius: "20px",
-                                                                MozBorderRadius: "20px",
-                                                                WebkitBorderRadius: "20px",
-                                                            } },
-                                                            React.createElement("div", { className: "gdlr-core-blog-modern-inner" },
-                                                                React.createElement("div", { className: "gdlr-core-blog-thumbnail gdlr-core-media-image" },
-                                                                    React.createElement("img", { src: require("../images/andrii-podilnyk-766487-unsplash-794x1024.jpg"), alt: "", width: 700, height: 990, title: "kelsey-roenau-608583-unsplash", draggable: "false" })),
-                                                                React.createElement("div", { className: "gdlr-core-blog-modern-content  gdlr-core-center-align", style: {
-                                                                        paddingRight: "40px",
-                                                                        paddingLeft: "40px",
-                                                                    } },
-                                                                    React.createElement("h3", { className: "gdlr-core-blog-title gdlr-core-skin-title", style: {
-                                                                            fontSize: "24px",
-                                                                            fontStyle: "normal",
-                                                                            fontWeight: 500,
-                                                                            letterSpacing: "0px",
-                                                                        } },
-                                                                        React.createElement("a", { href: "cities-to-visit-for-your-first-time-in-europe/index.html" }, "Cities To Visit For Your First Time In Europe")),
-                                                                    React.createElement("div", { className: "gdlr-core-blog-info-wrapper gdlr-core-skin-divider" },
-                                                                        React.createElement("span", { className: "gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date" },
-                                                                            React.createElement("span", { className: "gdlr-core-blog-info-sep" }, "\u2022"),
-                                                                            React.createElement("span", { className: "gdlr-core-head" },
-                                                                                React.createElement("i", { className: "gdlr-icon-clock" })),
-                                                                            React.createElement("a", { href: "2021/12/17/index.html" }, "Dec 17, 2021")))))))),
-                                                React.createElement(react_1.SwiperSlide, null,
-                                                    React.createElement("div", { className: "gdlr-core-item-mglr flex-with-active-class", style: {
-                                                            width: "386.667px",
-                                                            marginRight: "40px",
-                                                            float: "left",
-                                                            display: "block",
-                                                        } },
-                                                        React.createElement("div", { className: "gdlr-core-blog-modern  gdlr-core-with-image gdlr-core-hover-overlay-content gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover gdlr-core-style-1 gdlr-core-outer-frame-element", style: {
-                                                                borderWidth: "0px",
-                                                                borderRadius: "20px",
-                                                                MozBorderRadius: "20px",
-                                                                WebkitBorderRadius: "20px",
-                                                            } },
-                                                            React.createElement("div", { className: "gdlr-core-blog-modern-inner" },
-                                                                React.createElement("div", { className: "gdlr-core-blog-thumbnail gdlr-core-media-image" },
-                                                                    React.createElement("img", { src: require("../images/andrii-podilnyk-766487-unsplash-794x1024.jpg"), alt: "", width: 700, height: 990, title: "kelsey-roenau-608583-unsplash", draggable: "false" })),
-                                                                React.createElement("div", { className: "gdlr-core-blog-modern-content  gdlr-core-center-align", style: {
-                                                                        paddingRight: "40px",
-                                                                        paddingLeft: "40px",
-                                                                    } },
-                                                                    React.createElement("h3", { className: "gdlr-core-blog-title gdlr-core-skin-title", style: {
-                                                                            fontSize: "24px",
-                                                                            fontStyle: "normal",
-                                                                            fontWeight: 500,
-                                                                            letterSpacing: "0px",
-                                                                        } },
-                                                                        React.createElement("a", { href: "cities-to-visit-for-your-first-time-in-europe/index.html" }, "Cities To Visit For Your First Time In Europe")),
-                                                                    React.createElement("div", { className: "gdlr-core-blog-info-wrapper gdlr-core-skin-divider" },
-                                                                        React.createElement("span", { className: "gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date" },
-                                                                            React.createElement("span", { className: "gdlr-core-blog-info-sep" }, "\u2022"),
-                                                                            React.createElement("span", { className: "gdlr-core-head" },
-                                                                                React.createElement("i", { className: "gdlr-icon-clock" })),
-                                                                            React.createElement("a", { href: "2021/12/17/index.html" }, "Dec 17, 2021")))))))))))))),
+                                        React.createElement("div", { className: "gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-image gdlr-core-item-pdlr", id: "gdlr-core-blog-1" }))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first", id: "gdlr-core-column-30" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "35px 0px 85px 0px" } },
                                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),

@@ -6,9 +6,12 @@ class HomeFacilities extends React.Component {
         return (
             <React.Fragment>
                 <div
-                    className="gdlr-core-pbf-wrapper "
+                    className="gdlr-core-pbf-wrapper"
                     style={{ padding: "50px 0px 200px 0px" }}
                     id="gdlr-core-wrapper-4"
+                    data-aos="zoom-out-right"
+                    data-aos-duration="2000"
+                  
                 >
                     <div className="gdlr-core-pbf-background-wrap" />
                     <div className="gdlr-core-pbf-background-wrap" style={{ top: "-70px" }}>

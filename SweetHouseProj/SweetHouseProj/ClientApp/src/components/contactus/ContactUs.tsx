@@ -33,6 +33,8 @@ class ContactUs extends React.Component<any, ContactUsInitial> {
                     style={{ padding: "300px 0px 160px 0px" }}
                     data-skin="white"
                     id="gdlr-core-wrapper-1"
+                    data-aos="fade-bottom"
+                    data-aos-duration="1000"
                 >
                     <div
                         className="gdlr-core-pbf-background-wrap"

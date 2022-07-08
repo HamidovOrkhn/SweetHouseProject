@@ -18,7 +18,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_redux_1 = require("react-redux");
 require("swiper/css");
-var mdbreact_1 = require("mdbreact");
 var Posts_1 = require("./Posts");
 var PostsSlider = /** @class */ (function (_super) {
     __extends(PostsSlider, _super);
@@ -38,7 +37,7 @@ var PostsSlider = /** @class */ (function (_super) {
         });
     };
     PostsSlider.prototype.render = function () {
-        return (React.createElement("div", { className: "gdlr-core-pbf-wrapper ", id: "gdlr-core-wrapper-9" },
+        return (React.createElement("div", { className: "gdlr-core-pbf-wrapper ", id: "gdlr-core-wrapper-9", "data-aos": "fade-right", "data-aos-duration": "2000" },
             React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
             React.createElement("div", { className: "gdlr-core-pbf-background-wrap", style: { top: "120px" } },
                 React.createElement("div", { className: "gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js", style: {
@@ -79,9 +78,7 @@ var PostsSlider = /** @class */ (function (_super) {
                                                 color: "#000000",
                                                 textTransform: "uppercase",
                                             } },
-                                            React.createElement("span", { className: "gdlr-core-content" },
-                                                React.createElement(mdbreact_1.MDBIcon, { fab: true, icon: "instagram" }),
-                                                "Bizi Instagramdan takip edin")))))))))));
+                                            React.createElement("span", { className: "gdlr-core-content" }, "Bizi Instagramdan takip edin")))))))))));
     };
     return PostsSlider;
 }(React.Component));

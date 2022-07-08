@@ -42,10 +42,13 @@
   <ItemGroup>
     <None Remove="ClientApp\public\assets\layout\mapinit.ts" />
     <None Remove="ClientApp\src\components\aboutus\AboutUs.tsx" />
+    <None Remove="ClientApp\src\components\blogs\Blogs.tsx" />
+    <None Remove="ClientApp\src\components\blogs\BlogsDetails.tsx" />
     <None Remove="ClientApp\src\components\contactus\ContactUs.tsx" />
     <None Remove="ClientApp\src\components\foot\Footer.tsx" />
     <None Remove="ClientApp\src\components\header\Header.tsx" />
     <None Remove="ClientApp\src\components\home\BlogList.tsx" />
+    <None Remove="ClientApp\src\components\home\BlogSlider.tsx" />
     <None Remove="ClientApp\src\components\home\Cards.tsx" />
     <None Remove="ClientApp\src\components\home\HomeAboutUs.tsx" />
     <None Remove="ClientApp\src\components\home\HomeFacilities.tsx" />
@@ -56,6 +59,7 @@
     <None Remove="ClientApp\src\components\rooms\Pagination.tsx" />
     <None Remove="ClientApp\src\components\rooms\RoomDetails.tsx" />
     <None Remove="ClientApp\src\components\rooms\Rooms.tsx" />
+    <None Remove="ClientApp\src\interfaces\blog\BlogTypes.ts" />
     <None Remove="ClientApp\src\interfaces\contactus\ContactUsTypes.ts" />
     <None Remove="ClientApp\src\interfaces\home\GlobalTypes.ts" />
     <None Remove="ClientApp\src\interfaces\home\HomeTypes.ts" />

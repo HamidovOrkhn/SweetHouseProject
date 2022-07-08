@@ -18,6 +18,7 @@ namespace SweetHouseProj.Data
         public DbSet<HomeVideo> HomeVideos { get; set; }
         public DbSet<ContactUs> ContactUs { get; set; }
         public DbSet<ContactUsList> ContactUsLists { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
