@@ -4,21 +4,8 @@ import { RouteComponentProps } from 'react-router';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { CardsState } from '../../interfaces/home/HomeTypes';
+import BlogSlider from './BlogSlider';
 class BlogList extends React.Component {
-    //constructor(props: any) {
-    //    super(props);
-    //    this.state = {
-    //        data: []
-    //    };
-    //}
-    //componentDidMount() {
-    //    fetch('/api/home/rooms').then((response) => {
-    //        return response.json();
-    //    }).then((data) => {
-    //        this.setState({ data: data });
-    //        console.log(this.state.data)
-    //    })
-    //}
     public render() {
         return (
             <div>
@@ -112,7 +99,7 @@ class BlogList extends React.Component {
                                                 className="gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-image gdlr-core-item-pdlr"
                                                 id="gdlr-core-blog-1"
                                             >
-                                                
+                                                <BlogSlider/>
                                             </div>
                                         </div>
                                     </div>

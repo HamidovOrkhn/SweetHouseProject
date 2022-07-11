@@ -1,7 +1,9 @@
 ﻿export interface BlogDetails {
     data: BlogDetailsInitial
 }
-
+export interface BlogsInitial {
+    data: BlogDetailsInitial[]
+}
 export interface BlogDetailsInitial {
     id:number,
     headText: string,

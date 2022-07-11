@@ -18,25 +18,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_redux_1 = require("react-redux");
 require("swiper/css");
+var BlogSlider_1 = require("./BlogSlider");
 var BlogList = /** @class */ (function (_super) {
     __extends(BlogList, _super);
     function BlogList() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    //constructor(props: any) {
-    //    super(props);
-    //    this.state = {
-    //        data: []
-    //    };
-    //}
-    //componentDidMount() {
-    //    fetch('/api/home/rooms').then((response) => {
-    //        return response.json();
-    //    }).then((data) => {
-    //        this.setState({ data: data });
-    //        console.log(this.state.data)
-    //    })
-    //}
     BlogList.prototype.render = function () {
         return (React.createElement("div", null,
             React.createElement("div", { className: "gdlr-core-pbf-wrapper ", "data-aos": "fade-left", "data-aos-duration": "2000" },
@@ -78,7 +65,8 @@ var BlogList = /** @class */ (function (_super) {
                                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
                                 React.createElement("div", { className: "gdlr-core-pbf-column-content clearfix gdlr-core-js", "data-gdlr-animation-duration": "600ms", "data-gdlr-animation-offset": "0.8", style: {} },
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
-                                        React.createElement("div", { className: "gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-image gdlr-core-item-pdlr", id: "gdlr-core-blog-1" }))))),
+                                        React.createElement("div", { className: "gdlr-core-blog-item gdlr-core-item-pdb clearfix  gdlr-core-style-blog-image gdlr-core-item-pdlr", id: "gdlr-core-blog-1" },
+                                            React.createElement(BlogSlider_1.default, null)))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first", id: "gdlr-core-column-30" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "35px 0px 85px 0px" } },
                                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),

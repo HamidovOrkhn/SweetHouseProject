@@ -53,6 +53,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_redux_1 = require("react-redux");
+var BlogSlider_1 = require("../home/BlogSlider");
 var BlogsDetails = /** @class */ (function (_super) {
     __extends(BlogsDetails, _super);
     function BlogsDetails(props) {
@@ -151,7 +152,8 @@ var BlogsDetails = /** @class */ (function (_super) {
                                             React.createElement("div", { className: "gdlr-core-pbf-column-content clearfix gdlr-core-js " },
                                                 React.createElement("div", { className: "gdlr-core-pbf-element" },
                                                     React.createElement("div", { className: "gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align" },
-                                                        React.createElement("div", { className: "gdlr-core-divider-line gdlr-core-skin-divider" }))))))))))))));
+                                                        React.createElement("div", { className: "gdlr-core-divider-line gdlr-core-skin-divider" }))))))),
+                                React.createElement(BlogSlider_1.default, null))))))));
     };
     return BlogsDetails;
 }(React.Component));

@@ -26,6 +26,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.3.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.3.1" />
@@ -73,6 +74,17 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\components\foot\Footer.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\SweetHouseAdmin\Data\" />
+    <Folder Include="Areas\SweetHouseAdmin\Models\" />
+    <Folder Include="ClientApp\public\locales\en\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\SweetHouseAdmin\Views\Shared\_AdminValidationPartial.cshtml" />
+    <None Include="Areas\SweetHouseAdmin\Views\Shared\_Layout.cshtml" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

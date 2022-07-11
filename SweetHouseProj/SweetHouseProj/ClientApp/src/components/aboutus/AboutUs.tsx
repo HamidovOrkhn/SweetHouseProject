@@ -2,7 +2,7 @@
 import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
 import { InitialDataState } from '../../interfaces/home/HomeTypes';
-class AboutUs extends React.Component < any, InitialDataState > {
+class AboutUs extends React.Component <any, InitialDataState > {
     constructor(props: any) {
         super(props);
         this.state = {
@@ -38,8 +38,7 @@ class AboutUs extends React.Component < any, InitialDataState > {
                             </div>
                         </div>
                     </div>{" "}
-                <div className="hotale-page-wrapper" id="hotale-page-wrapper" data-aos="fade-bottom"
-                    data-aos-duration="1000">
+                    <div className="hotale-page-wrapper" id="hotale-page-wrapper">
                         <div className="gdlr-core-page-builder-body">
                             <div
                                 className="gdlr-core-pbf-wrapper "

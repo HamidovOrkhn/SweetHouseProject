@@ -29,11 +29,12 @@ namespace SweetHouseProj
             services.AddControllersWithViews().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
             services.AddRouting(options => options.LowercaseUrls = true);
+            services.AddMvc();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Azerishiq OSOS Services",
+                    Title = "SweetHouse App Services",
                     Version = "v1",
                     Contact = new OpenApiContact
                     {
@@ -80,8 +81,24 @@ namespace SweetHouseProj
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+
+                
             });
 
+            app.Map("/admin", admin =>
+            {
+                admin.UseRouting();
+
+                admin.UseEndpoints(endpoints =>
+                {
+                    endpoints.MapControllerRoute(
+                                      name: "areas",
+                                      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                                    );
+
+                });
+
+            });
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = "ClientApp";

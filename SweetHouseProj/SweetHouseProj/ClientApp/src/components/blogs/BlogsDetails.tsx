@@ -2,6 +2,7 @@
 import { connect } from 'react-redux';
 import parse from "html-react-parser";
 import { BlogDetails } from '../../interfaces/blog/BlogTypes';
+import BlogSlider from '../home/BlogSlider';
 class BlogsDetails extends React.Component<any, BlogDetails> {
     constructor(props: any) {
         super(props);
@@ -175,114 +176,12 @@ class BlogsDetails extends React.Component<any, BlogDetails> {
                                             </div>
                                         </div>
                                     </div>
+                                    <BlogSlider />
                                 </div>
                                
                             </div>
                         </div>
-                     
-                        {/*<div*/}
-                        {/*    className="gdlr-core-pbf-wrapper "*/}
-                        {/*    style={{ padding: "20px 0px 0px 0px" }}*/}
-                        {/*>*/}
-                        {/*    <div className="gdlr-core-pbf-background-wrap" />*/}
-                        {/*    <div className="gdlr-core-pbf-wrapper-content gdlr-core-js ">*/}
-                        {/*        <div className="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">*/}
-                        {/*            <div*/}
-                        {/*                className="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first"*/}
-                        {/*                id="gdlr-core-column-27"*/}
-                        {/*            >*/}
-                        {/*                <div*/}
-                        {/*                    className="gdlr-core-pbf-column-content-margin gdlr-core-js "*/}
-                        {/*                    style={{ margin: "0px 0px 0px 0px", padding: "30px 0px 0px 0px" }}*/}
-                        {/*                >*/}
-                        {/*                    <div className="gdlr-core-pbf-background-wrap" />*/}
-                        {/*                    <div className="gdlr-core-pbf-column-content clearfix gdlr-core-js ">*/}
-                        {/*                        <div className="gdlr-core-pbf-element">*/}
-                        {/*                            <div*/}
-                        {/*                                className="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr"*/}
-                        {/*                                style={{ paddingBottom: "60px" }}*/}
-                        {/*                            >*/}
-                        {/*                                <div className="gdlr-core-title-item-title-wrap ">*/}
-                        {/*                                    <h3*/}
-                        {/*                                        className="gdlr-core-title-item-title gdlr-core-skin-title  class-test"*/}
-                        {/*                                        style={{*/}
-                        {/*                                            fontSize: "31px",*/}
-                        {/*                                            fontWeight: 500,*/}
-                        {/*                                            letterSpacing: "0px",*/}
-                        {/*                                            textTransform: "none",*/}
-                        {/*                                        }}*/}
-                        {/*                                    >*/}
-                        {/*                                        More Rooms*/}
-                        {/*                                        <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />*/}
-                        {/*                                    </h3>*/}
-                        {/*                                </div>*/}
-                        {/*                            </div>*/}
-                        {/*                        </div>*/}
-                        {/*                    </div>*/}
-                        {/*                </div>*/}
-                        {/*            </div>*/}
-                        {/*            <div*/}
-                        {/*                className="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first"*/}
-                        {/*                id="gdlr-core-column-28"*/}
-                        {/*            >*/}
-                        {/*                <div*/}
-                        {/*                    className="gdlr-core-pbf-column-content-margin gdlr-core-js "*/}
-                        {/*                    style={{ padding: "0px 0px 20px 0px" }}*/}
-                        {/*                >*/}
-                        {/*                    <div className="gdlr-core-pbf-background-wrap" />*/}
-                        {/*                    <div className="gdlr-core-pbf-column-content clearfix gdlr-core-js ">*/}
-                        {/*                        <div className="gdlr-core-pbf-element">*/}
-                        {/*                            <div*/}
-                        {/*                                className="tourmaster-room-item clearfix  tourmaster-room-item-style-grid"*/}
-                        {/*                                id="gdlr-core-room-1"*/}
-                        {/*                            >*/}
-                        {/*                                <div*/}
-                        {/*                                    className="gdlr-core-flexslider flexslider gdlr-core-js-2 "*/}
-                        {/*                                    data-type="carousel"*/}
-                        {/*                                    data-column={3}*/}
-                        {/*                                    data-move={1}*/}
-                        {/*                                    data-nav="navigation-outer"*/}
-                        {/*                                    data-nav-parent="self"*/}
-                        {/*                                    data-vcenter-nav={1}*/}
-                        {/*                                >*/}
-                        {/*                                    <div*/}
-                        {/*                                        className="flex-viewport"*/}
-                        {/*                                        style={{ overflow: "hidden", position: "relative" }}*/}
-                        {/*                                    >*/}
-                        {/*                                        <Cards />*/}
-                        {/*                                    </div>*/}
-                        {/*                                    <div*/}
-                        {/*                                        className="gdlr-core-flexslider-custom-nav  gdlr-core-style-navigation-outer gdlr-core-center-align"*/}
-                        {/*                                        style={{ marginTop: "-60px" }}*/}
-                        {/*                                    >*/}
-                        {/*                                        <i*/}
-                        {/*                                            className="icon-arrow-left flex-prev"*/}
-                        {/*                                            style={{*/}
-                        {/*                                                color: "rgb(196, 196, 196)",*/}
-                        {/*                                                fontSize: "34px",*/}
-                        {/*                                                left: "-90px",*/}
-                        {/*                                                marginTop: "-247.562px",*/}
-                        {/*                                            }}*/}
-                        {/*                                        />*/}
-                        {/*                                        <i*/}
-                        {/*                                            className="icon-arrow-right flex-next"*/}
-                        {/*                                            style={{*/}
-                        {/*                                                color: "rgb(196, 196, 196)",*/}
-                        {/*                                                fontSize: "34px",*/}
-                        {/*                                                right: "-90px",*/}
-                        {/*                                                marginTop: "-247.562px",*/}
-                        {/*                                            }}*/}
-                        {/*                                        />*/}
-                        {/*                                    </div>*/}
-                        {/*                                </div>*/}
-                        {/*                            </div>*/}
-                        {/*                        </div>*/}
-                        {/*                    </div>*/}
-                        {/*                </div>*/}
-                        {/*            </div>*/}
-                        {/*        </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
+                       
                     </div>
                 </div>
 

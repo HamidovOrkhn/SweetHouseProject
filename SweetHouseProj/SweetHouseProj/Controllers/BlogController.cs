@@ -37,7 +37,15 @@ namespace SweetHouseProj.Controllers
         [HttpGet("[action]")]
         public IActionResult BlogSection()
         {
-            List<Blog> blogs = _db.Blogs.OrderByDescending(a => a.Id).Take(5).ToList();
+            var blogs = _db.Blogs.OrderByDescending(a => a.Id).Take(5).Select(a => new
+            {
+                Id = a.Id,
+                BlogPicture = a.BlogPicture,
+                BodyText = a.BodyText,
+                CreatedDate = a.CreatedDate.ToString("yyyy.MM.dd"),
+                HeadText = a.HeadText,
+                UpdatedDate = a.UpdatedDate.ToString("yyyy.MM.dd")
+            }).ToList();
             return StatusCode(200, blogs);
         }
         [HttpGet("[action]")]
