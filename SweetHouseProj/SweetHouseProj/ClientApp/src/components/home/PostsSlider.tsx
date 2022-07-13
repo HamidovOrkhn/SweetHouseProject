@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MDBIcon } from 'mdbreact';
 import Posts from './Posts';
 import { HomePicturesInitial } from '../../interfaces/home/HomeTypes';
+import { withTranslation } from 'react-i18next';
 class PostsSlider extends React.Component<any, HomePicturesInitial> {
     constructor(props: any) {
         super(props);
@@ -109,7 +110,7 @@ class PostsSlider extends React.Component<any, HomePicturesInitial> {
                                                 }}
                                             >
                                                 <span className="gdlr-core-content">
-                                                    Bizi Instagramdan takip edin
+                                                    {this.props.t("homepictures_footlink")}
                                                 </span>
                                             </a>
                                         </div>
@@ -123,4 +124,4 @@ class PostsSlider extends React.Component<any, HomePicturesInitial> {
         )
     }
 }
-export default connect()(PostsSlider);
+export default withTranslation()(PostsSlider);

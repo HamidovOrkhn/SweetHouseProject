@@ -1,4 +1,5 @@
 ﻿import * as React from 'react';
+import { withTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -44,7 +45,7 @@ class Blogs extends React.Component<any, InitialState<BlogDetailsInitial[]>> {
                     <div className="hotale-page-title-overlay" />
                     <div className="hotale-page-title-container hotale-container">
                         <div className="hotale-page-title-content hotale-item-pdlr">
-                            <h1 className="hotale-page-title">Bloglar</h1>
+                            <h1 className="hotale-page-title">{this.props.t("blogs_title")}</h1>
                         </div>
                     </div>
                 </div>{" "}
@@ -141,4 +142,4 @@ class Blogs extends React.Component<any, InitialState<BlogDetailsInitial[]>> {
     }
 }
 
-export default connect()(Blogs);
+export default withTranslation()(Blogs);

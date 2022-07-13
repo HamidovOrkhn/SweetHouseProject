@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import logo from '../images/logo2.png';
 import { RouteComponentProps } from 'react-router';
 import ContactUsInitial from '../../interfaces/contactus/ContactUsTypes';
+import { withTranslation } from 'react-i18next';
 
 
 class Footer extends React.PureComponent<any, ContactUsInitial> {
@@ -199,7 +200,7 @@ class Footer extends React.PureComponent<any, ContactUsInitial> {
                             {/*    </div>*/}
                             {/*</div>*/}
                             <div className="hotale-copyright-right hotale-item-pdlr">
-                                Copyright © GoodLayers. All Rights Reserved.
+                                {this.props.t("footer_foot")}
                             </div>
                         </div>
                     </div>
@@ -209,4 +210,4 @@ class Footer extends React.PureComponent<any, ContactUsInitial> {
     }
 };
 
-export default connect()(Footer);
+export default withTranslation()(Footer);

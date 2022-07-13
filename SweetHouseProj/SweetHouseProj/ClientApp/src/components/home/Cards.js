@@ -16,10 +16,10 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
 var react_1 = require("swiper/react");
 require("swiper/css");
 var react_router_dom_1 = require("react-router-dom");
+var react_i18next_1 = require("react-i18next");
 var Cards = /** @class */ (function (_super) {
     __extends(Cards, _super);
     function Cards(props) {
@@ -39,6 +39,7 @@ var Cards = /** @class */ (function (_super) {
         });
     };
     Cards.prototype.render = function () {
+        var _this = this;
         return (React.createElement("div", null,
             React.createElement(react_1.Swiper, { spaceBetween: 10, slidesPerView: 3, onSlideChange: function () { return console.log('slide change'); }, onSwiper: function (swiper) { return console.log(swiper); } }, this.state.data.map(function (value, index) {
                 return (React.createElement(react_1.SwiperSlide, { key: index },
@@ -68,7 +69,8 @@ var Cards = /** @class */ (function (_super) {
                                         React.createElement("span", { className: "tourmaster-price" }, value.name),
                                         React.createElement("span", { className: "tourmaster-tail" },
                                             " ",
-                                            "/ Gec\u0259si"))),
+                                            "/ ",
+                                            _this.props.t("global_card_namecomponent")))),
                                 React.createElement("div", { className: "tourmaster-room-content-wrap gdlr-core-skin-e-background gdlr-core-js ", "data-sync-height": "room-item-53", style: {
                                         paddingTop: "45px",
                                         paddingBottom: "40px",
@@ -81,18 +83,20 @@ var Cards = /** @class */ (function (_super) {
                                             React.createElement("i", { className: "gdlr-icon-double-bed2" }),
                                             React.createElement("span", { className: "tourmaster-tail" },
                                                 value.bedCount,
-                                                " \u018Fd\u0259d \u00C7arpay\u0131")),
+                                                " ",
+                                                _this.props.t("global_card_bed"))),
                                         React.createElement("div", { className: "tourmaster-info tourmaster-info-guest-amount" },
                                             React.createElement("i", { className: "gdlr-icon-group" }),
                                             React.createElement("span", { className: "tourmaster-tail" },
                                                 value.maxGuest,
-                                                " N\u0259f\u0259r"))),
+                                                " ",
+                                                _this.props.t("global_card_guest")))),
                                     React.createElement(react_router_dom_1.Link, { className: "tourmaster-read-more tourmaster-type-text", to: "/rooms/details/" + value.id },
-                                        "Rezerv",
+                                        _this.props.t("global_card_button"),
                                         React.createElement("i", { className: "icon-arrow-right" }))))))));
             }))));
     };
     return Cards;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(Cards);
+exports.default = (0, react_i18next_1.withTranslation)()(Cards);
 //# sourceMappingURL=Cards.js.map

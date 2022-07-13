@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
+var react_i18next_1 = require("react-i18next");
 var Footer = /** @class */ (function (_super) {
     __extends(Footer, _super);
     function Footer(props) {
@@ -110,10 +110,10 @@ var Footer = /** @class */ (function (_super) {
                                         React.createElement("img", { loading: "lazy", src: require("../images/footer-cards.png"), alt: "", className: "wp-image-15005", width: "154", height: "26", srcSet: require("../images/footer-cards.png"), sizes: "(max-width: 154px) 100vw, 154px" }))))))),
                 React.createElement("div", { className: "hotale-copyright-wrapper" },
                     React.createElement("div", { className: "hotale-copyright-container hotale-container clearfix" },
-                        React.createElement("div", { className: "hotale-copyright-right hotale-item-pdlr" }, "Copyright \u00A9 GoodLayers. All Rights Reserved."))))));
+                        React.createElement("div", { className: "hotale-copyright-right hotale-item-pdlr" }, this.props.t("footer_foot")))))));
     };
     return Footer;
 }(React.PureComponent));
 ;
-exports.default = (0, react_redux_1.connect)()(Footer);
+exports.default = (0, react_i18next_1.withTranslation)()(Footer);
 //# sourceMappingURL=Footer.js.map

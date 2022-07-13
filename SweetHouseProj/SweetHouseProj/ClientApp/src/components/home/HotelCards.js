@@ -16,8 +16,9 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
 var Cards_1 = require("./Cards");
+var i18n_1 = require("../../i18n");
+var react_i18next_1 = require("react-i18next");
 var HotelCards = /** @class */ (function (_super) {
     __extends(HotelCards, _super);
     function HotelCards() {
@@ -48,7 +49,7 @@ var HotelCards = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#000000",
                                                     } },
-                                                    "Otaqlar.",
+                                                    this.props.t("homerooms_head"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" }))))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align gdlr-core-no-p-space", style: { paddingBottom: "0px" } },
@@ -59,7 +60,7 @@ var HotelCards = /** @class */ (function (_super) {
                                                     textTransform: "none",
                                                     color: "#898989",
                                                 } },
-                                                React.createElement("p", null, "Siz burada \u015F\u0259h\u0259r s\u0259s-k\u00FCy\u00FCnd\u0259n uzaqda \u0259sl istirah\u0259tinizi tapacaqs\u0131n\u0131z"))))))),
+                                                React.createElement("p", null, this.props.t("homerooms_title")))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first", id: "gdlr-core-column-6" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "0px 0px 0px 0px" } },
                                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
@@ -68,7 +69,8 @@ var HotelCards = /** @class */ (function (_super) {
                                         React.createElement("div", { className: "tourmaster-room-item clearfix  tourmaster-room-item-style-grid", id: "gdlr-core-room-1" },
                                             React.createElement("div", { className: "gdlr-core-flexslider flexslider gdlr-core-js-2 gdlr-core-with-outer-frame-element", "data-type": "carousel", "data-column": 3, "data-move": 1, "data-nav": "navigation-outer", "data-nav-parent": "self", "data-vcenter-nav": 1 },
                                                 React.createElement("div", { className: "flex-viewport", style: { overflow: "hidden", position: "relative" } },
-                                                    React.createElement(Cards_1.default, null)),
+                                                    React.createElement(react_i18next_1.I18nextProvider, { i18n: i18n_1.default },
+                                                        React.createElement(Cards_1.default, null))),
                                                 React.createElement("div", { className: "gdlr-core-flexslider-custom-nav  gdlr-core-style-navigation-outer gdlr-core-center-align", style: { marginTop: "-20px" } },
                                                     React.createElement("i", { className: "icon-arrow-left flex-prev", style: {
                                                             color: "rgb(181, 181, 181)",
@@ -103,10 +105,10 @@ var HotelCards = /** @class */ (function (_super) {
                                                     borderColor: "#dadada",
                                                 } },
                                                 React.createElement("span", { className: "gdlr-core-content" },
-                                                    "B\u00FCt\u00FCn Otaqlar\u0131m\u0131z",
+                                                    this.props.t("homerooms_footlink"),
                                                     React.createElement("i", { className: "gdlr-core-pos-right icon-arrow-right", style: { fontSize: "16px", color: "#000000" } })))))))))))));
     };
     return HotelCards;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(HotelCards);
+exports.default = (0, react_i18next_1.withTranslation)()(HotelCards);
 //# sourceMappingURL=HotelCards.js.map

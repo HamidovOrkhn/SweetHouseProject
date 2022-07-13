@@ -1,8 +1,8 @@
 ﻿import * as React from 'react';
+import { withTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
-//import background from "../images/home-resort-hero-bg.jpg";
 import { RouteComponentProps } from 'react-router';
-class HomeWelcome extends React.Component {
+class HomeWelcome extends React.Component<any,any> {
     public render() {
         return (
             <React.Fragment>
@@ -104,7 +104,7 @@ class HomeWelcome extends React.Component {
                                                                 color: "#ffffff",
                                                             }}
                                                         >
-                                                            <p>İstirahətinizi bizlə keçirin</p>
+                                                            <p>{this.props.t('homewelcome_title')}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1328,4 +1328,4 @@ class HomeWelcome extends React.Component {
     }
 }
 
-export default connect()(HomeWelcome);
+export default withTranslation()(HomeWelcome); //connect()

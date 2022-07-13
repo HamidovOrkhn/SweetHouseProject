@@ -80,6 +80,7 @@
     <Folder Include="Areas\SweetHouseAdmin\Data\" />
     <Folder Include="Areas\SweetHouseAdmin\Models\" />
     <Folder Include="ClientApp\public\locales\en\" />
+    <Folder Include="Content\" />
   </ItemGroup>
 
   <ItemGroup>

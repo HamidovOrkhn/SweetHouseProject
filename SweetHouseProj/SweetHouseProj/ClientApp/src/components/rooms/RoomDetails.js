@@ -52,10 +52,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
 var html_react_parser_1 = require("html-react-parser");
 var Posts_1 = require("../home/Posts");
 var Cards_1 = require("../home/Cards");
+var react_i18next_1 = require("react-i18next");
 var RoomDetails = /** @class */ (function (_super) {
     __extends(RoomDetails, _super);
     function RoomDetails(props) {
@@ -98,7 +98,7 @@ var RoomDetails = /** @class */ (function (_super) {
                 React.createElement("div", { className: "hotale-page-title-overlay" }),
                 React.createElement("div", { className: "hotale-page-title-container hotale-container" },
                     React.createElement("div", { className: "hotale-page-title-content hotale-item-pdlr" },
-                        React.createElement("h1", { className: "hotale-page-title" }, "Ota\u011F Detal\u0131")))),
+                        React.createElement("h1", { className: "hotale-page-title" }, this.props.t("roomdetails_head"))))),
             " ",
             React.createElement("div", { className: "hotale-page-wrapper", id: "hotale-page-wrapper" },
                 React.createElement("div", { className: "gdlr-core-page-builder-body" },
@@ -128,14 +128,15 @@ var RoomDetails = /** @class */ (function (_super) {
                                                 React.createElement("div", { className: "gdlr-core-pbf-element" },
                                                     React.createElement("div", { className: "tourmaster-room-title-item tourmaster-item-mglr tourmaster-item-pdb clearfix", style: { paddingBottom: "35px" } },
                                                         React.createElement("h3", { className: "tourmaster-room-title-item-title" }, this.state.data.name),
-                                                        React.createElement("div", { className: "tourmaster-room-title-item-caption" }, "Otaq Haqq\u0131nda"),
+                                                        React.createElement("div", { className: "tourmaster-room-title-item-caption" }, this.props.t("roomdetails_title")),
                                                         React.createElement("div", { className: "tourmaster-room-title-price" },
                                                             React.createElement("div", { className: "tourmaster-head" },
                                                                 React.createElement("span", { className: "tourmaster-price" },
-                                                                    "G\u00FCnl\u00FCk ",
+                                                                    this.props.t("roomdetails_pricecomponent"),
+                                                                    " ",
                                                                     this.state.data.price,
                                                                     " AZN")),
-                                                            React.createElement("div", { className: "tourmaster-tail" }, "Qiym\u0259t/Gec\u0259lik")))),
+                                                            React.createElement("div", { className: "tourmaster-tail" }, this.props.t("roomdetails_daycomponent"))))),
                                                 React.createElement("div", { className: "gdlr-core-pbf-element" },
                                                     React.createElement("div", { className: "gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align" },
                                                         React.createElement("div", { className: "gdlr-core-divider-line gdlr-core-skin-divider" })))))),
@@ -158,7 +159,7 @@ var RoomDetails = /** @class */ (function (_super) {
                                                                         fontSize: "19px",
                                                                         fontWeight: 600,
                                                                         textTransform: "none",
-                                                                    } }, "Yataq Say\u0131"),
+                                                                    } }, this.props.t("roomdetails_bed_head")),
                                                                 React.createElement("div", { className: "gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption", style: {
                                                                         fontSize: "17px",
                                                                         fontWeight: 500,
@@ -166,7 +167,8 @@ var RoomDetails = /** @class */ (function (_super) {
                                                                         marginTop: "0px",
                                                                     } },
                                                                     this.state.data.bedCount,
-                                                                    " \u018Fd\u0259d \u00C7arpay\u0131")))))))),
+                                                                    " ",
+                                                                    this.props.t("roomdetails_bed_body"))))))))),
                                     React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-20", id: "gdlr-core-column-3" },
                                         React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js " },
                                             React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
@@ -186,7 +188,7 @@ var RoomDetails = /** @class */ (function (_super) {
                                                                         fontSize: "19px",
                                                                         fontWeight: 600,
                                                                         textTransform: "none",
-                                                                    } }, "Max Say"),
+                                                                    } }, this.props.t("roomdetails_person_head")),
                                                                 React.createElement("div", { className: "gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption", style: {
                                                                         fontSize: "17px",
                                                                         fontWeight: 500,
@@ -194,7 +196,8 @@ var RoomDetails = /** @class */ (function (_super) {
                                                                         marginTop: "0px",
                                                                     } },
                                                                     this.state.data.maxGuest,
-                                                                    " N\u0259f\u0259rlik")))))))),
+                                                                    " ",
+                                                                    this.props.t("roomdetails_person_body"))))))))),
                                     React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-20" },
                                         React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js " },
                                             React.createElement("div", { className: "gdlr-core-pbf-column-content clearfix gdlr-core-js " }))),
@@ -217,7 +220,7 @@ var RoomDetails = /** @class */ (function (_super) {
                                                                         fontSize: "19px",
                                                                         fontWeight: 600,
                                                                         textTransform: "none",
-                                                                    } }, "Otaq Geni\u015Fliyi"),
+                                                                    } }, this.props.t("roomdetails_room_head")),
                                                                 React.createElement("div", { className: "gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption", style: {
                                                                         fontSize: "17px",
                                                                         fontWeight: 500,
@@ -225,7 +228,8 @@ var RoomDetails = /** @class */ (function (_super) {
                                                                         marginTop: "0px",
                                                                     } },
                                                                     this.state.data.roomSpace,
-                                                                    " kv/m")))))))),
+                                                                    " ",
+                                                                    this.props.t("roomdetails_room_body"))))))))),
                                     React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-20", id: "gdlr-core-column-5" },
                                         React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js " },
                                             React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
@@ -245,7 +249,7 @@ var RoomDetails = /** @class */ (function (_super) {
                                                                         fontSize: "19px",
                                                                         fontWeight: 600,
                                                                         textTransform: "none",
-                                                                    } }, "M\u0259nz\u0259r\u0259"),
+                                                                    } }, this.props.t("roomdetails_view_head")),
                                                                 React.createElement("div", { className: "gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption", style: {
                                                                         fontSize: "17px",
                                                                         fontWeight: 500,
@@ -285,7 +289,7 @@ var RoomDetails = /** @class */ (function (_super) {
                                                                     letterSpacing: "0px",
                                                                     textTransform: "none",
                                                                 } },
-                                                                "Otaq Avadanl\u0131qlar\u0131",
+                                                                this.props.t("roomdetails_facilities"),
                                                                 React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                                     this.state.data.amenities.map(function (value, index) {
                                         return (React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-20 gdlr-core-column-first", id: "gdlr-core-column-8", key: index },
@@ -588,7 +592,7 @@ var RoomDetails = /** @class */ (function (_super) {
                                                                 letterSpacing: "0px",
                                                                 textTransform: "none",
                                                             } },
-                                                            "More Rooms",
+                                                            this.props.t("roomdetails_foothead"),
                                                             React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                                 React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first", id: "gdlr-core-column-28" },
                                     React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "0px 0px 20px 0px" } },
@@ -611,10 +615,9 @@ var RoomDetails = /** @class */ (function (_super) {
                                                                     fontSize: "34px",
                                                                     right: "-90px",
                                                                     marginTop: "-247.562px",
-                                                                } }))))))))))))),
-            ";"));
+                                                                } })))))))))))))));
     };
     return RoomDetails;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(RoomDetails);
+exports.default = (0, react_i18next_1.withTranslation)()(RoomDetails);
 //# sourceMappingURL=RoomDetails.js.map

@@ -1,4 +1,5 @@
 ﻿import * as React from 'react';
+import { withTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
 import { InitialDataState } from '../../interfaces/home/HomeTypes';
@@ -132,7 +133,7 @@ class HomeAboutUs extends React.Component<any, InitialDataState> {
                                                     id="gdlr-core-button-id-1"
                                                 >
                                                     <span className="gdlr-core-content">
-                                                        More About US
+                                                        {this.props.t("homeaboutus_footlink")}
                                                         <i
                                                             className="gdlr-core-pos-right icon-arrow-right"
                                                             style={{ fontSize: "16px", color: "#000000" }}
@@ -184,38 +185,6 @@ class HomeAboutUs extends React.Component<any, InitialDataState> {
                                     </div>
                                 </div>
                             </div>
-                            {/*<div*/}
-                            {/*    className="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first gdlr-core-hide-in-mobile"*/}
-                            {/*    id="gdlr-core-column-4"*/}
-                            {/*>*/}
-                            {/*    <div*/}
-                            {/*        className="gdlr-core-pbf-column-content-margin gdlr-core-js "*/}
-                            {/*        style={{ margin: "-130px 0px 0px 0px", padding: "0px 0px 0px 0px" }}*/}
-                            {/*    >*/}
-                            {/*        <div className="gdlr-core-pbf-background-wrap" />*/}
-                            {/*        <div className="gdlr-core-pbf-column-content clearfix gdlr-core-js ">*/}
-                            {/*            <div className="gdlr-core-pbf-element">*/}
-                            {/*                <div*/}
-                            {/*                    className="gdlr-core-image-item gdlr-core-item-pdb  gdlr-core-center-align gdlr-core-item-pdlr"*/}
-                            {/*                    style={{ paddingBottom: "0px" }}*/}
-                            {/*                >*/}
-                            {/*                    <div*/}
-                            {/*                        className="gdlr-core-image-item-wrap gdlr-core-media-image  gdlr-core-image-item-style-rectangle"*/}
-                            {/*                        style={{ borderWidth: "0px", maxWidth: "1091px" }}*/}
-                            {/*                    >*/}
-                            {/*                        <img*/}
-                            {/*                            src={require('../images/resort-group.png')}*/}
-                            {/*                            alt=""*/}
-                            {/*                            width={1381}*/}
-                            {/*                            height={672}*/}
-                            {/*                            title="resort-group"*/}
-                            {/*                        />*/}
-                            {/*                    </div>*/}
-                            {/*                </div>*/}
-                            {/*            </div>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
                         </div>
                     </div>
                 </div>;
@@ -227,4 +196,4 @@ class HomeAboutUs extends React.Component<any, InitialDataState> {
 
     }
 }
-export default connect()(HomeAboutUs);
+export default withTranslation()(HomeAboutUs);

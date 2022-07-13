@@ -1,4 +1,5 @@
 ﻿import * as React from 'react';
+import { withTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
 import ContactUsInitial from '../../interfaces/contactus/ContactUsTypes';
@@ -71,7 +72,7 @@ class ContactUs extends React.Component<any, ContactUsInitial> {
                                                 color: "#ffffff",
                                             }}
                                         >
-                                            Əlaqə
+                                            {this.props.t("contactus_head") }
                                             <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                         </h3>
                                     </div>
@@ -85,7 +86,8 @@ class ContactUs extends React.Component<any, ContactUsInitial> {
                                             marginTop: "15px",
                                         }}
                                     >
-                                        Bizimilə əlaqə saxlamaq üçün
+                                        
+                                        {this.props.t("contactus_title")}
                                     </span>
                                 </div>
                             </div>
@@ -172,7 +174,7 @@ class ContactUs extends React.Component<any, ContactUsInitial> {
                                                             color: "#ffffff",
                                                         }}
                                                     >
-                                                        Phone
+                                                        {this.props.t("contactus_phone") }
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -262,7 +264,7 @@ class ContactUs extends React.Component<any, ContactUsInitial> {
                                                             color: "#ffffff",
                                                         }}
                                                     >
-                                                        Email
+                                                        {this.props.t("contactus_email")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -352,7 +354,7 @@ class ContactUs extends React.Component<any, ContactUsInitial> {
                                                             color: "#ffffff",
                                                         }}
                                                     >
-                                                        Location
+                                                        {this.props.t("contactus_location")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -424,7 +426,7 @@ class ContactUs extends React.Component<any, ContactUsInitial> {
                                                             textTransform: "none",
                                                         }}
                                                     >
-                                                        Məlumatları daxil edin{" "}
+                                                        { this.props.t("contactus_formhead")} {" "}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -436,7 +438,8 @@ class ContactUs extends React.Component<any, ContactUsInitial> {
                                                         letterSpacing: "0px",
                                                     }}
                                                 >
-                                                    Müraciətləriniz tez bir zamanda cavablandırılacaqdır
+                                                    {this.props.t("contactus_formtitle")}
+                                                   
                                                 </span>
                                             </div>
                                         </div>
@@ -499,4 +502,4 @@ class ContactUs extends React.Component<any, ContactUsInitial> {
     }
 }
 
-export default connect()(ContactUs);
+export default withTranslation()(ContactUs);

@@ -2,7 +2,9 @@
 import { connect } from 'react-redux';
 import Cards from './Cards';
 import { RouteComponentProps } from 'react-router';
-class HotelCards extends React.Component {
+import i18n from "../../i18n";
+import { I18nextProvider, withTranslation } from 'react-i18next';
+class HotelCards extends React.Component<any,any> {
     public render() {
         return (
             <React.Fragment>
@@ -56,7 +58,7 @@ class HotelCards extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Otaqlar.
+                                                        {this.props.t("homerooms_head") }
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -78,7 +80,7 @@ class HotelCards extends React.Component {
                                                     }}
                                                 >
                                                     <p>
-                                                        Siz burada şəhər səs-küyündən uzaqda əsl istirahətinizi tapacaqsınız
+                                                        {this.props.t("homerooms_title")}
                                                     </p>
                                                 </div>
                                             </div>
@@ -114,7 +116,9 @@ class HotelCards extends React.Component {
                                                         className="flex-viewport"
                                                         style={{ overflow: "hidden", position: "relative" }}
                                                     >
-                                                    <Cards/>
+                                                        <I18nextProvider i18n={i18n}>
+                                                            <Cards />
+                                                        </I18nextProvider>
                                                     </div>
                                                     <div
                                                         className="gdlr-core-flexslider-custom-nav  gdlr-core-style-navigation-outer gdlr-core-center-align"
@@ -176,7 +180,7 @@ class HotelCards extends React.Component {
                                                     }}
                                                 >
                                                     <span className="gdlr-core-content">
-                                                        Bütün Otaqlarımız
+                                                        {this.props.t("homerooms_footlink") }
                                                         <i
                                                             className="gdlr-core-pos-right icon-arrow-right"
                                                             style={{ fontSize: "16px", color: "#000000" }}
@@ -193,7 +197,7 @@ class HotelCards extends React.Component {
                 </div>
 
             </React.Fragment>
-            )
+        )
     }
 }
-export default connect()(HotelCards);
+export default withTranslation()(HotelCards);

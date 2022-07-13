@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
+var react_i18next_1 = require("react-i18next");
 var HomeAboutUs = /** @class */ (function (_super) {
     __extends(HomeAboutUs, _super);
     function HomeAboutUs(props) {
@@ -94,7 +94,7 @@ var HomeAboutUs = /** @class */ (function (_super) {
                                         React.createElement("div", { className: "gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align" },
                                             React.createElement("a", { className: "gdlr-core-button  gdlr-core-button-transparent gdlr-core-left-align gdlr-core-button-with-border", href: "#", id: "gdlr-core-button-id-1" },
                                                 React.createElement("span", { className: "gdlr-core-content" },
-                                                    "More About US",
+                                                    this.props.t("homeaboutus_footlink"),
                                                     React.createElement("i", { className: "gdlr-core-pos-right icon-arrow-right", style: { fontSize: "16px", color: "#000000" } })))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-30", id: "gdlr-core-column-3" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js " },
@@ -114,5 +114,5 @@ var HomeAboutUs = /** @class */ (function (_super) {
     };
     return HomeAboutUs;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(HomeAboutUs);
+exports.default = (0, react_i18next_1.withTranslation)()(HomeAboutUs);
 //# sourceMappingURL=HomeAboutUs.js.map

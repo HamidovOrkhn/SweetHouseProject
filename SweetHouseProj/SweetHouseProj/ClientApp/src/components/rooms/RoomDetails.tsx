@@ -5,6 +5,7 @@ import { RoomProps, RoomState } from '../../interfaces/home/RoomTypes';
 import parse from "html-react-parser";
 import Posts from '../home/Posts';
 import Cards from '../home/Cards';
+import { withTranslation } from 'react-i18next';
 class RoomDetails extends React.Component<any, RoomState> {
     constructor(props: any) {
         super(props);
@@ -43,7 +44,7 @@ class RoomDetails extends React.Component<any, RoomState> {
                     <div className="hotale-page-title-overlay" />
                     <div className="hotale-page-title-container hotale-container">
                         <div className="hotale-page-title-content hotale-item-pdlr">
-                            <h1 className="hotale-page-title">Otağ Detalı</h1>
+                            <h1 className="hotale-page-title">{this.props.t("roomdetails_head") }</h1>
                         </div>
                     </div>
                 </div>{" "}
@@ -108,14 +109,14 @@ class RoomDetails extends React.Component<any, RoomState> {
                                                                 {this.state.data.name}
                                                             </h3>
                                                             <div className="tourmaster-room-title-item-caption">
-                                                                Otaq Haqqında
+                                                                {this.props.t("roomdetails_title") }
                                                             </div>
                                                             <div className="tourmaster-room-title-price">
                                                                 <div className="tourmaster-head">
 
-                                                                    <span className="tourmaster-price">Günlük {this.state.data.price} AZN</span>
+                                                                    <span className="tourmaster-price">{this.props.t("roomdetails_pricecomponent")} {this.state.data.price} AZN</span>
                                                                 </div>
-                                                                <div className="tourmaster-tail">Qiymət/Gecəlik</div>
+                                                                <div className="tourmaster-tail">{this.props.t("roomdetails_daycomponent")}</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -160,7 +161,7 @@ class RoomDetails extends React.Component<any, RoomState> {
                                                                             textTransform: "none",
                                                                         }}
                                                                     >
-                                                                        Yataq Sayı
+                                                                         {this.props.t("roomdetails_bed_head")}
                                                                     </h3>
                                                                     <div
                                                                         className="gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption"
@@ -171,7 +172,7 @@ class RoomDetails extends React.Component<any, RoomState> {
                                                                             marginTop: "0px",
                                                                         }}
                                                                     >
-                                                                        {this.state.data.bedCount} Ədəd Çarpayı
+                                                                        {this.state.data.bedCount} {this.props.t("roomdetails_bed_body")}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -216,7 +217,7 @@ class RoomDetails extends React.Component<any, RoomState> {
                                                                             textTransform: "none",
                                                                         }}
                                                                     >
-                                                                        Max Say
+                                                                        {this.props.t("roomdetails_person_head")}
                                                                     </h3>
                                                                     <div
                                                                         className="gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption"
@@ -227,7 +228,7 @@ class RoomDetails extends React.Component<any, RoomState> {
                                                                             marginTop: "0px",
                                                                         }}
                                                                     >
-                                                                        {this.state.data.maxGuest} Nəfərlik
+                                                                        {this.state.data.maxGuest} {this.props.t("roomdetails_person_body")}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -274,7 +275,7 @@ class RoomDetails extends React.Component<any, RoomState> {
                                                                             textTransform: "none",
                                                                         }}
                                                                     >
-                                                                        Otaq Genişliyi
+                                                                         {this.props.t("roomdetails_room_head")}
                                                                     </h3>
                                                                     <div
                                                                         className="gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption"
@@ -285,7 +286,7 @@ class RoomDetails extends React.Component<any, RoomState> {
                                                                             marginTop: "0px",
                                                                         }}
                                                                     >
-                                                                        {this.state.data.roomSpace } kv/m
+                                                                        {this.state.data.roomSpace} {this.props.t("roomdetails_room_body")}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -331,7 +332,7 @@ class RoomDetails extends React.Component<any, RoomState> {
                                                                             textTransform: "none",
                                                                         }}
                                                                     >
-                                                                        Mənzərə
+                                                                        {this.props.t("roomdetails_view_head")}
                                                                     </h3>
                                                                     <div
                                                                         className="gdlr-core-column-service-caption gdlr-core-info-font gdlr-core-skin-caption"
@@ -420,7 +421,7 @@ class RoomDetails extends React.Component<any, RoomState> {
                                                                         textTransform: "none",
                                                                     }}
                                                                 >
-                                                                    Otaq Avadanlıqları
+                                                                    {this.props.t("roomdetails_facilities")}
                                                                     <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                                 </h3>
                                                             </div>
@@ -1280,7 +1281,7 @@ class RoomDetails extends React.Component<any, RoomState> {
                                                                     textTransform: "none",
                                                                 }}
                                                             >
-                                                                More Rooms
+                                                                {this.props.t("roomdetails_foothead") }
                                                                 <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                             </h3>
                                                         </div>
@@ -1352,14 +1353,14 @@ class RoomDetails extends React.Component<any, RoomState> {
                             </div>
                         </div>
                     </div>
-                </div>;
+                </div>
 
             </React.Fragment>
         );
     }
 }
 
-export default connect()(RoomDetails);
+export default withTranslation()(RoomDetails);
 
 
 

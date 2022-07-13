@@ -1,4 +1,5 @@
 ﻿import * as React from 'react';
+import { withTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -44,7 +45,7 @@ class Rooms extends React.Component<any, InitialState<CardStateInitial[]>> {
                     <div className="hotale-page-title-overlay" />
                     <div className="hotale-page-title-container hotale-container">
                         <div className="hotale-page-title-content hotale-item-pdlr">
-                            <h1 className="hotale-page-title">Otaqlar</h1>
+                            <h1 className="hotale-page-title">{this.props.t("rooms_title")}</h1>
                         </div>
                     </div>
                 </div>{" "}
@@ -110,11 +111,11 @@ class Rooms extends React.Component<any, InitialState<CardStateInitial[]>> {
                                                                             <div className="tourmaster-info-wrap clearfix">
                                                                                 <div className="tourmaster-info tourmaster-info-bed-type">
                                                                                     <i className="gdlr-icon-double-bed2" />
-                                                                                    <span className="tourmaster-tail">{value.bedCount} Ədəd Çarpayı</span>
+                                                                                    <span className="tourmaster-tail">{value.bedCount} {this.props.t("global_card_bed")}</span>
                                                                                 </div>
                                                                                 <div className="tourmaster-info tourmaster-info-guest-amount">
                                                                                     <i className="gdlr-icon-group" />
-                                                                                    <span className="tourmaster-tail">{value.maxGuest} Nəfər</span>
+                                                                                    <span className="tourmaster-tail">{value.maxGuest} {this.props.t("global_card_guest")}</span>
                                                                                 </div>
                                                                             </div>
                                                                             <div className="tourmaster-bottom clearfix">
@@ -122,7 +123,7 @@ class Rooms extends React.Component<any, InitialState<CardStateInitial[]>> {
                                                                                     <span className="tourmaster-price">{value.price} AZN</span>
                                                                                 </div>
                                                                                 <Link className="tourmaster-read-more tourmaster-type-button" to={"/rooms/details/" + value.id}>
-                                                                                    Rezerv
+                                                                                    {this.props.t("global_card_button")}
                                                                                 </Link>
                                                                             </div>
                                                                         </div>
@@ -152,7 +153,7 @@ class Rooms extends React.Component<any, InitialState<CardStateInitial[]>> {
     }
 }
 
-export default connect()(Rooms);
+export default withTranslation()(Rooms);
 
 
 

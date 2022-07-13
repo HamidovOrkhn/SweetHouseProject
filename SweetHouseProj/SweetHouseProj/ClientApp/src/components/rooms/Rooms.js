@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
+var react_i18next_1 = require("react-i18next");
 var react_router_dom_1 = require("react-router-dom");
 var Pagination_1 = require("./Pagination");
 var Rooms = /** @class */ (function (_super) {
@@ -47,13 +47,14 @@ var Rooms = /** @class */ (function (_super) {
         });
     };
     Rooms.prototype.render = function () {
+        var _this = this;
         return (React.createElement(React.Fragment, null,
             React.createElement("div", { className: "hotale-page-title-wrap  hotale-style-custom hotale-center-align", "data-aos": "fade-bottom", "data-aos-duration": "1000" },
                 React.createElement("div", { className: "hotale-header-transparent-substitute", style: { height: "149.3px" } }),
                 React.createElement("div", { className: "hotale-page-title-overlay" }),
                 React.createElement("div", { className: "hotale-page-title-container hotale-container" },
                     React.createElement("div", { className: "hotale-page-title-content hotale-item-pdlr" },
-                        React.createElement("h1", { className: "hotale-page-title" }, "Otaqlar")))),
+                        React.createElement("h1", { className: "hotale-page-title" }, this.props.t("rooms_title"))))),
             " ",
             React.createElement("div", null),
             React.createElement("div", { className: "hotale-page-wrapper", id: "hotale-page-wrapper", "data-aos": "fade-top", "data-aos-duration": "1000" },
@@ -84,23 +85,25 @@ var Rooms = /** @class */ (function (_super) {
                                                                         React.createElement("i", { className: "gdlr-icon-double-bed2" }),
                                                                         React.createElement("span", { className: "tourmaster-tail" },
                                                                             value.bedCount,
-                                                                            " \u018Fd\u0259d \u00C7arpay\u0131")),
+                                                                            " ",
+                                                                            _this.props.t("global_card_bed"))),
                                                                     React.createElement("div", { className: "tourmaster-info tourmaster-info-guest-amount" },
                                                                         React.createElement("i", { className: "gdlr-icon-group" }),
                                                                         React.createElement("span", { className: "tourmaster-tail" },
                                                                             value.maxGuest,
-                                                                            " N\u0259f\u0259r"))),
+                                                                            " ",
+                                                                            _this.props.t("global_card_guest")))),
                                                                 React.createElement("div", { className: "tourmaster-bottom clearfix" },
                                                                     React.createElement("div", { className: "tourmaster-price-wrap tourmaster-no-bg " },
                                                                         React.createElement("span", { className: "tourmaster-price" },
                                                                             value.price,
                                                                             " AZN")),
-                                                                    React.createElement(react_router_dom_1.Link, { className: "tourmaster-read-more tourmaster-type-button", to: "/rooms/details/" + value.id }, "Rezerv")))))));
+                                                                    React.createElement(react_router_dom_1.Link, { className: "tourmaster-read-more tourmaster-type-button", to: "/rooms/details/" + value.id }, _this.props.t("global_card_button"))))))));
                                             })
                                             : ""))),
                                 React.createElement(Pagination_1.default, { pageCount: this.state.init.page, currentPage: 0 }))))))));
     };
     return Rooms;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(Rooms);
+exports.default = (0, react_i18next_1.withTranslation)()(Rooms);
 //# sourceMappingURL=Rooms.js.map

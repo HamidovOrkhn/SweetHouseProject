@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import parse from "html-react-parser";
 import { BlogDetails } from '../../interfaces/blog/BlogTypes';
 import BlogSlider from '../home/BlogSlider';
+import { withTranslation } from 'react-i18next';
 class BlogsDetails extends React.Component<any, BlogDetails> {
     constructor(props: any) {
         super(props);
@@ -40,7 +41,7 @@ class BlogsDetails extends React.Component<any, BlogDetails> {
                     <div className="hotale-page-title-overlay" />
                     <div className="hotale-page-title-container hotale-container">
                         <div className="hotale-page-title-content hotale-item-pdlr">
-                            <h1 className="hotale-page-title">Blog Haqqında</h1>
+                            <h1 className="hotale-page-title">{this.props.t("blogdetails_title")}</h1>
                         </div>
                     </div>
                 </div>{" "}
@@ -107,7 +108,7 @@ class BlogsDetails extends React.Component<any, BlogDetails> {
                                                             </h3>
                                                             <div className="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
                                                                 <span className="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date" style={{ fontSize: "14px"}}>
-                                                                    Tarix :
+                                                                    {this.props.t("blogdetails_date")} :
                                                                     <span className="gdlr-core-head" style={{ marginLeft:"10px" }}>
                                                                         <i className="gdlr-icon-clock" />
                                                                     </span>
@@ -190,7 +191,7 @@ class BlogsDetails extends React.Component<any, BlogDetails> {
     }
 }
 
-export default connect()(BlogsDetails);
+export default withTranslation()(BlogsDetails);
 
 
 

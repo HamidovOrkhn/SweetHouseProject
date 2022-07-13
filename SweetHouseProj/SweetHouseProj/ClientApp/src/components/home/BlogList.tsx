@@ -5,7 +5,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { CardsState } from '../../interfaces/home/HomeTypes';
 import BlogSlider from './BlogSlider';
-class BlogList extends React.Component {
+import { withTranslation } from 'react-i18next';
+class BlogList extends React.Component<any,any> {
     public render() {
         return (
             <div>
@@ -56,7 +57,7 @@ class BlogList extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Ən Son Xəbərlər &amp; Yeniliklər
+                                                        {this.props.t("homeblogs_head")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -74,8 +75,7 @@ class BlogList extends React.Component {
                                                     }}
                                                 >
                                                     <p>
-                                                        Aktiv bloglarımızla ən son xəbərlərlə tanış ola bilər ən son yeniliklərdən ilk xəbərdar ola bilərsiniz
-                                                    </p>
+                                                        {this.props.t("homeblogs_title")} </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -126,7 +126,7 @@ class BlogList extends React.Component {
                                                     id="gdlr-core-button-id-5"
                                                 >
                                                     <span className="gdlr-core-content">
-                                                        Daha çox
+                                                        {this.props.t("homeblogs_footlink")}
                                                         <i
                                                             className="gdlr-core-pos-right icon-arrow-right"
                                                             style={{ fontSize: "16px", color: "#000000" }}
@@ -149,4 +149,4 @@ class BlogList extends React.Component {
         )
     }
 }
-export default connect()(BlogList);
+export default withTranslation()(BlogList);

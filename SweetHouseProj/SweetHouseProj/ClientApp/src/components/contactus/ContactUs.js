@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
+var react_i18next_1 = require("react-i18next");
 var ContactUsForm_1 = require("./ContactUsForm");
 var ContactUs = /** @class */ (function (_super) {
     __extends(ContactUs, _super);
@@ -62,7 +62,7 @@ var ContactUs = /** @class */ (function (_super) {
                                             textTransform: "none",
                                             color: "#ffffff",
                                         } },
-                                        "\u018Flaq\u0259",
+                                        this.props.t("contactus_head"),
                                         React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" }))),
                                 React.createElement("span", { className: "gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption", style: {
                                         fontSize: "25px",
@@ -70,7 +70,7 @@ var ContactUs = /** @class */ (function (_super) {
                                         letterSpacing: "0px",
                                         color: "#e5e5e5",
                                         marginTop: "15px",
-                                    } }, "Bizimil\u0259 \u0259laq\u0259 saxlamaq \u00FC\u00E7\u00FCn")))))),
+                                    } }, this.props.t("contactus_title"))))))),
             React.createElement("div", { className: "gdlr-core-pbf-wrapper ", style: { padding: "30px 0px 20px 0px" }, "data-skin": "White Text" },
                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap", style: { backgroundColor: "#191919" } },
                     React.createElement("div", { className: "gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js", style: {
@@ -110,7 +110,7 @@ var ContactUs = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#ffffff",
                                                     } },
-                                                    "Phone",
+                                                    this.props.t("contactus_phone"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" }))))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align", style: { paddingBottom: "0px" } },
@@ -147,7 +147,7 @@ var ContactUs = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#ffffff",
                                                     } },
-                                                    "Email",
+                                                    this.props.t("contactus_email"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" }))))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align", style: { paddingBottom: "0px" } },
@@ -184,7 +184,7 @@ var ContactUs = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#ffffff",
                                                     } },
-                                                    "Location",
+                                                    this.props.t("contactus_location"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" }))))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align", style: { paddingBottom: "0px" } },
@@ -210,14 +210,15 @@ var ContactUs = /** @class */ (function (_super) {
                                                         letterSpacing: "0px",
                                                         textTransform: "none",
                                                     } },
-                                                    "M\u0259lumatlar\u0131 daxil edin",
+                                                    this.props.t("contactus_formhead"),
+                                                    " ",
                                                     " ",
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" }))),
                                             React.createElement("span", { className: "gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption", style: {
                                                     fontSize: "19px",
                                                     fontStyle: "normal",
                                                     letterSpacing: "0px",
-                                                } }, "M\u00FCraci\u0259tl\u0259riniz tez bir zamanda cavabland\u0131r\u0131lacaqd\u0131r"))),
+                                                } }, this.props.t("contactus_formtitle")))),
                                     React.createElement("div", { className: "gdlr-core-pbf-element" },
                                         React.createElement("div", { className: "gdlr-core-contact-form-7-item gdlr-core-item-pdlr gdlr-core-item-pdb " },
                                             React.createElement("div", { role: "form", className: "wpcf7", id: "wpcf7-f1979-p1964-o1", lang: "en-US", dir: "ltr" },
@@ -243,5 +244,5 @@ var ContactUs = /** @class */ (function (_super) {
     };
     return ContactUs;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(ContactUs);
+exports.default = (0, react_i18next_1.withTranslation)()(ContactUs);
 //# sourceMappingURL=ContactUs.js.map

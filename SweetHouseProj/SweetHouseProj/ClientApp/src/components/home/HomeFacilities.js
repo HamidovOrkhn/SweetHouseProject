@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
+var react_i18next_1 = require("react-i18next");
 var HomeFacilities = /** @class */ (function (_super) {
     __extends(HomeFacilities, _super);
     function HomeFacilities() {
@@ -47,7 +47,7 @@ var HomeFacilities = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#000000",
                                                     } },
-                                                    "Xidm\u0259tl\u0259r\u0259 daxildir.",
+                                                    this.props.t("homefacilities_head"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first", id: "gdlr-core-column-8" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "0px 0px 30px 0px" } },
@@ -62,7 +62,7 @@ var HomeFacilities = /** @class */ (function (_super) {
                                                     textTransform: "none",
                                                     color: "#898989",
                                                 } },
-                                                React.createElement("p", null, "Tam funksyonal v\u0259 daima yenil\u0259n\u0259n xidm\u0259tl\u0259r d\u00FC\u015F\u0259rg\u0259si il\u0259 istifad\u0259\u00E7il\u0259ri m\u0259mnun edirik."))))))),
+                                                React.createElement("p", null, this.props.t("homefacilities_title")))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-12 gdlr-core-column-first", id: "gdlr-core-column-9" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "70px 0px 0px 0px" } },
                                 React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
@@ -81,7 +81,7 @@ var HomeFacilities = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#000000",
                                                     } },
-                                                    "Parking",
+                                                    this.props.t("homefacilities_fc1"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-12", id: "gdlr-core-column-10" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "70px 0px 0px 0px" } },
@@ -105,7 +105,7 @@ var HomeFacilities = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#000000",
                                                     } },
-                                                    "Seyf",
+                                                    this.props.t("homefacilities_fc2"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-12", id: "gdlr-core-column-11" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "70px 0px 0px 0px" } },
@@ -129,7 +129,7 @@ var HomeFacilities = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#000000",
                                                     } },
-                                                    "Hovuz",
+                                                    this.props.t("homefacilities_fc3"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-12", id: "gdlr-core-column-12" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "70px 0px 0px 0px" } },
@@ -153,7 +153,7 @@ var HomeFacilities = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#000000",
                                                     } },
-                                                    "Spa",
+                                                    this.props.t("homefacilities_fc4"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-12", id: "gdlr-core-column-13" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "70px 0px 0px 0px" } },
@@ -177,7 +177,7 @@ var HomeFacilities = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#000000",
                                                     } },
-                                                    "\u0130dman zal\u0131",
+                                                    this.props.t("homefacilities_fc5"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-12 gdlr-core-column-first", id: "gdlr-core-column-14" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "0px 0px 0px 0px" } },
@@ -205,7 +205,7 @@ var HomeFacilities = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#000000",
                                                     } },
-                                                    "Wifi",
+                                                    this.props.t("homefacilities_fc6"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-12", id: "gdlr-core-column-16" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "75px 0px 0px 0px" } },
@@ -229,7 +229,7 @@ var HomeFacilities = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#000000",
                                                     } },
-                                                    "S\u0259h\u0259r Yem\u0259yi",
+                                                    this.props.t("homefacilities_fc7"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-12", id: "gdlr-core-column-17" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "73px 0px 0px 0px" } },
@@ -253,7 +253,7 @@ var HomeFacilities = /** @class */ (function (_super) {
                                                         textTransform: "none",
                                                         color: "#000000",
                                                     } },
-                                                    "\u0130\u015F m\u00FChiti",
+                                                    this.props.t("homefacilities_fc8"),
                                                     React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                         React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-12", id: "gdlr-core-column-18" },
                             React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "70px 0px 0px 0px" } },
@@ -263,5 +263,5 @@ var HomeFacilities = /** @class */ (function (_super) {
     };
     return HomeFacilities;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(HomeFacilities);
+exports.default = (0, react_i18next_1.withTranslation)()(HomeFacilities);
 //# sourceMappingURL=HomeFacilities.js.map

@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
+var react_i18next_1 = require("react-i18next");
 var AboutUs = /** @class */ (function (_super) {
     __extends(AboutUs, _super);
     function AboutUs(props) {
@@ -46,7 +46,7 @@ var AboutUs = /** @class */ (function (_super) {
                 React.createElement("div", { className: "hotale-page-title-overlay" }),
                 React.createElement("div", { className: "hotale-page-title-container hotale-container" },
                     React.createElement("div", { className: "hotale-page-title-content hotale-item-pdlr" },
-                        React.createElement("h1", { className: "hotale-page-title" }, "Haqq\u0131m\u0131zda")))),
+                        React.createElement("h1", { className: "hotale-page-title" }, this.props.t("aboutus_title"))))),
             " ",
             React.createElement("div", { className: "hotale-page-wrapper", id: "hotale-page-wrapper" },
                 React.createElement("div", { className: "gdlr-core-page-builder-body" },
@@ -67,7 +67,7 @@ var AboutUs = /** @class */ (function (_super) {
                                                                 textTransform: "none",
                                                                 color: "#000000",
                                                             } },
-                                                            "Haqq\u0131m\u0131zda",
+                                                            this.props.t("aboutus_title"),
                                                             React.createElement("span", { className: "gdlr-core-title-item-title-divider gdlr-core-skin-divider" })))))))),
                                 React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first", id: "gdlr-core-column-1" },
                                     React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "0px 0px 20px 0px" } },
@@ -90,5 +90,5 @@ var AboutUs = /** @class */ (function (_super) {
     };
     return AboutUs;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(AboutUs);
+exports.default = (0, react_i18next_1.withTranslation)()(AboutUs);
 //# sourceMappingURL=AboutUs.js.map

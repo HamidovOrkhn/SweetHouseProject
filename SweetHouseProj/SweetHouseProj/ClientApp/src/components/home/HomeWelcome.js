@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
+var react_i18next_1 = require("react-i18next");
 var HomeWelcome = /** @class */ (function (_super) {
     __extends(HomeWelcome, _super);
     function HomeWelcome() {
@@ -89,7 +89,7 @@ var HomeWelcome = /** @class */ (function (_super) {
                                                             textTransform: "none",
                                                             color: "#ffffff",
                                                         } },
-                                                        React.createElement("p", null, "\u0130stirah\u0259tinizi bizl\u0259 ke\u00E7irin"))))))),
+                                                        React.createElement("p", null, this.props.t('homewelcome_title')))))))),
                                 React.createElement("div", { className: "gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first", id: "gdlr-core-column-1" },
                                     React.createElement("div", { className: "gdlr-core-pbf-column-content-margin gdlr-core-js ", style: { padding: "270px 0px 0px 0px" } },
                                         React.createElement("div", { className: "gdlr-core-pbf-background-wrap" }),
@@ -378,5 +378,5 @@ var HomeWelcome = /** @class */ (function (_super) {
     };
     return HomeWelcome;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(HomeWelcome);
+exports.default = (0, react_i18next_1.withTranslation)()(HomeWelcome); //connect()
 //# sourceMappingURL=HomeWelcome.js.map

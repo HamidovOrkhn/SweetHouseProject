@@ -52,8 +52,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
 var BlogSlider_1 = require("../home/BlogSlider");
+var react_i18next_1 = require("react-i18next");
 var BlogsDetails = /** @class */ (function (_super) {
     __extends(BlogsDetails, _super);
     function BlogsDetails(props) {
@@ -93,7 +93,7 @@ var BlogsDetails = /** @class */ (function (_super) {
                 React.createElement("div", { className: "hotale-page-title-overlay" }),
                 React.createElement("div", { className: "hotale-page-title-container hotale-container" },
                     React.createElement("div", { className: "hotale-page-title-content hotale-item-pdlr" },
-                        React.createElement("h1", { className: "hotale-page-title" }, "Blog Haqq\u0131nda")))),
+                        React.createElement("h1", { className: "hotale-page-title" }, this.props.t("blogdetails_title"))))),
             " ",
             React.createElement("div", { className: "hotale-page-wrapper", id: "hotale-page-wrapper", "data-aos": "fade-bottom", "data-aos-duration": "1000" },
                 React.createElement("div", { className: "gdlr-core-page-builder-body" },
@@ -125,7 +125,8 @@ var BlogsDetails = /** @class */ (function (_super) {
                                                         React.createElement("h3", { className: "tourmaster-room-title-item-title" }, this.state.data.headText),
                                                         React.createElement("div", { className: "gdlr-core-blog-info-wrapper gdlr-core-skin-divider" },
                                                             React.createElement("span", { className: "gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date", style: { fontSize: "14px" } },
-                                                                "Tarix :",
+                                                                this.props.t("blogdetails_date"),
+                                                                " :",
                                                                 React.createElement("span", { className: "gdlr-core-head", style: { marginLeft: "10px" } },
                                                                     React.createElement("i", { className: "gdlr-icon-clock" })),
                                                                 React.createElement("a", null, this.state.data.createdDate))))),
@@ -157,5 +158,5 @@ var BlogsDetails = /** @class */ (function (_super) {
     };
     return BlogsDetails;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(BlogsDetails);
+exports.default = (0, react_i18next_1.withTranslation)()(BlogsDetails);
 //# sourceMappingURL=BlogsDetails.js.map

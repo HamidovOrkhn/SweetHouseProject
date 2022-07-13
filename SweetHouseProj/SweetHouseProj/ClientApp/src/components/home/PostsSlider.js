@@ -16,9 +16,9 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var react_redux_1 = require("react-redux");
 require("swiper/css");
 var Posts_1 = require("./Posts");
+var react_i18next_1 = require("react-i18next");
 var PostsSlider = /** @class */ (function (_super) {
     __extends(PostsSlider, _super);
     function PostsSlider(props) {
@@ -78,9 +78,9 @@ var PostsSlider = /** @class */ (function (_super) {
                                                 color: "#000000",
                                                 textTransform: "uppercase",
                                             } },
-                                            React.createElement("span", { className: "gdlr-core-content" }, "Bizi Instagramdan takip edin")))))))))));
+                                            React.createElement("span", { className: "gdlr-core-content" }, this.props.t("homepictures_footlink"))))))))))));
     };
     return PostsSlider;
 }(React.Component));
-exports.default = (0, react_redux_1.connect)()(PostsSlider);
+exports.default = (0, react_i18next_1.withTranslation)()(PostsSlider);
 //# sourceMappingURL=PostsSlider.js.map

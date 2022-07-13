@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { CardsState } from '../../interfaces/home/HomeTypes';
 import { Link } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
 class Cards extends React.Component<any, CardsState> {
     constructor(props: any) {
         super(props);
@@ -75,7 +76,7 @@ class Cards extends React.Component<any, CardsState> {
                                                         <span className="tourmaster-price">{value.name}</span>
                                                         <span className="tourmaster-tail">
                                                             {" "}
-                                                            / Gecəsi
+                                                            / {this.props.t("global_card_namecomponent")}
                                                         </span>
                                                     </div>
                                                 </div>
@@ -98,18 +99,18 @@ class Cards extends React.Component<any, CardsState> {
                                                         <div className="tourmaster-info tourmaster-info-bed-type">
                                                             <i className="gdlr-icon-double-bed2" />
                                                             <span className="tourmaster-tail">
-                                                                {value.bedCount} Ədəd Çarpayı
+                                                                {value.bedCount} {this.props.t("global_card_bed") }
                                                             </span>
                                                         </div>
                                                         <div className="tourmaster-info tourmaster-info-guest-amount">
                                                             <i className="gdlr-icon-group" />
                                                             <span className="tourmaster-tail">
-                                                                {value.maxGuest} Nəfər
+                                                                {value.maxGuest} {this.props.t("global_card_guest")}
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <Link className="tourmaster-read-more tourmaster-type-text" to={"/rooms/details/" + value.id}>
-                                                        Rezerv
+                                                        {this.props.t("global_card_button")}
                                                         <i className="icon-arrow-right" />
                                                     </Link>
 
@@ -131,4 +132,4 @@ class Cards extends React.Component<any, CardsState> {
         )
     }
 }
-export default connect()(Cards);
+export default withTranslation()(Cards);

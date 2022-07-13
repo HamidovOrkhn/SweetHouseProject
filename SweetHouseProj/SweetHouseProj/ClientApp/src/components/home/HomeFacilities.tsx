@@ -1,7 +1,8 @@
 ﻿import * as React from 'react';
+import { withTranslation } from 'react-i18next';
 import { connect } from 'react-redux';
 import { RouteComponentProps } from 'react-router';
-class HomeFacilities extends React.Component {
+class HomeFacilities extends React.Component<any,any> {
     public render() {
         return (
             <React.Fragment>
@@ -50,7 +51,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Xidmətlərə daxildir.
+                                                        {this.props.t("homefacilities_head") }
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -88,7 +89,7 @@ class HomeFacilities extends React.Component {
                                                     }}
                                                 >
                                                     <p>
-                                                        Tam funksyonal və daima yenilənən xidmətlər düşərgəsi ilə istifadəçiləri məmnun edirik.
+                                                        {this.props.t("homefacilities_title")}
                                                     </p>
                                                 </div>
                                             </div>
@@ -143,7 +144,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Parking
+                                                        {this.props.t("homefacilities_fc1")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -196,7 +197,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Seyf
+                                                        {this.props.t("homefacilities_fc2")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -249,7 +250,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Hovuz
+                                                        {this.props.t("homefacilities_fc3")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -302,7 +303,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Spa
+                                                        {this.props.t("homefacilities_fc4")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -355,7 +356,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        İdman zalı
+                                                        {this.props.t("homefacilities_fc5")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -420,7 +421,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Wifi
+                                                        {this.props.t("homefacilities_fc6")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -473,7 +474,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        Səhər Yeməyi
+                                                        {this.props.t("homefacilities_fc7")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -526,7 +527,7 @@ class HomeFacilities extends React.Component {
                                                             color: "#000000",
                                                         }}
                                                     >
-                                                        İş mühiti
+                                                        {this.props.t("homefacilities_fc8")}
                                                         <span className="gdlr-core-title-item-title-divider gdlr-core-skin-divider" />
                                                     </h3>
                                                 </div>
@@ -555,4 +556,4 @@ class HomeFacilities extends React.Component {
             );
     }
 }
-export default connect()(HomeFacilities);
+export default withTranslation()(HomeFacilities);
