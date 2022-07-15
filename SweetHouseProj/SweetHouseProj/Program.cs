@@ -20,7 +20,7 @@ namespace SweetHouseProj
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>().UseWebRoot("Content"); ;
+                    webBuilder.UseStartup<Startup>().UseWebRoot("wwwroot"); ;
                 });
     }
 }
