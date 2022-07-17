@@ -1,0 +1,80 @@
+﻿@using SweetHouseProj.ViewModels
+@model ContactListViewModel
+
+@{
+    ViewData["Title"] = "ContactList";
+}
+
+<div class="row">
+    <div class="col-12 col-md-12 col-lg-12">
+        <div class="card">
+            
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Fullname
+                            </th>
+                            <th>
+                                Subject
+                            </th>
+                            <th>
+                                Message
+                            </th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.ContactUsLists)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Fullname)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Subject)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Message)
+                                </td>
+
+                                <td>
+
+                                    <a style="text-decoration:none;" asp-area="sweethouseadmin" asp-controller="contact" asp-action="ContactlistDelete" asp-route-id="@item.Id"><i class="fa-solid fa-xmark"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example" class="mt-2" style="float:right">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" asp-area="SweetHouseAdmin" asp-controller="Contact" asp-action="ContactList" asp-route-page="@Model.Pagination.StartPage">İlk səhifə</a></li>
+                        @for (int i = Model.Pagination.StartPage; i <= Model.Pagination.EndPage; i++)
+                        {
+                            if (i == Model.Pagination.Page)
+                            {
+                                <li class="page-item active"><a class="page-link" asp-area="SweetHouseAdmin" asp-controller="Contact" asp-action="ContactList" asp-route-page="@i">@(i+1)</a></li>
+                            }
+                            else
+                            {
+                                <li class="page-item"><a class="page-link" asp-area="SweetHouseAdmin" asp-controller="Contact" asp-action="ContactList" asp-route-page="@i">@(i+1)</a></li>
+                            }
+
+                        }
+                        <li class="page-item"><a class="page-link" asp-area="SweetHouseAdmin" asp-controller="Contact" asp-action="ContactList" asp-route-page="@Model.Pagination.EndPage">Son Səhifə</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -4,13 +4,13 @@ namespace SweetHouseProj.Dto
 {
     public class AboutUsDto
     {
-        [Required]
+        [Required(ErrorMessage ="Boş ola bilməz")]
         [MaxLength(200)]
         public string MiniText { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Boş ola bilməz")]
         [MaxLength(100)]
         public string Header { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Boş ola bilməz")]
         [MaxLength(1000)]
         public string Body { get; set; }
     }

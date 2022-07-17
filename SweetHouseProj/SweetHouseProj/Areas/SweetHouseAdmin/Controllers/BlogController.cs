@@ -3,7 +3,7 @@
 namespace SweetHouseProj.Areas.SweetHouseAdmin.Controllers
 {
     [Area("SweetHouseAdmin")]
-    public class HomeController : Controller
+    public class BlogController : Controller
     {
         public IActionResult Index()
         {

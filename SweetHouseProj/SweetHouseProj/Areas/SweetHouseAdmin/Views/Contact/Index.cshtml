@@ -1,0 +1,96 @@
+﻿@model IEnumerable<SweetHouseProj.Models.ContactUs>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-12 col-md-12 col-lg-12">
+        <div class="card">
+            <p style="display:flex;justify-content:end;margin-right:25px;margin-top:25px;">
+                <a class="btn btn-primary" style="text-decoration:none;" asp-area="sweethouseadmin" asp-controller="Contact" asp-action="Create">Yeni Yarat</a>
+            </p>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Phone)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Email)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Location)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.MapX)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.MapY)
+                            </th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Phone)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Location)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MapX)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MapY)
+                                </td>
+
+                                <td>
+
+                                    <a style="text-decoration:none;" asp-area="sweethouseadmin" asp-controller="contact" asp-action="index" asp-route-id="@item.Id"><i class="fa-solid fa-xmark"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+<script>
+                $("#Delete").click(function(){
+             Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
+    })
+          })
+
+</script>
+
+
+}

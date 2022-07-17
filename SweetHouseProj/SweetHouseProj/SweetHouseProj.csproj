@@ -79,6 +79,7 @@
   <ItemGroup>
     <Folder Include="Areas\SweetHouseAdmin\Data\" />
     <Folder Include="Areas\SweetHouseAdmin\Models\" />
+    <Folder Include="Areas\SweetHouseAdmin\DTO\" />
     <Folder Include="ClientApp\public\locales\en\" />
     <Folder Include="Content\" />
     <Folder Include="wwwroot\vendor\font-awesome\less\" />

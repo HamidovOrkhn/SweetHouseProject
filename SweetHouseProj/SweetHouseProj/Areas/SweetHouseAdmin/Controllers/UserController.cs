@@ -3,11 +3,12 @@
 namespace SweetHouseProj.Areas.SweetHouseAdmin.Controllers
 {
     [Area("SweetHouseAdmin")]
-    public class HomeController : Controller
+    public class UserController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Login()
         {
             return View();
         }
+  
     }
 }

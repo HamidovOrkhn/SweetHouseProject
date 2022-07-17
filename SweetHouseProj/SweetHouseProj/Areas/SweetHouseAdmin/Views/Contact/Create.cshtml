@@ -1,0 +1,71 @@
+﻿@model SweetHouseProj.Models.ContactUs
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="card">
+    <div>
+    <a asp-area="sweethouseadmin" asp-controller="contact" asp-action="Index">geri</a>
+</div>
+    <div class="card-body">
+        <div class="col-md-12">
+             <form asp-area="SweetHouseAdmin" asp-controller="Contact" asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location" class="control-label"></label>
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MapX" class="control-label"></label>
+                <input asp-for="MapX" class="form-control" />
+                <span asp-validation-for="MapX" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MapY" class="control-label"></label>
+                <input asp-for="MapY" class="form-control" />
+                <span asp-validation-for="MapY" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input id="add" type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+@section Scripts{
+    <script>
+      $("#add").click(function(){
+       Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Ugurla emeliyyat',
+      showConfirmButton: false,
+      timer: 3000
+    })
+      })
+
+</script>
+@{
+    await Html.RenderPartialAsync("_AdminValidationPartial");
+}
+
+}

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<SweetHouseProj.Models.AboutUs>
+
+@{
+    ViewData["Title"] = "AboutList";
+}
+<div class="row">
+    <div class="col-12 col-md-12 col-lg-12">
+        <div class="card">
+            <p style="display:flex;justify-content:end;margin-right:25px;margin-top:25px;">
+                <a class="btn btn-primary" style="text-decoration:none;" asp-controller="AboutUs" asp-action="Create">Yeni Yarat</a>
+            </p>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.MiniText)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Header)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Body)
+                            </th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MiniText)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Header)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Body)
+                                </td>
+
+                                <td>
+
+                                    <a id="Delete" style="text-decoration:none;" asp-controller="AboutUs" asp-action="Delete" asp-route-id="@item.Id"><i class="fa-solid fa-xmark"></i></a>
+
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+<script>
+            $("#Delete").click(function(){
+         Swal.fire({
+      position: 'top-end',
+      icon: 'warning',
+      title: 'Ugurla Silindi',
+      showConfirmButton: false,
+      timer: 3000
+    })
+      })
+
+</script>
+
+
+}
+
+
+

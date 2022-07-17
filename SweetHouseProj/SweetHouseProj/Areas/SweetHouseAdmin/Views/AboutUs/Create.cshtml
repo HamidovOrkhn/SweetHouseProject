@@ -1,0 +1,61 @@
+﻿@model SweetHouseProj.Dto.AboutUsDto
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="card">
+       <div>
+            <a style="margin:10px 34px;text-decoration:none;" class="btn btn-warning" asp-area="sweethouseadmin" asp-controller="aboutus" asp-action="aboutlist"> Geri</a>
+        </div>
+    <div class="card-body">
+        <div class="col-md-12">
+            <form asp-area="sweethouseadmin" asp-controller="aboutus" asp-action="Create" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="MiniText" class="control-label"></label>
+                    <input asp-for="MiniText" class="form-control" />
+                    <span asp-validation-for="MiniText" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Header" class="control-label"></label>
+                    <input asp-for="Header" class="form-control" />
+                    <span asp-validation-for="Header" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Body" class="control-label"></label>
+                    <textarea asp-for="Body" class="form-control" ></textarea>
+                    <span asp-validation-for="Body" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input id="add" type="submit" value="Yarat" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@section Scripts{
+    <script>
+
+
+       $("#add").click(function(){
+         Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Ugurlu Elave olundu',
+      showConfirmButton: false,
+      timer: 5000
+    })
+      })
+
+</script>
+@{
+    await Html.RenderPartialAsync("_AdminValidationPartial");
+}
+
+}
